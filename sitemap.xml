@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 메인 페이지 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 황금 표준 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/golden-standard</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 색상 페이지 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/colors</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 타이포그래피 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/typography</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 규제 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/regulations</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 대체 텍스트 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/alt-text</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 코드 라이브러리 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/code-library</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PDF 체크리스트 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/pdf-checklist</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 출판사 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/publishers</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 다운로드 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/downloads</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 참고 자료 -->
+  <url>
+    <loc>https://scholara11y.vercel.app/references</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
