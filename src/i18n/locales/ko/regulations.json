@@ -1,0 +1,129 @@
+{
+  "title": "접근성 규제 및 표준",
+  "subtitle": "학술 출판을 위한 주요 국제 표준 및 법적 요구사항",
+  "wcag": {
+    "title": "핵심 Success Criteria",
+    "principles": {
+      "title": "WCAG 2.2 POUR 원칙",
+      "perceivable": {
+        "title": "Perceivable (인식 가능)",
+        "description": "정보와 UI 컴포넌트는 사용자가 인식할 수 있는 방식으로 표현되어야 합니다.",
+        "examples": "텍스트 대안 제공 (이미지, 차트 등), 시간 기반 미디어 대안 제공, 명도 대비 4.5:1 이상 (일반 텍스트), 비텍스트 콘텐츠 대비 3:1 이상, 텍스트 크기 조절 가능 (200%까지)"
+      },
+      "operable": {
+        "title": "Operable (작동 가능)",
+        "description": "UI 컴포넌트와 탐색은 사용자가 작동할 수 있어야 합니다.",
+        "examples": "모든 기능을 키보드로 접근 가능, 충분한 시간 제공, 발작 유발 콘텐츠 배제, 명확한 탐색 및 검색 방법, 다양한 입력 방식 지원"
+      },
+      "understandable": {
+        "title": "Understandable (이해 가능)",
+        "description": "정보와 UI 작동은 이해할 수 있어야 합니다.",
+        "examples": "읽기 쉬운 텍스트, 예측 가능한 동작, 명확한 오류 메시지, 입력 지원 및 오류 방지, 일관된 탐색 패턴"
+      },
+      "robust": {
+        "title": "Robust (견고함)",
+        "description": "콘텐츠는 다양한 사용자 에이전트가 해석할 수 있어야 합니다.",
+        "examples": "유효한 HTML 마크업, 적절한 ARIA 레이블, 보조 기술과의 호환성, 표준 웹 기술 사용, 상태 및 속성 명시"
+      }
+    },
+    "contrast": {
+      "title": "1.4.3 명도 대비 (최소) - Level AA",
+      "description": "텍스트와 이미지의 텍스트는 배경과 최소 4.5:1의 명도 대비를 가져야 합니다.",
+      "table": {
+        "element": "요소",
+        "levelAA": "Level AA",
+        "levelAAA": "Level AAA",
+        "normalText": "일반 텍스트 (< 18pt)",
+        "largeText": "큰 텍스트 (≥ 18pt)",
+        "boldText": "Bold 텍스트 (≥ 14pt)"
+      }
+    },
+    "nonText": {
+      "title": "1.4.11 비텍스트 대비 - Level AA",
+      "description": "UI 컴포넌트와 그래픽 객체는 인접한 색상과 최소 3:1의 대비를 가져야 합니다.",
+      "items": [
+        "버튼, 입력 필드 등 UI 요소",
+        "차트의 데이터 계열",
+        "아이콘 및 그래픽 요소",
+        "지도의 경계선 및 마커"
+      ]
+    },
+    "levels": {
+      "title": "Level A, AA, AAA 차이점",
+      "headers": {
+        "level": "레벨",
+        "meaning": "의미",
+        "requirements": "주요 요구사항",
+        "target": "권장 대상"
+      },
+      "a": {
+        "level": "Level A",
+        "description": "최소 접근성 요구사항",
+        "requirements": ["모든 이미지에 alt 텍스트", "키보드 접근 가능", "명확한 페이지 제목"],
+        "target": "모든 웹사이트"
+      },
+      "aa": {
+        "level": "Level AA",
+        "description": "권장 접근성 표준",
+        "requirements": ["명도 대비 4.5:1", "텍스트 크기 조절 200%", "비텍스트 대비 3:1"],
+        "target": "학술 출판 권장"
+      },
+      "aaa": {
+        "level": "Level AAA",
+        "description": "최고 수준 접근성",
+        "requirements": ["명도 대비 7:1", "수화 영상 제공", "읽기 수준 초등 수준"],
+        "target": "공공기관, 의료 분야"
+      }
+    }
+  },
+  "timeline": {
+    "title": "2025-2026 법적 요구사항 타임라인",
+    "june2025": {
+      "date": "2025년 6월",
+      "region": "EU 전역",
+      "title": "EU 접근성 법안(EAA) 시행",
+      "description": "모든 디지털 제품 및 서비스에 접근성 표준 준수 의무화"
+    },
+    "oct2025": {
+      "date": "2025년 10월",
+      "region": "Elsevier",
+      "title": "저널 태그된 PDF 의무화",
+      "description": "모든 신규 논문에 PDF/UA 표준 준수 필수"
+    },
+    "jan2026": {
+      "date": "2026년 1월",
+      "region": "ACM",
+      "title": "완전 개방 접근 전환",
+      "description": "모든 출판물 즉시 무료 공개 및 접근성 표준 적용"
+    },
+    "apr2026": {
+      "date": "2026년 4월",
+      "region": "Elsevier",
+      "title": "모든 콘텐츠 접근성 준수",
+      "description": "기존 아카이브 포함 전체 콘텐츠 WCAG 2.2 AA 이상 달성"
+    }
+  },
+  "publishers": {
+    "title": "출판사 접근성 정책",
+    "elsevier": {
+      "name": "Elsevier",
+      "description": "포괄적인 접근성 표준 및 AI 도구 지원"
+    },
+    "springer": {
+      "name": "Springer Nature",
+      "description": "저자 가이드라인 및 접근성 체크리스트"
+    },
+    "wiley": {
+      "name": "Wiley",
+      "description": "접근성 성명 및 저자 지원 자료"
+    },
+    "taylor": {
+      "name": "Taylor & Francis",
+      "description": "접근성 약속 및 저자 리소스"
+    }
+  },
+  "note": {
+    "title": "중요 안내",
+    "content": "학술 출판은 의무적 접근성 준수로 빠르게 이동하고 있습니다. 2025년부터 많은 주요 출판사가 WCAG 2.2 Level AA 준수와 PDF/UA 태그된 PDF를 요구할 것입니다. 처음부터 접근 가능한 문서를 준비하면 시간을 절약하고 원활한 출판을 보장할 수 있습니다."
+  }
+}

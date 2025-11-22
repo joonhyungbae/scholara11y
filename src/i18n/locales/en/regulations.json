@@ -1,0 +1,133 @@
+{
+  "title": "Accessibility Regulations & Standards",
+  "subtitle": "Key international standards and legal requirements for academic publishing",
+  "wcag": {
+    "title": "Key Success Criteria",
+    "principles": {
+      "title": "WCAG 2.2 POUR Principles",
+      "perceivable": {
+        "title": "Perceivable",
+        "description": "Information and UI components must be presentable to users in ways they can perceive.",
+        "examples": "Text alternatives (images, charts, etc.), Time-based media alternatives, Contrast ratio 4.5:1+ (regular text), Non-text content contrast 3:1+, Adjustable text size (up to 200%)"
+      },
+      "operable": {
+        "title": "Operable",
+        "description": "UI components and navigation must be operable by users.",
+        "examples": "All functions keyboard accessible, Sufficient time provided, No seizure-inducing content, Clear navigation and search, Support for various input methods"
+      },
+      "understandable": {
+        "title": "Understandable",
+        "description": "Information and UI operation must be understandable.",
+        "examples": "Readable text, Predictable behavior, Clear error messages, Input assistance and error prevention, Consistent navigation patterns"
+      },
+      "robust": {
+        "title": "Robust",
+        "description": "Content must be robust enough to be interpreted by various user agents.",
+        "examples": "Valid HTML markup, Appropriate ARIA labels, Compatibility with assistive technologies, Use of standard web technologies, Clear states and properties"
+      }
+    },
+    "contrast": {
+      "title": "1.4.3 Contrast (Minimum) - Level AA",
+      "description": "Text and images of text must have a minimum contrast ratio of 4.5:1 with the background.",
+      "table": {
+        "element": "Element",
+        "levelAA": "Level AA",
+        "levelAAA": "Level AAA",
+        "normalText": "Normal text (< 18pt)",
+        "largeText": "Large text (≥ 18pt)",
+        "boldText": "Bold text (≥ 14pt)"
+      }
+    },
+    "nonText": {
+      "title": "1.4.11 Non-text Contrast - Level AA",
+      "description": "UI components and graphical objects must have a minimum 3:1 contrast ratio with adjacent colors.",
+      "items": [
+        "Buttons, input fields, and other UI elements",
+        "Chart data series",
+        "Icons and graphic elements",
+        "Map boundaries and markers"
+      ]
+    },
+    "levels": {
+      "title": "Level A, AA, AAA Differences",
+      "headers": {
+        "level": "Level",
+        "meaning": "Meaning",
+        "requirements": "Key Requirements",
+        "target": "Recommended For"
+      },
+      "a": {
+        "level": "Level A",
+        "description": "Minimum accessibility requirements",
+        "requirements": ["Alt text for all images", "Keyboard accessible", "Clear page titles"],
+        "target": "All websites"
+      },
+      "aa": {
+        "level": "Level AA",
+        "description": "Recommended accessibility standard",
+        "requirements": ["Contrast ratio 4.5:1", "Text resizable to 200%", "Non-text contrast 3:1"],
+        "target": "Academic publishing recommended"
+      },
+      "aaa": {
+        "level": "Level AAA",
+        "description": "Highest level of accessibility",
+        "requirements": ["Contrast ratio 7:1", "Sign language videos", "Elementary reading level"],
+        "target": "Public agencies, healthcare"
+      }
+    }
+  },
+  "timeline": {
+    "title": "2025-2026 Legal Requirements Timeline",
+    "june2025": {
+      "date": "June 2025",
+      "region": "EU-wide",
+      "title": "EU Accessibility Act (EAA) Implementation",
+      "description": "Mandatory accessibility standards for all digital products and services"
+    },
+    "oct2025": {
+      "date": "October 2025",
+      "region": "Elsevier",
+      "title": "Tagged PDF Mandatory for Journals",
+      "description": "All new papers must comply with PDF/UA standard"
+    },
+    "jan2026": {
+      "date": "January 2026",
+      "region": "ACM",
+      "title": "Full Open Access Transition",
+      "description": "All publications immediately free and accessible with accessibility standards applied"
+    },
+    "apr2026": {
+      "date": "April 2026",
+      "region": "Elsevier",
+      "title": "All Content Accessibility Compliance",
+      "description": "All content including archives must achieve WCAG 2.2 AA or higher"
+    }
+  },
+  "publishers": {
+    "title": "Publisher Accessibility Policies",
+    "elsevier": {
+      "name": "Elsevier",
+      "description": "Comprehensive accessibility standards and AI tool support"
+    },
+    "springer": {
+      "name": "Springer Nature",
+      "description": "Author guidelines and accessibility checklist"
+    },
+    "wiley": {
+      "name": "Wiley",
+      "description": "Detailed author accessibility guide"
+    },
+    "taylor": {
+      "name": "Taylor & Francis",
+      "description": "Accessibility commitment and author resources"
+    },
+    "wiley": {
+      "name": "Wiley",
+      "description": "Accessibility commitment and author resources"
+    }
+  },
+  "note": {
+    "title": "Important Note",
+    "content": "Academic publishing is rapidly moving toward mandatory accessibility compliance. Starting in 2025, many major publishers will require WCAG 2.2 Level AA compliance and PDF/UA tagged PDFs. Preparing accessible documents from the start will save time and ensure smooth publication."
+  }
+}

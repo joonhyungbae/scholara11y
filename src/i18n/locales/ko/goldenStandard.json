@@ -1,0 +1,248 @@
+{
+  "hero": {
+    "title": "🏆 2025 접근성 시각 디자인 골든 스탠다드",
+    "subtitle": "Born-Accessible: 태생적 접근성을 위한 최적 조합",
+    "description": "WCAG 2.2 Level AA와 글로벌 출판사 Best Practice를 통합한 즉시 적용 가능한 표준",
+    "ctaButton": "빠른 시작 가이드 다운로드"
+  },
+  "principles": {
+    "title": "5대 핵심 원칙",
+    "color": {
+      "title": "Okabe-Ito 팔레트",
+      "description": "과학적으로 검증된 색맹 안전 8색 팔레트",
+      "copied": "HEX 코드가 클립보드에 복사되었습니다!"
+    },
+    "typography": {
+      "title": "Atkinson Hyperlegible",
+      "description": "시각 접근성을 위해 설계된 가독성 향상 폰트",
+      "settings": "최소 16px, 1.5배 행간"
+    },
+    "contrast": {
+      "title": "WCAG 2.2 대비 기준",
+      "description": "가독성을 위한 최소 대비 기준 충족",
+      "aa": "AA: 4.5:1",
+      "aaa": "AAA: 7:1"
+    },
+    "dualEncoding": {
+      "title": "색상 + 패턴",
+      "description": "색상에만 의존하지 마세요 - 패턴과 텍스처 추가",
+      "toggle": "색상 토글"
+    },
+    "fileFormat": {
+      "title": "벡터 우선",
+      "description": "확장 가능한 벡터 포맷 우선 사용",
+      "priority": "SVG > EPS > PDF",
+      "resolution": "래스터는 600dpi 이상"
+    }
+  },
+  "code": {
+    "title": "통합 코드 예제",
+    "python": {
+      "title": "Python",
+      "description": "완전한 matplotlib 구현"
+    },
+    "r": {
+      "title": "R",
+      "description": "ggplot2 접근성 플로팅"
+    },
+    "css": {
+      "title": "CSS",
+      "description": "웹 디자인 시스템"
+    },
+    "latex": {
+      "title": "LaTeX",
+      "description": "학술 출판 패키지"
+    },
+    "comments": {
+      "integratedFunction": "5가지 원칙이 하나로 작동하는 통합 구현",
+      "color": "1. 색상: Okabe-Ito 팔레트 적용",
+      "typography": "2. 타이포그래피: 명확한 폰트와 크기",
+      "minSize": "최소 크기 보장",
+      "clarity": "명확성 강화",
+      "contrast": "3. 대비율: 검은 테두리로 3:1 이상 보장",
+      "dualEncoding": "4. 이중 인코딩: 색상 + 패턴",
+      "vectorFirst": "5. Vector First: SVG로 저장 + 메타데이터"
+    }
+  },
+  "validation": {
+    "title": "검증 도구 매트릭스",
+    "item": "검증 항목",
+    "standard": "골든 스탠다드 값",
+    "tool": "테스트 도구",
+    "test": "즉시 테스트",
+    "items": {
+      "contrast": {
+        "item": "색상 대비",
+        "value": "4.5:1 (AA)",
+        "tool": "WebAIM"
+      },
+      "colorblind": {
+        "item": "색맹 시뮬레이션",
+        "value": "Okabe-Ito 통과",
+        "tool": "Color Oracle"
+      },
+      "pdf": {
+        "item": "PDF 접근성",
+        "value": "PDF/UA 준수",
+        "tool": "PAC 2024"
+      },
+      "web": {
+        "item": "웹 접근성",
+        "value": "WCAG 2.2 AA",
+        "tool": "WAVE"
+      }
+    }
+  },
+  "downloads": {
+    "title": "다운로드 센터",
+    "python": {
+      "title": "완전한 Python 패키지",
+      "file": "golden_standard_2025.py (15KB)"
+    },
+    "r": {
+      "title": "R 패키지 및 함수",
+      "file": "golden_standard.R (12KB)"
+    },
+    "css": {
+      "title": "CSS 프레임워크",
+      "file": "golden-standard.css (8KB)"
+    },
+    "latex": {
+      "title": "LaTeX 스타일 파일",
+      "file": "golden-standard.sty (6KB)"
+    },
+    "palette": {
+      "title": "색상 팔레트 세트",
+      "files": "okabe-ito.ase (Adobe) + okabe-ito.json (데이터)"
+    },
+    "font": {
+      "title": "폰트 파일",
+      "file": "Atkinson-Hyperlegible.zip (320KB)"
+    },
+    "download": "다운로드",
+    "downloadAll": "모두 다운로드"
+  },
+  "gallery": {
+    "title": "실제 적용 예시",
+    "beforeAfter": "적용 전/후 비교",
+    "chart": "차트 변환",
+    "pdf": "PDF 접근성",
+    "web": "WCAG 준수 웹"
+  },
+  "quickRef": {
+    "title": "빠른 참조 카드 (인쇄 가능)",
+    "description": "A4 크기 PDF 요약 카드 다운로드",
+    "includes": "색상 코드, 대비율 표, 폰트 크기, 체크리스트 포함",
+    "download": "PDF 다운로드"
+  },
+  "synergy": {
+    "title": "5가지 핵심 원칙의 통합 시너지",
+    "subtitle": "골든 스탠다드의 작동 원리",
+    "intro": "2025 골든 스탠다드는 5가지 핵심 원칙이 개별적으로 작동하는 것이 아니라 상호보완적인 시스템으로 통합되어 있습니다. 각 원칙은 다른 원칙의 약점을 보완하고 강점을 증폭시킵니다.",
+    "badges": {
+      "synergy": "시너지",
+      "application": "적용",
+      "users": "수혜자",
+      "role": "역할",
+      "standard": "기준",
+      "backup": "백업",
+      "preservation": "보존",
+      "metadata": "메타데이터"
+    },
+    "layers": {
+      "title": "통합 매트릭스",
+      "layer1": {
+        "title": "Layer 1: 기본 인지 (Primary Perception)",
+        "combination": "색상 (Okabe-Ito) × 타이포그래피 (Atkinson Hyperlegible)",
+        "synergy": "색상의 구분력 + 글자의 명확성 = 즉각적 정보 인지",
+        "applications": "차트 범례, 축 라벨, 데이터 라벨",
+        "users": "일반 사용자, 경미한 시각 장애"
+      },
+      "layer2": {
+        "title": "Layer 2: 검증된 가시성 (Validated Visibility)",
+        "combination": "대비율 (WCAG 2.2) = 색상과 타이포그래피의 품질 보증",
+        "synergy": "Layer 1이 실제로 작동하는지 수치적 검증",
+        "applications": "텍스트 4.5:1, 그래픽 3:1 이상",
+        "users": "저시력자, 노안, 밝은 환경의 사용자"
+      },
+      "layer3": {
+        "title": "Layer 3: 다중 안전장치 (Redundant Encoding)",
+        "combination": "이중 인코딩 (색상 + 패턴/모양)",
+        "synergy": "색상 정보가 손실되어도 패턴으로 구분",
+        "applications": "막대 차트 해칭, 선 그래프 스타일, 데이터 포인트 모양",
+        "users": "색맹/색약, 흑백 인쇄 사용자"
+      },
+      "layer4": {
+        "title": "Layer 4: 무한 확장성 (Infinite Scalability)",
+        "combination": "Vector First (SVG/EPS)",
+        "synergy": "Layer 1-3의 모든 요소가 확대 시에도 유지",
+        "applications": "스크린 리더용 메타데이터 임베드",
+        "users": "화면 확대 사용자, 스크린 리더 사용자"
+      }
+    },
+    "scenarios": {
+      "title": "실제 적용 시나리오",
+      "scenario1": {
+        "title": "시나리오 1: 색각 이상자가 논문 차트를 볼 때",
+        "steps": [
+          "Okabe-Ito 팔레트 → 적록 색맹도 구분 가능한 색상",
+          "패턴 추가 → 색상 구분 실패 시 패턴으로 식별",
+          "벡터 포맷 → 확대해도 패턴 선명도 유지"
+        ]
+      },
+      "scenario2": {
+        "title": "시나리오 2: 저시력자가 데이터를 읽을 때",
+        "steps": [
+          "Atkinson 폰트 → 글자 형태 명확",
+          "4.5:1 대비 → 배경과 확실한 구분",
+          "벡터 포맷 → 400% 확대해도 깨지지 않음"
+        ]
+      },
+      "scenario3": {
+        "title": "시나리오 3: 스크린 리더 사용자",
+        "steps": [
+          "SVG 메타데이터 → 차트 설명 포함",
+          "구조화된 텍스트 → 논리적 읽기 순서",
+          "대체 텍스트 → 시각 정보의 텍스트 변환"
+        ]
+      }
+    },
+    "codeExample": {
+      "title": "통합 코드 예시",
+      "description": "5가지 원칙이 하나로 작동하는 완전한 구현",
+      "codeTitle": "5가지 원칙의 실전 적용"
+    },
+    "results": {
+      "title": "통합의 결과",
+      "subtitle": "개별 원칙만으로는 불가능한, 통합 시스템만이 제공하는 가치",
+      "table": {
+        "challenge": "접근성 도전과제",
+        "singleLimit": "단일 원칙의 한계",
+        "integrated": "통합 시스템의 해결"
+      },
+      "items": [
+        {
+          "challenge": "색맹 + 저시력",
+          "singleLimit": "색상만으론 부족, 큰 글씨만으론 부족",
+          "integrated": "Okabe-Ito + 패턴 + 고대비 + 큰 폰트"
+        },
+        {
+          "challenge": "흑백 인쇄",
+          "singleLimit": "색상 정보 완전 손실",
+          "integrated": "패턴과 명도 차이로 구분 유지"
+        },
+        {
+          "challenge": "극도 확대 (400%)",
+          "singleLimit": "래스터는 픽셀화",
+          "integrated": "벡터 + 명확한 폰트 = 완벽한 선명도"
+        },
+        {
+          "challenge": "스크린 리더",
+          "singleLimit": "시각 정보 접근 불가",
+          "integrated": "SVG 메타데이터 + 구조화된 대체 텍스트"
+        }
+      ],
+      "conclusion": "이것이 바로 '골든 스탠다드'입니다: 모든 사용자가 정보에 접근할 수 있는 완전한 시스템."
+    }
+  }
+}

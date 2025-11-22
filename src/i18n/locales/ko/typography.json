@@ -1,0 +1,62 @@
+{
+  "title": "접근 가능한 타이포그래피 표준",
+  "subtitle": "학술 문서를 위한 글꼴 선택, 크기 및 간격 가이드라인",
+  "latexTitle": "LaTeX 접근 가능 템플릿",
+  "latexDescription": "접근 가능한 LaTeX 문서 작성을 위해 이 템플릿을 사용하세요:",
+  "cssTitle": "CSS 접근 가능 타이포그래피",
+  "cssDescription": "접근 가능한 웹 타이포그래피를 위해 다음 CSS 규칙을 적용하세요:",
+  "coreRequirements": {
+    "title": "핵심 요구사항",
+    "items": {
+      "fonts": "산세리프 글꼴(Arial, Helvetica) 또는 접근 가능한 세리프 글꼴 사용",
+      "size": "본문 텍스트 최소 12pt, 14pt 권장",
+      "spacing": "본문 텍스트 줄 간격 최소 1.5",
+      "alignment": "왼쪽 정렬 텍스트(양쪽 정렬 피하기)",
+      "contrast": "일반 텍스트 최소 4.5:1 명암비"
+    }
+  },
+  "publisherFonts": {
+    "title": "출판사별 글꼴 요구사항",
+    "table": {
+      "publisher": "출판사",
+      "font": "권장 글꼴",
+      "size": "최소 크기",
+      "spacing": "줄 간격",
+      "nature": {
+        "font": "Arial, Helvetica",
+        "size": "12pt",
+        "spacing": "1.5"
+      },
+      "science": {
+        "font": "Times New Roman",
+        "size": "12pt",
+        "spacing": "Double"
+      },
+      "elsevier": {
+        "font": "Times New Roman",
+        "size": "12pt",
+        "spacing": "1.5"
+      },
+      "springer": {
+        "font": "Arial, Times",
+        "size": "11pt",
+        "spacing": "1.5"
+      },
+      "wiley": {
+        "font": "Times New Roman",
+        "size": "12pt",
+        "spacing": "Double"
+      }
+    }
+  },
+  "bestPractices": {
+    "title": "모범 사례",
+    "items": {
+      "consistent": "문서 전체에 일관된 글꼴 패밀리 사용",
+      "hierarchy": "명확한 제목 계층 구조 확립 (H1, H2, H3)",
+      "emphasis": "강조는 굵게 사용, 밑줄 피하기",
+      "capitalization": "약어를 제외하고 모두 대문자 텍스트 피하기",
+      "color": "정보 전달을 색상에만 의존하지 않기"
+    }
+  }
+}

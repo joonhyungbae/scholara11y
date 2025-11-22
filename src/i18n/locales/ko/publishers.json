@@ -1,0 +1,175 @@
+{
+  "title": "출판사별 접근성 요구사항",
+  "subtitle": "주요 학술 출판사의 접근성 가이드라인",
+  "intro": "출판사마다 접근성 요구사항이 다릅니다. 이 가이드는 주요 학술 출판사의 주요 요구사항을 요약하여 해당 표준을 충족하는 원고를 준비하는 데 도움을 줍니다.",
+  "nature": {
+    "name": "Nature Portfolio",
+    "wcag": "WCAG 2.1 Level AA 준수 필요",
+    "requirements": {
+      "title": "주요 요구사항",
+      "items": {
+        "alt": "모든 그림과 이미지에 alt 텍스트 필요",
+        "contrast": "텍스트 최소 4.5:1 명암비",
+        "colors": "정보 전달에 색상만 사용하지 않기",
+        "fonts": "본문 텍스트 최소 10pt 글꼴 크기",
+        "tables": "테이블에 적절한 헤더와 구조 필요",
+        "pdf": "보충 PDF는 PDF/UA 준수 필요",
+        "captions": "상세한 그림 캡션 필요"
+      }
+    },
+    "resources": "저자 가이드라인: https://www.nature.com/nature/for-authors"
+  },
+  "science": {
+    "name": "Science / AAAS",
+    "requirements": {
+      "title": "주요 요구사항",
+      "items": {
+        "figures": "설명 캡션이 있는 고해상도 그림",
+        "alt": "복잡한 그림에 대한 대체 텍스트",
+        "readable": "기계 판독 가능한 데이터 테이블",
+        "colors": "색맹 안전 팔레트 권장",
+        "fonts": "최소 12pt 글꼴 크기",
+        "supplements": "접근 가능한 보충 자료"
+      }
+    },
+    "tools": "AAAS는 저자를 위한 접근성 검사 도구 제공",
+    "resources": "지침: https://www.science.org/content/page/instructions-authors"
+  },
+  "elsevier": {
+    "name": "Elsevier",
+    "requirements": {
+      "title": "주요 요구사항",
+      "items": {
+        "pdf": "최종 출판물에 PDF/UA 준수",
+        "structure": "제목이 있는 적절한 문서 구조",
+        "alt": "모든 시각적 요소에 alt 텍스트",
+        "math": "방정식에 MathML 또는 접근 가능한 LaTeX",
+        "tables": "헤더가 있는 구조화된 테이블",
+        "references": "적절하게 연결된 참고 문헌",
+        "metadata": "완전한 문서 메타데이터"
+      }
+    },
+    "support": "Elsevier는 저자를 위한 접근성 지원 제공",
+    "resources": "가이드: https://www.elsevier.com/authors/policies-and-guidelines"
+  },
+  "springer": {
+    "name": "Springer Nature",
+    "wcag": "WCAG 2.1 Level AA 표준",
+    "requirements": {
+      "title": "주요 요구사항",
+      "items": {
+        "tags": "태그된 PDF 제출",
+        "alt": "그림에 대한 설명 alt 텍스트",
+        "contrast": "충분한 색상 대비",
+        "headings": "적절한 제목 계층 구조",
+        "lists": "구조화된 목록",
+        "links": "설명 링크 텍스트",
+        "language": "메타데이터의 언어 지정"
+      }
+    },
+    "tools": "저자 서비스에 접근성 검사 포함",
+    "resources": "저자: https://www.springernature.com/gp/authors"
+  },
+  "wiley": {
+    "name": "Wiley",
+    "requirements": {
+      "title": "주요 요구사항",
+      "items": {
+        "wcag": "최소 WCAG 2.0 Level AA",
+        "alt": "모든 그림과 이미지에 alt 텍스트",
+        "tables": "접근 가능한 테이블 형식",
+        "fonts": "최소 12pt 글꼴 크기",
+        "contrast": "일반 텍스트 4.5:1 명암비",
+        "pdf": "PDF/UA 준수 보충 자료",
+        "multimedia": "비디오 콘텐츠 자막"
+      }
+    },
+    "support": "저자 서비스를 통한 접근성 지원 가능",
+    "resources": "가이드라인: https://authorservices.wiley.com/"
+  },
+  "plos": {
+    "name": "PLOS (Public Library of Science)",
+    "openAccess": "강력한 접근성 약속을 가진 오픈 액세스 출판사",
+    "requirements": {
+      "title": "주요 요구사항",
+      "items": {
+        "alt": "모든 그림에 대한 포괄적인 alt 텍스트",
+        "data": "접근 가능한 데이터 가용성",
+        "supplements": "접근 가능한 보충 정보",
+        "colors": "색맹 친화적 색상 구성",
+        "format": "접근 가능한 문서 형식",
+        "captions": "상세하고 설명적인 캡션"
+      }
+    },
+    "tools": "제출 시스템에 접근성 검사 포함",
+    "resources": "가이드라인: https://plos.org/publish/"
+  },
+  "ieee": {
+    "name": "IEEE",
+    "requirements": {
+      "title": "주요 요구사항",
+      "items": {
+        "pdf": "PDF/UA 준수 최종 논문",
+        "alt": "그림과 방정식에 alt 텍스트",
+        "structure": "적절한 문서 구조",
+        "fonts": "포함된 접근 가능한 글꼴",
+        "tables": "접근 가능한 테이블 형식",
+        "math": "접근 가능한 수학 표기법"
+      }
+    },
+    "template": "IEEE는 접근 가능한 LaTeX 템플릿 제공",
+    "resources": "저자 센터: https://ieeeauthorcenter.ieee.org/"
+  },
+  "comparison": {
+    "title": "빠른 비교 표",
+    "table": {
+      "publisher": "출판사",
+      "wcag": "WCAG 수준",
+      "pdfua": "PDF/UA",
+      "minFont": "최소 글꼴 크기",
+      "contrast": "최소 명암비",
+      "nature": {
+        "wcag": "AA (2.1)",
+        "pdfua": "필수",
+        "minFont": "10pt",
+        "contrast": "4.5:1"
+      },
+      "science": {
+        "wcag": "AA",
+        "pdfua": "권장",
+        "minFont": "12pt",
+        "contrast": "4.5:1"
+      },
+      "elsevier": {
+        "wcag": "AA",
+        "pdfua": "필수",
+        "minFont": "11pt",
+        "contrast": "4.5:1"
+      },
+      "springer": {
+        "wcag": "AA (2.1)",
+        "pdfua": "필수",
+        "minFont": "11pt",
+        "contrast": "4.5:1"
+      },
+      "wiley": {
+        "wcag": "AA (2.0)",
+        "pdfua": "필수",
+        "minFont": "12pt",
+        "contrast": "4.5:1"
+      }
+    }
+  },
+  "tips": {
+    "title": "모든 출판사를 위한 일반 팁",
+    "items": {
+      "early": "사후 고려가 아닌 처음부터 접근성 고려",
+      "guidelines": "제출 전 출판사 가이드라인 검토",
+      "tools": "준비 중 접근성 검사 도구 사용",
+      "alt": "모든 시각적 요소에 설명 alt 텍스트 작성",
+      "test": "가능하면 스크린 리더로 문서 테스트",
+      "contact": "질문이 있으면 출판사 지원에 문의",
+      "examples": "예로서 출판된 접근 가능한 기사 검토"
+    }
+  }
+}

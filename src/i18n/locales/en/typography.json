@@ -1,0 +1,62 @@
+{
+  "title": "Accessible Typography Standards",
+  "subtitle": "Font selection, sizing, and spacing guidelines for academic documents",
+  "latexTitle": "LaTeX Accessible Template",
+  "latexDescription": "Use this template for creating accessible LaTeX documents:",
+  "cssTitle": "CSS Accessible Typography",
+  "cssDescription": "Apply these CSS rules for accessible web typography:",
+  "coreRequirements": {
+    "title": "Core Requirements",
+    "items": {
+      "fonts": "Use sans-serif fonts (Arial, Helvetica) or accessible serif fonts",
+      "size": "Minimum 12pt for body text, 14pt preferred",
+      "spacing": "Line spacing at least 1.5 for body text",
+      "alignment": "Left-aligned text (avoid justified text)",
+      "contrast": "Minimum 4.5:1 contrast ratio for normal text"
+    }
+  },
+  "publisherFonts": {
+    "title": "Publisher-Specific Font Requirements",
+    "table": {
+      "publisher": "Publisher",
+      "font": "Recommended Font",
+      "size": "Minimum Size",
+      "spacing": "Line Spacing",
+      "nature": {
+        "font": "Arial, Helvetica",
+        "size": "12pt",
+        "spacing": "1.5"
+      },
+      "science": {
+        "font": "Times New Roman",
+        "size": "12pt",
+        "spacing": "Double"
+      },
+      "elsevier": {
+        "font": "Times New Roman",
+        "size": "12pt",
+        "spacing": "1.5"
+      },
+      "springer": {
+        "font": "Arial, Times",
+        "size": "11pt",
+        "spacing": "1.5"
+      },
+      "wiley": {
+        "font": "Times New Roman",
+        "size": "12pt",
+        "spacing": "Double"
+      }
+    }
+  },
+  "bestPractices": {
+    "title": "Best Practices",
+    "items": {
+      "consistent": "Use consistent font families throughout the document",
+      "hierarchy": "Establish clear heading hierarchy (H1, H2, H3)",
+      "emphasis": "Use bold for emphasis, avoid underlining",
+      "capitalization": "Avoid all-caps text except for acronyms",
+      "color": "Don't rely on color alone to convey information"
+    }
+  }
+}

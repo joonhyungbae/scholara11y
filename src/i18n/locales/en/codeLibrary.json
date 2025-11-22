@@ -1,0 +1,123 @@
+{
+  "title": "Code Library & Templates",
+  "subtitle": "Ready-to-use code snippets for accessible academic content",
+  "intro": "This library provides copy-paste ready code examples for implementing accessibility standards in your academic publications. All examples follow WCAG 2.2 Level AA guidelines.",
+  "latexSection": {
+    "title": "LaTeX Templates",
+    "accessible": {
+      "title": "Accessible LaTeX Template",
+      "description": "Complete LaTeX document template with accessibility features"
+    },
+    "tables": {
+      "title": "Accessible LaTeX Tables",
+      "description": "Properly structured tables with clear headers"
+    }
+  },
+  "pythonSection": {
+    "title": "Python Examples",
+    "matplotlib": {
+      "title": "Matplotlib Accessible Plots",
+      "description": "Create colorblind-safe charts with proper contrast"
+    },
+    "seaborn": {
+      "title": "Seaborn Accessible Styling",
+      "description": "Configure seaborn with accessible color palettes"
+    }
+  },
+  "rSection": {
+    "title": "R Examples",
+    "ggplot": {
+      "title": "ggplot2 Accessible Themes",
+      "description": "Custom ggplot2 theme with accessibility features"
+    },
+    "colorblind": {
+      "title": "Colorblind-Safe Color Scales",
+      "description": "Implement Okabe-Ito palette in R"
+    }
+  },
+  "cssSection": {
+    "title": "CSS Stylesheets",
+    "typography": {
+      "title": "Accessible Typography",
+      "description": "CSS rules for readable text with proper spacing"
+    },
+    "colors": {
+      "title": "CSS Color Variables",
+      "description": "Okabe-Ito palette as CSS custom properties"
+    },
+    "darkMode": {
+      "title": "Accessible Dark Mode",
+      "description": "Dark mode implementation with sufficient contrast"
+    }
+  },
+  "htmlSection": {
+    "title": "HTML Templates",
+    "article": {
+      "title": "Semantic Article Structure",
+      "description": "Properly structured HTML article with ARIA labels"
+    },
+    "figures": {
+      "title": "Accessible Figure Markup",
+      "description": "HTML structure for figures with captions and alt text"
+    },
+    "tables": {
+      "title": "Accessible HTML Tables",
+      "description": "Data tables with proper headers and scope"
+    }
+  },
+  "usage": {
+    "title": "How to Use These Examples",
+    "items": {
+      "copy": "Copy the code snippets directly into your project",
+      "modify": "Modify colors, fonts, and values to match your style",
+      "test": "Test with screen readers and colorblind simulation tools",
+      "validate": "Validate HTML and check WCAG compliance",
+      "document": "Document any accessibility features you implement"
+    }
+  },
+  "comments": {
+    "wcagCompliant": "WCAG 2.2 compliant chart creation example",
+    "settings": "Settings",
+    "data": "Data",
+    "figureCreation": "Figure creation",
+    "okabeItoColors": "Okabe-Ito colors and patterns",
+    "directLabeling": "Direct labeling",
+    "axisSettings": "Axis settings",
+    "rangeSettings": "Range settings",
+    "metadataSave": "Save with metadata",
+    "usage": "Usage",
+    "okabeItoPalette": "Okabe-Ito Palette",
+    "black": "Black",
+    "orange": "Orange",
+    "skyBlue": "Sky Blue",
+    "bluishGreen": "Bluish Green",
+    "yellow": "Yellow",
+    "blue": "Blue",
+    "vermillion": "Vermillion",
+    "reddishPurple": "Reddish Purple",
+    "globalSettings": "Global settings",
+    "dualEncodingExample": "Dual encoding example: Color + Pattern",
+    "accessibleChart": "Accessible chart with color and patterns",
+    "patternAddition": "Pattern addition",
+    "directLabeling2": "Direct labeling",
+    "usageExample": "Usage example",
+    "accessibleLineChart": "Accessible line chart",
+    "sampleData": "Sample data",
+    "okabeColors": "Okabe-Ito colors and various line styles",
+    "axisSettings2": "Axis settings",
+    "legend": "Legend (with clear background)",
+    "grid": "Grid",
+    "okabeItoPalette2": "Okabe-Ito Palette Definition",
+    "accessibleTheme": "Accessible theme settings",
+    "sampleData2": "Sample data",
+    "accessibleBarChart": "Accessible bar chart",
+    "directLabeling3": "Direct labeling",
+    "principlesTitle": "Code Writing Core Principles",
+    "okabeItoUsage": "Use Okabe-Ito palette: Select colorblind-safe colors",
+    "dualEncoding2": "Dual encoding: Combine color + pattern/line style",
+    "directLabeling4": "Direct labeling: Display values on all data points",
+    "clearBorders": "Clear borders: Distinguish elements with 2px black borders",
+    "includeMetadata": "Include metadata: Add descriptions when saving SVG/PDF",
+    "ariaLabels": "ARIA labels: Add accessibility attributes to interactive charts"
+  }
+}

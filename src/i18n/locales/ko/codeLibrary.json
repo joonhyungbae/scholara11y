@@ -1,0 +1,123 @@
+{
+  "title": "코드 라이브러리 및 템플릿",
+  "subtitle": "접근 가능한 학술 콘텐츠를 위한 즉시 사용 가능한 코드 스니펫",
+  "intro": "이 라이브러리는 학술 출판물에서 접근성 표준을 구현하기 위한 복사-붙여넣기 가능한 코드 예제를 제공합니다. 모든 예제는 WCAG 2.2 Level AA 가이드라인을 따릅니다.",
+  "latexSection": {
+    "title": "LaTeX 템플릿",
+    "accessible": {
+      "title": "접근 가능한 LaTeX 템플릿",
+      "description": "접근성 기능이 포함된 완전한 LaTeX 문서 템플릿"
+    },
+    "tables": {
+      "title": "접근 가능한 LaTeX 테이블",
+      "description": "명확한 헤더가 있는 적절하게 구조화된 테이블"
+    }
+  },
+  "pythonSection": {
+    "title": "Python 예제",
+    "matplotlib": {
+      "title": "Matplotlib 접근 가능한 플롯",
+      "description": "적절한 대비로 색맹 안전 차트 생성"
+    },
+    "seaborn": {
+      "title": "Seaborn 접근 가능한 스타일링",
+      "description": "접근 가능한 색상 팔레트로 seaborn 구성"
+    }
+  },
+  "rSection": {
+    "title": "R 예제",
+    "ggplot": {
+      "title": "ggplot2 접근 가능한 테마",
+      "description": "접근성 기능이 있는 사용자 정의 ggplot2 테마"
+    },
+    "colorblind": {
+      "title": "색맹 안전 색상 스케일",
+      "description": "R에서 Okabe-Ito 팔레트 구현"
+    }
+  },
+  "cssSection": {
+    "title": "CSS 스타일시트",
+    "typography": {
+      "title": "접근 가능한 타이포그래피",
+      "description": "적절한 간격의 읽기 쉬운 텍스트를 위한 CSS 규칙"
+    },
+    "colors": {
+      "title": "CSS 색상 변수",
+      "description": "CSS 사용자 정의 속성으로서의 Okabe-Ito 팔레트"
+    },
+    "darkMode": {
+      "title": "접근 가능한 다크 모드",
+      "description": "충분한 대비가 있는 다크 모드 구현"
+    }
+  },
+  "htmlSection": {
+    "title": "HTML 템플릿",
+    "article": {
+      "title": "시맨틱 문서 구조",
+      "description": "ARIA 레이블이 있는 적절하게 구조화된 HTML 문서"
+    },
+    "figures": {
+      "title": "접근 가능한 그림 마크업",
+      "description": "캡션과 alt 텍스트가 있는 그림을 위한 HTML 구조"
+    },
+    "tables": {
+      "title": "접근 가능한 HTML 테이블",
+      "description": "적절한 헤더와 범위가 있는 데이터 테이블"
+    }
+  },
+  "usage": {
+    "title": "이 예제 사용 방법",
+    "items": {
+      "copy": "코드 스니펫을 프로젝트에 직접 복사",
+      "modify": "스타일에 맞게 색상, 글꼴 및 값 수정",
+      "test": "스크린 리더 및 색맹 시뮬레이션 도구로 테스트",
+      "validate": "HTML 유효성 검사 및 WCAG 준수 확인",
+      "document": "구현한 모든 접근성 기능 문서화"
+    }
+  },
+  "comments": {
+    "wcagCompliant": "WCAG 2.2 준수 차트 생성 예제",
+    "settings": "설정",
+    "data": "데이터",
+    "figureCreation": "그림 생성",
+    "okabeItoColors": "Okabe-Ito 색상과 패턴",
+    "directLabeling": "직접 라벨링",
+    "axisSettings": "축 설정",
+    "rangeSettings": "범위 설정",
+    "metadataSave": "메타데이터 포함 저장",
+    "usage": "사용",
+    "okabeItoPalette": "Okabe-Ito 팔레트",
+    "black": "검정",
+    "orange": "주황",
+    "skyBlue": "하늘색",
+    "bluishGreen": "청록색",
+    "yellow": "노랑",
+    "blue": "파랑",
+    "vermillion": "주홍",
+    "reddishPurple": "자홍",
+    "globalSettings": "전역 설정",
+    "dualEncodingExample": "이중 인코딩 예시: 색상 + 패턴",
+    "accessibleChart": "색상과 패턴을 함께 사용한 접근성 높은 차트",
+    "patternAddition": "패턴 추가",
+    "directLabeling2": "직접 라벨링",
+    "usageExample": "사용 예시",
+    "accessibleLineChart": "접근성 높은 선 그래프",
+    "sampleData": "샘플 데이터",
+    "okabeColors": "Okabe-Ito 색상과 다양한 선 스타일",
+    "axisSettings2": "축 설정",
+    "legend": "범례 (명확한 배경)",
+    "grid": "그리드",
+    "okabeItoPalette2": "Okabe-Ito 팔레트 정의",
+    "accessibleTheme": "접근성 테마 설정",
+    "sampleData2": "샘플 데이터",
+    "accessibleBarChart": "접근성 높은 막대 그래프",
+    "directLabeling3": "직접 라벨링",
+    "principlesTitle": "코드 작성 핵심 원칙",
+    "okabeItoUsage": "Okabe-Ito 팔레트 사용: 색맹 안전 색상 선택",
+    "dualEncoding2": "이중 인코딩: 색상 + 패턴/선 스타일 병행",
+    "directLabeling4": "직접 라벨링: 모든 데이터 포인트에 값 표시",
+    "clearBorders": "명확한 테두리: 2px 검정 테두리로 요소 구분",
+    "includeMetadata": "메타데이터 포함: SVG/PDF 저장 시 설명 추가",
+    "ariaLabels": "ARIA 레이블: 인터랙티브 차트에 접근성 속성"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "title": "PDF Accessibility Checklist",
+  "subtitle": "Step-by-step guide for creating PDF/UA compliant documents",
+  "intro": "Creating accessible PDFs requires attention to structure, tags, and metadata. This checklist guides you through the process of ensuring your academic PDFs meet PDF/UA (ISO 14289-1) standards.",
+  "preparation": {
+    "title": "1. Document Preparation",
+    "items": {
+      "source": "Start with a well-structured source document (Word, LaTeX, InDesign)",
+      "headings": "Use proper heading styles (Heading 1, Heading 2, etc.)",
+      "alt": "Add alt text to all images and figures",
+      "tables": "Structure tables with proper headers",
+      "lists": "Use built-in list formatting (not manual bullets)",
+      "toc": "Include a table of contents with links",
+      "fonts": "Use accessible fonts embedded in the document"
+    }
+  },
+  "latex": {
+    "title": "2. LaTeX to PDF",
+    "description": "For LaTeX documents, use the accessibility package:",
+    "packages": {
+      "title": "Required Packages",
+      "items": {
+        "accessible": "\\usepackage{accessibility} - Core accessibility features",
+        "hyperref": "\\usepackage{hyperref} - PDF bookmarks and links",
+        "tagpdf": "\\usepackage{tagpdf} - PDF tagging support"
+      }
+    },
+    "compilation": "Compile with: pdflatex --shell-escape document.tex"
+  },
+  "word": {
+    "title": "3. Microsoft Word to PDF",
+    "steps": {
+      "title": "Steps for Word",
+      "items": {
+        "styles": "Use built-in styles for headings and lists",
+        "alt": "Add alt text: Right-click image → Edit Alt Text",
+        "reading": "Check reading order in Accessibility Checker",
+        "export": "Export: File → Export → Create PDF/XPS → Options → check 'Document structure tags'",
+        "verify": "Verify with Adobe Acrobat Pro or PAC 2024"
+      }
+    }
+  },
+  "tagging": {
+    "title": "4. PDF Tagging",
+    "description": "Ensure your PDF has proper structural tags:",
+    "tags": {
+      "title": "Essential Tags",
+      "items": {
+        "document": "Document - Root element",
+        "part": "Part - Major divisions",
+        "article": "Article - Self-contained content",
+        "section": "Section - Generic grouping",
+        "h1h6": "H1-H6 - Heading hierarchy",
+        "p": "P - Paragraphs",
+        "list": "L, LI, Lbl, LBody - Lists",
+        "table": "Table, TR, TH, TD - Tables",
+        "figure": "Figure - Images and illustrations"
+      }
+    },
+    "tools": {
+      "title": "Tagging Tools",
+      "acrobat": "Adobe Acrobat Pro - Add Tags",
+      "pac": "PAC 2024 (free) - Verify and fix tags",
+      "axesPDF": "axesPDF - Automated tagging (commercial)"
+    }
+  },
+  "metadata": {
+    "title": "5. Document Metadata",
+    "required": {
+      "title": "Required Metadata",
+      "items": {
+        "title": "Title - Document title (not filename)",
+        "author": "Author - Creator name",
+        "subject": "Subject - Brief description",
+        "language": "Language - Primary language code (e.g., en-US, ko-KR)",
+        "keywords": "Keywords - Searchable terms"
+      }
+    },
+    "setting": "Set in: File → Properties → Description"
+  },
+  "remediation": {
+    "title": "6. Common Issues & Fixes",
+    "issues": {
+      "untagged": {
+        "issue": "Untagged content",
+        "fix": "Run 'Add Tags to Document' in Acrobat Pro"
+      },
+      "readingOrder": {
+        "issue": "Incorrect reading order",
+        "fix": "Use Reading Order tool to reorder tags"
+      },
+      "missingAlt": {
+        "issue": "Missing alt text",
+        "fix": "Right-click image tag → Properties → Add alt text"
+      },
+      "tableHeaders": {
+        "issue": "Tables without headers",
+        "fix": "Tag cells as TH (header) instead of TD (data)"
+      },
+      "contrast": {
+        "issue": "Low contrast text",
+        "fix": "Increase contrast or provide alternative format"
+      },
+      "fonts": {
+        "issue": "Non-embedded fonts",
+        "fix": "Re-export PDF with 'Embed all fonts' option"
+      }
+    }
+  },
+  "validation": {
+    "title": "7. Validation & Testing",
+    "tools": {
+      "title": "Testing Tools",
+      "pac": {
+        "name": "PAC 2024 (PDF Accessibility Checker)",
+        "description": "Free tool for PDF/UA validation",
+        "url": "Download from PAC website"
+      },
+      "acrobat": {
+        "name": "Adobe Acrobat Pro",
+        "description": "Full Accessibility Check: Tools → Accessibility"
+      },
+      "jaws": {
+        "name": "JAWS Screen Reader",
+        "description": "Test with actual assistive technology"
+      },
+      "nvda": {
+        "name": "NVDA Screen Reader",
+        "description": "Free alternative for testing"
+      }
+    },
+    "checklist": {
+      "title": "Final Verification",
+      "items": {
+        "pass": "Passes PAC 2024 PDF/UA validation",
+        "tagged": "All content is properly tagged",
+        "alt": "All images have alt text",
+        "reading": "Logical reading order maintained",
+        "metadata": "Complete document metadata",
+        "fonts": "All fonts embedded",
+        "bookmarks": "Navigation bookmarks present",
+        "contrast": "Sufficient color contrast",
+        "screen": "Readable with screen reader",
+        "keyboard": "Fully keyboard navigable"
+      }
+    }
+  },
+  "resources": {
+    "title": "Additional Resources",
+    "items": {
+      "pdfua": "PDF/UA Standard (ISO 14289-1)",
+      "matterhorn": "Matterhorn Protocol - PDF/UA Verification",
+      "adobe": "Adobe Accessibility Resources",
+      "w3c": "W3C PDF Techniques for WCAG",
+      "pac": "PAC 2024 User Guide"
+    }
+  }
+}

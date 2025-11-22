@@ -1,0 +1,89 @@
+{
+  "title": "Alt Text Writing Guide",
+  "subtitle": "Accessibility-compliant image description standards and practical examples",
+  "template": {
+    "title": "Chart Alt Text Template",
+    "cardTitle": "Basic Template Structure",
+    "cardText": "[Chart type] shows [key variables] [relationship/trend]. [Key findings 1-2]. [Specific numbers 1-2].",
+    "exampleTitle": "Good Example:",
+    "exampleText": "Bar chart shows annual growth rates from 2020-2024. Peaked at 45% in 2022, then stabilized at 30% in 2024."
+  },
+  "imageTypes": {
+    "title": "Guidelines by Image Type",
+    "charts": {
+      "title": "Charts and Graphs",
+      "description": "Include main trends, comparison targets, and key figures.",
+      "list1": "Specify chart type (bar, line, pie, etc.)",
+      "list2": "Describe axis variables and units",
+      "list3": "Mention key patterns and outliers"
+    },
+    "diagrams": {
+      "title": "Diagrams",
+      "description": "Describe structure, process, and relationships step by step.",
+      "list1": "List components",
+      "list2": "Explain connections",
+      "list3": "Specify flow direction"
+    },
+    "photos": {
+      "title": "Photos and Experimental Images",
+      "description": "Describe observable features and experimental conditions.",
+      "list1": "Describe main subject",
+      "list2": "Specify experimental conditions",
+      "list3": "Describe observed phenomena"
+    },
+    "complex": {
+      "title": "Complex Images",
+      "description": "Use short summary + detailed description together.",
+      "list1": "alt attribute: Short summary (1-2 sentences)",
+      "list2": "aria-describedby: Detailed description",
+      "list3": "Describe panels in order"
+    }
+  },
+  "htmlAria": {
+    "title": "HTML/ARIA Implementation",
+    "basic": {
+      "title": "Basic Structure",
+      "codeTitle": "figure-with-alt-text.html"
+    },
+    "complex": {
+      "title": "Complex Chart (Dual Description)",
+      "codeTitle": "complex-chart.html"
+    },
+    "multiPanel": {
+      "title": "Multi-Panel Image",
+      "codeTitle": "multi-panel.html"
+    }
+  },
+  "latex": {
+    "title": "LaTeX Implementation",
+    "description": "Use the accessibility package in LaTeX documents to add alt text to images.",
+    "basic": {
+      "codeTitle": "accessible-figure.tex"
+    },
+    "detailed": {
+      "title": "Detailed Description for Complex Figures",
+      "codeTitle": "detailed-description.tex"
+    }
+  },
+  "principles": {
+    "title": "Writing Principles",
+    "do": {
+      "title": "Recommended",
+      "item1": "Include specific numbers and units",
+      "item2": "Describe main trends and patterns",
+      "item3": "Use concise and clear sentences",
+      "item4": "Provide information not duplicated in caption",
+      "item5": "Maintain logical reading order"
+    },
+    "dont": {
+      "title": "Avoid",
+      "item1": "Unnecessary descriptions like \"This is a graph\"",
+      "item2": "Listing all data points (provide in table)",
+      "item3": "Subjective interpretations or conclusions",
+      "item4": "Conveying information only by color",
+      "item5": "Alt text longer than 100 characters"
+    }
+  },
+  "cssTitle": "Screen Reader Only CSS",
+  "cssCodeTitle": "screen-reader-only.css"
+}

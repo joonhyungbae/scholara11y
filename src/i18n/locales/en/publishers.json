@@ -1,0 +1,175 @@
+{
+  "title": "Publisher-Specific Accessibility Requirements",
+  "subtitle": "Accessibility guidelines from major academic publishers",
+  "intro": "Different publishers have varying accessibility requirements. This guide summarizes the key requirements from major academic publishers to help you prepare manuscripts that meet their standards.",
+  "nature": {
+    "name": "Nature Portfolio",
+    "wcag": "WCAG 2.1 Level AA compliance required",
+    "requirements": {
+      "title": "Key Requirements",
+      "items": {
+        "alt": "Alt text required for all figures and images",
+        "contrast": "Minimum 4.5:1 contrast ratio for text",
+        "colors": "Do not use color alone to convey information",
+        "fonts": "Minimum 10pt font size for main text",
+        "tables": "Tables must have proper headers and structure",
+        "pdf": "Supplementary PDFs must be PDF/UA compliant",
+        "captions": "Detailed figure captions required"
+      }
+    },
+    "resources": "Author guidelines: https://www.nature.com/nature/for-authors"
+  },
+  "science": {
+    "name": "Science / AAAS",
+    "requirements": {
+      "title": "Key Requirements",
+      "items": {
+        "figures": "High-resolution figures with descriptive captions",
+        "alt": "Alternative text for complex figures",
+        "readable": "Machine-readable data tables",
+        "colors": "Colorblind-safe palettes recommended",
+        "fonts": "Minimum 12pt font size",
+        "supplements": "Accessible supplementary materials"
+      }
+    },
+    "tools": "AAAS provides accessibility checking tools for authors",
+    "resources": "Instructions: https://www.science.org/content/page/instructions-authors"
+  },
+  "elsevier": {
+    "name": "Elsevier",
+    "requirements": {
+      "title": "Key Requirements",
+      "items": {
+        "pdf": "PDF/UA compliance for final publication",
+        "structure": "Proper document structure with headings",
+        "alt": "Alt text for all visual elements",
+        "math": "MathML or accessible LaTeX for equations",
+        "tables": "Structured tables with headers",
+        "references": "Properly linked references",
+        "metadata": "Complete document metadata"
+      }
+    },
+    "support": "Elsevier provides accessibility support for authors",
+    "resources": "Guide: https://www.elsevier.com/authors/policies-and-guidelines"
+  },
+  "springer": {
+    "name": "Springer Nature",
+    "wcag": "WCAG 2.1 Level AA standards",
+    "requirements": {
+      "title": "Key Requirements",
+      "items": {
+        "tags": "Tagged PDF submission",
+        "alt": "Descriptive alt text for figures",
+        "contrast": "Sufficient color contrast",
+        "headings": "Proper heading hierarchy",
+        "lists": "Structured lists",
+        "links": "Descriptive link text",
+        "language": "Language specification in metadata"
+      }
+    },
+    "tools": "Author services include accessibility checking",
+    "resources": "Authors: https://www.springernature.com/gp/authors"
+  },
+  "wiley": {
+    "name": "Wiley",
+    "requirements": {
+      "title": "Key Requirements",
+      "items": {
+        "wcag": "WCAG 2.0 Level AA minimum",
+        "alt": "Alt text for all figures and images",
+        "tables": "Accessible table formatting",
+        "fonts": "Minimum 12pt font size",
+        "contrast": "4.5:1 contrast ratio for normal text",
+        "pdf": "PDF/UA compliant supplementary materials",
+        "multimedia": "Captions for video content"
+      }
+    },
+    "support": "Accessibility support available through author services",
+    "resources": "Guidelines: https://authorservices.wiley.com/"
+  },
+  "plos": {
+    "name": "PLOS (Public Library of Science)",
+    "openAccess": "Open access publisher with strong accessibility commitment",
+    "requirements": {
+      "title": "Key Requirements",
+      "items": {
+        "alt": "Comprehensive alt text for all figures",
+        "data": "Accessible data availability",
+        "supplements": "Accessible supplementary information",
+        "colors": "Colorblind-friendly color schemes",
+        "format": "Accessible document formatting",
+        "captions": "Detailed, descriptive captions"
+      }
+    },
+    "tools": "Submission system includes accessibility checks",
+    "resources": "Guidelines: https://plos.org/publish/"
+  },
+  "ieee": {
+    "name": "IEEE",
+    "requirements": {
+      "title": "Key Requirements",
+      "items": {
+        "pdf": "PDF/UA compliant final papers",
+        "alt": "Alt text for figures and equations",
+        "structure": "Proper document structure",
+        "fonts": "Embedded, accessible fonts",
+        "tables": "Accessible table formatting",
+        "math": "Accessible mathematical notation"
+      }
+    },
+    "template": "IEEE provides accessible LaTeX templates",
+    "resources": "Author center: https://ieeeauthorcenter.ieee.org/"
+  },
+  "comparison": {
+    "title": "Quick Comparison Table",
+    "table": {
+      "publisher": "Publisher",
+      "wcag": "WCAG Level",
+      "pdfua": "PDF/UA",
+      "minFont": "Min Font Size",
+      "contrast": "Min Contrast",
+      "nature": {
+        "wcag": "AA (2.1)",
+        "pdfua": "Required",
+        "minFont": "10pt",
+        "contrast": "4.5:1"
+      },
+      "science": {
+        "wcag": "AA",
+        "pdfua": "Recommended",
+        "minFont": "12pt",
+        "contrast": "4.5:1"
+      },
+      "elsevier": {
+        "wcag": "AA",
+        "pdfua": "Required",
+        "minFont": "11pt",
+        "contrast": "4.5:1"
+      },
+      "springer": {
+        "wcag": "AA (2.1)",
+        "pdfua": "Required",
+        "minFont": "11pt",
+        "contrast": "4.5:1"
+      },
+      "wiley": {
+        "wcag": "AA (2.0)",
+        "pdfua": "Required",
+        "minFont": "12pt",
+        "contrast": "4.5:1"
+      }
+    }
+  },
+  "tips": {
+    "title": "General Tips for All Publishers",
+    "items": {
+      "early": "Consider accessibility from the start, not as an afterthought",
+      "guidelines": "Review publisher guidelines before submission",
+      "tools": "Use accessibility checking tools during preparation",
+      "alt": "Write descriptive alt text for all visual elements",
+      "test": "Test documents with screen readers when possible",
+      "contact": "Contact publisher support if you have questions",
+      "examples": "Review published accessible articles as examples"
+    }
+  }
+}

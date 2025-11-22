@@ -1,0 +1,128 @@
+{
+  "title": "다운로드 및 리소스",
+  "subtitle": "접근 가능한 학술 출판을 위한 템플릿, 체크리스트 및 도구",
+  "intro": "접근 가능한 학술 콘텐츠를 만드는 데 도움이 되는 즉시 사용 가능한 템플릿, 체크리스트 및 색상 팔레트를 다운로드하세요.",
+  "templates": {
+    "title": "문서 템플릿",
+    "latex": {
+      "title": "LaTeX 접근 가능 템플릿",
+      "description": "접근성 패키지가 미리 구성된 완전한 LaTeX 문서 템플릿입니다. 적절한 문서 구조, 접근 가능한 글꼴 및 PDF/UA 태깅 지원이 포함됩니다.",
+      "features": "기능: 태그된 PDF, 하이퍼링크, 북마크, 접근 가능한 테이블",
+      "download": "템플릿 다운로드"
+    },
+    "word": {
+      "title": "Microsoft Word 템플릿",
+      "description": "내장 스타일, 제목 계층 구조 및 접근성 검사기 알림이 포함된 Word 문서 템플릿입니다.",
+      "features": "기능: 스타일 프리셋, alt 텍스트 자리 표시자, 접근 가능한 테이블",
+      "download": "템플릿 다운로드"
+    },
+    "css": {
+      "title": "CSS 스타일시트",
+      "description": "Okabe-Ito 색상 변수, 적절한 타이포그래피 및 WCAG 준수 명암비가 포함된 접근 가능한 CSS 스타일시트입니다.",
+      "features": "기능: 색상 변수, 반응형 디자인, 다크 모드 지원",
+      "download": "스타일시트 다운로드"
+    }
+  },
+  "checklists": {
+    "title": "체크리스트",
+    "wcag": {
+      "title": "WCAG 2.2 준수 체크리스트",
+      "description": "학술 출판과 관련된 모든 WCAG 2.2 Level AA 성공 기준을 포함하는 종합 체크리스트입니다.",
+      "format": "PDF 형식 (접근 가능)",
+      "download": "체크리스트 다운로드"
+    },
+    "pdf": {
+      "title": "PDF 접근성 체크리스트",
+      "description": "PDF/UA 준수 문서 작성 및 검증을 위한 단계별 체크리스트입니다.",
+      "format": "PDF 형식 (접근 가능)",
+      "download": "체크리스트 다운로드"
+    },
+    "submission": {
+      "title": "제출 전 체크리스트",
+      "description": "저널에 제출하기 전 접근성을 확인하는 빠른 체크리스트입니다.",
+      "format": "PDF 형식 (접근 가능)",
+      "download": "체크리스트 다운로드"
+    }
+  },
+  "colorPalettes": {
+    "title": "색상 팔레트",
+    "okabe": {
+      "title": "Okabe-Ito 팔레트 파일",
+      "description": "다양한 도구를 위한 여러 형식의 색맹 안전 Okabe-Ito 팔레트입니다.",
+      "formats": "사용 가능한 형식:",
+      "csv": "CSV - 스프레드시트 애플리케이션용",
+      "json": "JSON - 웹 및 프로그래밍용",
+      "ase": "ASE - Adobe Creative Suite용",
+      "gpl": "GPL - GIMP 및 Inkscape용",
+      "downloadAll": "모든 형식 다운로드"
+    }
+  },
+  "tools": {
+    "title": "권장 도구",
+    "pac": {
+      "title": "PAC 2024 (PDF 접근성 검사기)",
+      "description": "PDF/UA 준수 검증을 위한 무료 도구",
+      "platform": "플랫폼: Windows, Mac, Linux",
+      "link": "웹사이트 방문"
+    },
+    "colorOracle": {
+      "title": "Color Oracle",
+      "description": "Windows, Mac 및 Linux용 무료 색맹 시뮬레이터",
+      "platform": "플랫폼: Windows, Mac, Linux",
+      "link": "웹사이트 방문"
+    },
+    "wave": {
+      "title": "WAVE 웹 접근성 도구",
+      "description": "웹 접근성 검사를 위한 브라우저 확장",
+      "platform": "플랫폼: Chrome, Firefox, Edge",
+      "link": "웹사이트 방문"
+    },
+    "nvda": {
+      "title": "NVDA 스크린 리더",
+      "description": "Windows에서 접근성 테스트를 위한 무료 스크린 리더",
+      "platform": "플랫폼: Windows",
+      "link": "웹사이트 방문"
+    }
+  },
+  "guides": {
+    "title": "빠른 참조 가이드",
+    "contrast": {
+      "title": "명암비 빠른 참조",
+      "description": "WCAG 명암비 요구사항에 대한 한 페이지 가이드",
+      "format": "PDF 형식 (접근 가능)",
+      "download": "가이드 다운로드"
+    },
+    "altText": {
+      "title": "Alt 텍스트 작성 가이드",
+      "description": "효과적인 alt 텍스트 작성을 위한 모범 사례 및 예제",
+      "format": "PDF 형식 (접근 가능)",
+      "download": "가이드 다운로드"
+    },
+    "tables": {
+      "title": "접근 가능한 테이블 가이드",
+      "description": "LaTeX, Word 및 HTML에서 접근 가능한 테이블을 만드는 방법",
+      "format": "PDF 형식 (접근 가능)",
+      "download": "가이드 다운로드"
+    }
+  },
+  "scripts": {
+    "title": "코드 스크립트",
+    "python": {
+      "title": "Python 접근성 스크립트",
+      "description": "접근성 검사 자동화 및 접근 가능한 플롯 생성을 위한 Python 스크립트 모음입니다.",
+      "contents": "내용: matplotlib 설정, 명암비 검사기, alt 텍스트 생성기",
+      "download": "ZIP 다운로드"
+    },
+    "r": {
+      "title": "R 접근성 패키지",
+      "description": "접근 가능한 ggplot2 시각화를 만들기 위한 함수가 포함된 R 패키지입니다.",
+      "contents": "내용: ggplot2 테마, 색상 스케일, 내보내기 함수",
+      "download": "패키지 다운로드"
+    }
+  },
+  "license": {
+    "title": "라이센스 및 사용",
+    "description": "여기에 제공된 모든 템플릿, 체크리스트 및 코드는 Creative Commons CC0 1.0 Universal (공개 도메인 헌정)에 따라 릴리스됩니다. 귀하는 귀속 없이 상업적 사용을 포함하여 모든 목적으로 이러한 리소스를 자유롭게 사용, 수정 및 배포할 수 있습니다.",
+    "warranty": "이러한 리소스는 보증 없이 있는 그대로 제공됩니다. 항상 출판사의 특정 요구사항과의 준수를 확인하세요."
+  }
+}

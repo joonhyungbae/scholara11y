@@ -1,0 +1,53 @@
+{
+  "title": "접근 가능한 색상 팔레트 및 명암비",
+  "subtitle": "색맹 안전 색상 및 WCAG 2.2 명암비 요구사항",
+  "okabePalette": {
+    "title": "Okabe-Ito 색상 팔레트",
+    "description": "Okabe와 Ito가 설계한 색맹 안전 8색 팔레트로, 과학 출판에서 널리 권장됩니다.",
+    "colors": {
+      "orange": "주황색",
+      "skyBlue": "하늘색",
+      "blueGreen": "청록색",
+      "yellow": "노란색",
+      "blue": "파란색",
+      "vermillion": "주홍색",
+      "purple": "적자색",
+      "black": "검정색"
+    },
+    "cssTitle": "CSS 사용자 정의 속성",
+    "cssDescription": "스타일시트에서 다음 CSS 변수를 사용하세요:"
+  },
+  "contrastRatios": {
+    "title": "WCAG 2.2 명암비",
+    "description": "WCAG 2.2 Level AA 준수에 필요한 최소 명암비",
+    "table": {
+      "element": "요소 유형",
+      "levelAA": "Level AA",
+      "levelAAA": "Level AAA",
+      "normalText": "일반 텍스트 (< 18pt)",
+      "largeText": "큰 텍스트 (≥ 18pt 또는 굵게 ≥ 14pt)",
+      "uiComponents": "UI 구성요소 및 그래픽",
+      "ratio45": "4.5:1",
+      "ratio3": "3:1",
+      "ratio7": "7:1"
+    }
+  },
+  "pythonExample": {
+    "title": "Python matplotlib 구현",
+    "description": "Okabe-Ito 팔레트를 사용하도록 matplotlib 설정:"
+  },
+  "rExample": {
+    "title": "R ggplot2 구현",
+    "description": "Okabe-Ito 팔레트를 사용하도록 ggplot2 설정:"
+  },
+  "bestPractices": {
+    "title": "모범 사례",
+    "items": {
+      "palette": "항상 색맹 안전 팔레트 사용",
+      "patterns": "색상 외에 패턴과 텍스처 사용",
+      "contrast": "텍스트와 배경 간 충분한 명암비 확보",
+      "labels": "모든 차트 요소에 명확한 레이블 추가",
+      "testing": "색맹 시뮬레이션 도구로 디자인 테스트"
+    }
+  }
+}

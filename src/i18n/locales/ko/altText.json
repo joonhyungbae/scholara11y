@@ -1,0 +1,89 @@
+{
+  "title": "대체 텍스트 작성 가이드",
+  "subtitle": "접근성 준수 이미지 설명 작성 표준 및 실전 예제",
+  "template": {
+    "title": "차트 대체 텍스트 템플릿",
+    "cardTitle": "기본 템플릿 구조",
+    "cardText": "[차트 유형]은 [주요 변수]의 [관계/추세]를 보여줍니다. [핵심 발견 1-2개]. [구체적 수치 1-2개].",
+    "exampleTitle": "좋은 예시:",
+    "exampleText": "막대 그래프는 2020-2024년 연간 성장률을 나타냅니다. 2022년에 45%로 정점을 기록한 후 2024년 30%로 안정화되었습니다."
+  },
+  "imageTypes": {
+    "title": "이미지 유형별 가이드",
+    "charts": {
+      "title": "차트 및 그래프",
+      "description": "데이터의 주요 추세, 비교 대상, 핵심 수치를 포함합니다.",
+      "list1": "차트 유형 명시 (막대, 선, 파이 등)",
+      "list2": "축 변수와 단위 설명",
+      "list3": "주요 패턴 및 이상치 언급"
+    },
+    "diagrams": {
+      "title": "다이어그램",
+      "description": "구조, 프로세스, 관계를 단계별로 설명합니다.",
+      "list1": "구성 요소 나열",
+      "list2": "연결 관계 설명",
+      "list3": "흐름 방향 명시"
+    },
+    "photos": {
+      "title": "사진 및 실험 이미지",
+      "description": "관찰 가능한 특징과 실험 조건을 설명합니다.",
+      "list1": "주요 피사체 설명",
+      "list2": "실험 조건 명시",
+      "list3": "관찰된 현상 기술"
+    },
+    "complex": {
+      "title": "복합 이미지",
+      "description": "간단한 요약 + 상세 설명을 병행합니다.",
+      "list1": "alt 속성: 간단한 요약 (1-2문장)",
+      "list2": "aria-describedby: 상세 설명",
+      "list3": "순서대로 패널 설명"
+    }
+  },
+  "htmlAria": {
+    "title": "HTML/ARIA 구현",
+    "basic": {
+      "title": "기본 구조",
+      "codeTitle": "figure-with-alt-text.html"
+    },
+    "complex": {
+      "title": "복잡한 차트 (이중 설명)",
+      "codeTitle": "complex-chart.html"
+    },
+    "multiPanel": {
+      "title": "다중 패널 이미지",
+      "codeTitle": "multi-panel.html"
+    }
+  },
+  "latex": {
+    "title": "LaTeX 구현",
+    "description": "LaTeX 문서에서 accessibility 패키지를 사용하여 이미지에 대체 텍스트를 추가할 수 있습니다.",
+    "basic": {
+      "codeTitle": "accessible-figure.tex"
+    },
+    "detailed": {
+      "title": "복잡한 그림을 위한 상세 설명",
+      "codeTitle": "detailed-description.tex"
+    }
+  },
+  "principles": {
+    "title": "작성 원칙",
+    "do": {
+      "title": "권장사항",
+      "item1": "구체적인 수치와 단위 포함",
+      "item2": "주요 추세와 패턴 설명",
+      "item3": "간결하고 명확한 문장 사용",
+      "item4": "캡션과 중복되지 않는 정보 제공",
+      "item5": "논리적 읽기 순서 유지"
+    },
+    "dont": {
+      "title": "피해야 할 사항",
+      "item1": "\"그래프입니다\" 같은 불필요한 설명",
+      "item2": "모든 데이터 포인트 나열 (표로 제공)",
+      "item3": "주관적 해석이나 결론",
+      "item4": "색상만으로 정보 전달",
+      "item5": "100자 이상의 긴 alt 텍스트"
+    }
+  },
+  "cssTitle": "스크린 리더 전용 CSS",
+  "cssCodeTitle": "screen-reader-only.css"
+}

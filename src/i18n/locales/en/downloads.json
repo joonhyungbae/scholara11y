@@ -1,0 +1,128 @@
+{
+  "title": "Downloads & Resources",
+  "subtitle": "Templates, checklists, and tools for accessible academic publishing",
+  "intro": "Download ready-to-use templates, checklists, and color palettes to help you create accessible academic content.",
+  "templates": {
+    "title": "Document Templates",
+    "latex": {
+      "title": "LaTeX Accessible Template",
+      "description": "Complete LaTeX article template with accessibility packages pre-configured. Includes proper document structure, accessible fonts, and PDF/UA tagging support.",
+      "features": "Features: Tagged PDF, hyperlinks, bookmarks, accessible tables",
+      "download": "Download Template"
+    },
+    "word": {
+      "title": "Microsoft Word Template",
+      "description": "Word document template with built-in styles, heading hierarchy, and accessibility checker reminders.",
+      "features": "Features: Style presets, alt text placeholders, accessible tables",
+      "download": "Download Template"
+    },
+    "css": {
+      "title": "CSS Stylesheet",
+      "description": "Accessible CSS stylesheet with Okabe-Ito color variables, proper typography, and WCAG-compliant contrast ratios.",
+      "features": "Features: Color variables, responsive design, dark mode support",
+      "download": "Download Stylesheet"
+    }
+  },
+  "checklists": {
+    "title": "Checklists",
+    "wcag": {
+      "title": "WCAG 2.2 Compliance Checklist",
+      "description": "Comprehensive checklist covering all WCAG 2.2 Level AA success criteria relevant to academic publishing.",
+      "format": "PDF format (accessible)",
+      "download": "Download Checklist"
+    },
+    "pdf": {
+      "title": "PDF Accessibility Checklist",
+      "description": "Step-by-step checklist for creating and validating PDF/UA compliant documents.",
+      "format": "PDF format (accessible)",
+      "download": "Download Checklist"
+    },
+    "submission": {
+      "title": "Pre-Submission Checklist",
+      "description": "Quick checklist to verify accessibility before submitting to journals.",
+      "format": "PDF format (accessible)",
+      "download": "Download Checklist"
+    }
+  },
+  "colorPalettes": {
+    "title": "Color Palettes",
+    "okabe": {
+      "title": "Okabe-Ito Palette Files",
+      "description": "Colorblind-safe Okabe-Ito palette in multiple formats for different tools.",
+      "formats": "Available formats:",
+      "csv": "CSV - For spreadsheet applications",
+      "json": "JSON - For web and programming",
+      "ase": "ASE - For Adobe Creative Suite",
+      "gpl": "GPL - For GIMP and Inkscape",
+      "downloadAll": "Download All Formats"
+    }
+  },
+  "tools": {
+    "title": "Recommended Tools",
+    "pac": {
+      "title": "PAC 2024 (PDF Accessibility Checker)",
+      "description": "Free tool for validating PDF/UA compliance",
+      "platform": "Platform: Windows, Mac, Linux",
+      "link": "Visit Website"
+    },
+    "colorOracle": {
+      "title": "Color Oracle",
+      "description": "Free colorblindness simulator for Windows, Mac, and Linux",
+      "platform": "Platform: Windows, Mac, Linux",
+      "link": "Visit Website"
+    },
+    "wave": {
+      "title": "WAVE Web Accessibility Tool",
+      "description": "Browser extension for checking web accessibility",
+      "platform": "Platform: Chrome, Firefox, Edge",
+      "link": "Visit Website"
+    },
+    "nvda": {
+      "title": "NVDA Screen Reader",
+      "description": "Free screen reader for testing accessibility on Windows",
+      "platform": "Platform: Windows",
+      "link": "Visit Website"
+    }
+  },
+  "guides": {
+    "title": "Quick Reference Guides",
+    "contrast": {
+      "title": "Contrast Ratio Quick Reference",
+      "description": "One-page guide to WCAG contrast requirements",
+      "format": "PDF format (accessible)",
+      "download": "Download Guide"
+    },
+    "altText": {
+      "title": "Alt Text Writing Guide",
+      "description": "Best practices and examples for writing effective alt text",
+      "format": "PDF format (accessible)",
+      "download": "Download Guide"
+    },
+    "tables": {
+      "title": "Accessible Tables Guide",
+      "description": "How to create accessible tables in LaTeX, Word, and HTML",
+      "format": "PDF format (accessible)",
+      "download": "Download Guide"
+    }
+  },
+  "scripts": {
+    "title": "Code Scripts",
+    "python": {
+      "title": "Python Accessibility Scripts",
+      "description": "Collection of Python scripts for automating accessibility checks and generating accessible plots.",
+      "contents": "Contents: matplotlib setup, contrast checker, alt text generator",
+      "download": "Download ZIP"
+    },
+    "r": {
+      "title": "R Accessibility Package",
+      "description": "R package with functions for creating accessible ggplot2 visualizations.",
+      "contents": "Contents: ggplot2 themes, color scales, export functions",
+      "download": "Download Package"
+    }
+  },
+  "license": {
+    "title": "License & Usage",
+    "description": "All templates, checklists, and code provided here are released under Creative Commons CC0 1.0 Universal (Public Domain Dedication). You are free to use, modify, and distribute these resources for any purpose, including commercial use, without attribution.",
+    "warranty": "These resources are provided as-is without warranty. Always verify compliance with your publisher's specific requirements."
+  }
+}

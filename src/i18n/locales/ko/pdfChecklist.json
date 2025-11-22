@@ -1,0 +1,158 @@
+{
+  "title": "PDF 접근성 체크리스트",
+  "subtitle": "PDF/UA 준수 문서 작성을 위한 단계별 가이드",
+  "intro": "접근 가능한 PDF를 만들려면 구조, 태그 및 메타데이터에 주의를 기울여야 합니다. 이 체크리스트는 학술 PDF가 PDF/UA (ISO 14289-1) 표준을 충족하도록 하는 과정을 안내합니다.",
+  "preparation": {
+    "title": "1. 문서 준비",
+    "items": {
+      "source": "잘 구조화된 소스 문서로 시작 (Word, LaTeX, InDesign)",
+      "headings": "적절한 제목 스타일 사용 (제목 1, 제목 2 등)",
+      "alt": "모든 이미지와 그림에 alt 텍스트 추가",
+      "tables": "적절한 헤더로 테이블 구조화",
+      "lists": "내장 목록 서식 사용 (수동 글머리 기호 아님)",
+      "toc": "링크가 있는 목차 포함",
+      "fonts": "문서에 포함된 접근 가능한 글꼴 사용"
+    }
+  },
+  "latex": {
+    "title": "2. LaTeX to PDF",
+    "description": "LaTeX 문서의 경우 접근성 패키지를 사용하세요:",
+    "packages": {
+      "title": "필수 패키지",
+      "items": {
+        "accessible": "\\usepackage{accessibility} - 핵심 접근성 기능",
+        "hyperref": "\\usepackage{hyperref} - PDF 북마크 및 링크",
+        "tagpdf": "\\usepackage{tagpdf} - PDF 태깅 지원"
+      }
+    },
+    "compilation": "컴파일: pdflatex --shell-escape document.tex"
+  },
+  "word": {
+    "title": "3. Microsoft Word to PDF",
+    "steps": {
+      "title": "Word 단계",
+      "items": {
+        "styles": "제목과 목록에 내장 스타일 사용",
+        "alt": "Alt 텍스트 추가: 이미지 마우스 오른쪽 클릭 → Alt 텍스트 편집",
+        "reading": "접근성 검사기에서 읽기 순서 확인",
+        "export": "내보내기: 파일 → 내보내기 → PDF/XPS 만들기 → 옵션 → '문서 구조 태그' 확인",
+        "verify": "Adobe Acrobat Pro 또는 PAC 2024로 확인"
+      }
+    }
+  },
+  "tagging": {
+    "title": "4. PDF 태깅",
+    "description": "PDF에 적절한 구조 태그가 있는지 확인하세요:",
+    "tags": {
+      "title": "필수 태그",
+      "items": {
+        "document": "Document - 루트 요소",
+        "part": "Part - 주요 구분",
+        "article": "Article - 독립적인 콘텐츠",
+        "section": "Section - 일반 그룹화",
+        "h1h6": "H1-H6 - 제목 계층 구조",
+        "p": "P - 단락",
+        "list": "L, LI, Lbl, LBody - 목록",
+        "table": "Table, TR, TH, TD - 테이블",
+        "figure": "Figure - 이미지 및 일러스트레이션"
+      }
+    },
+    "tools": {
+      "title": "태깅 도구",
+      "acrobat": "Adobe Acrobat Pro - 태그 추가",
+      "pac": "PAC 2024 (무료) - 태그 확인 및 수정",
+      "axesPDF": "axesPDF - 자동 태깅 (상용)"
+    }
+  },
+  "metadata": {
+    "title": "5. 문서 메타데이터",
+    "required": {
+      "title": "필수 메타데이터",
+      "items": {
+        "title": "제목 - 문서 제목 (파일명 아님)",
+        "author": "작성자 - 작성자 이름",
+        "subject": "주제 - 간단한 설명",
+        "language": "언어 - 기본 언어 코드 (예: en-US, ko-KR)",
+        "keywords": "키워드 - 검색 가능한 용어"
+      }
+    },
+    "setting": "설정: 파일 → 속성 → 설명"
+  },
+  "remediation": {
+    "title": "6. 일반적인 문제 및 해결",
+    "issues": {
+      "untagged": {
+        "issue": "태그 없는 콘텐츠",
+        "fix": "Acrobat Pro에서 '문서에 태그 추가' 실행"
+      },
+      "readingOrder": {
+        "issue": "잘못된 읽기 순서",
+        "fix": "읽기 순서 도구를 사용하여 태그 재정렬"
+      },
+      "missingAlt": {
+        "issue": "Alt 텍스트 누락",
+        "fix": "이미지 태그 마우스 오른쪽 클릭 → 속성 → Alt 텍스트 추가"
+      },
+      "tableHeaders": {
+        "issue": "헤더 없는 테이블",
+        "fix": "셀을 TD (데이터) 대신 TH (헤더)로 태그"
+      },
+      "contrast": {
+        "issue": "낮은 대비 텍스트",
+        "fix": "대비 증가 또는 대체 형식 제공"
+      },
+      "fonts": {
+        "issue": "포함되지 않은 글꼴",
+        "fix": "'모든 글꼴 포함' 옵션으로 PDF 다시 내보내기"
+      }
+    }
+  },
+  "validation": {
+    "title": "7. 검증 및 테스트",
+    "tools": {
+      "title": "테스트 도구",
+      "pac": {
+        "name": "PAC 2024 (PDF 접근성 검사기)",
+        "description": "PDF/UA 검증을 위한 무료 도구",
+        "url": "PAC 웹사이트에서 다운로드"
+      },
+      "acrobat": {
+        "name": "Adobe Acrobat Pro",
+        "description": "전체 접근성 검사: 도구 → 접근성"
+      },
+      "jaws": {
+        "name": "JAWS 스크린 리더",
+        "description": "실제 보조 기술로 테스트"
+      },
+      "nvda": {
+        "name": "NVDA 스크린 리더",
+        "description": "테스트를 위한 무료 대안"
+      }
+    },
+    "checklist": {
+      "title": "최종 확인",
+      "items": {
+        "pass": "PAC 2024 PDF/UA 검증 통과",
+        "tagged": "모든 콘텐츠가 적절하게 태그됨",
+        "alt": "모든 이미지에 alt 텍스트",
+        "reading": "논리적 읽기 순서 유지",
+        "metadata": "완전한 문서 메타데이터",
+        "fonts": "모든 글꼴 포함",
+        "bookmarks": "탐색 북마크 존재",
+        "contrast": "충분한 색상 대비",
+        "screen": "스크린 리더로 읽을 수 있음",
+        "keyboard": "완전한 키보드 탐색 가능"
+      }
+    }
+  },
+  "resources": {
+    "title": "추가 리소스",
+    "items": {
+      "pdfua": "PDF/UA 표준 (ISO 14289-1)",
+      "matterhorn": "Matterhorn 프로토콜 - PDF/UA 검증",
+      "adobe": "Adobe 접근성 리소스",
+      "w3c": "WCAG를 위한 W3C PDF 기술",
+      "pac": "PAC 2024 사용자 가이드"
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "hero": {
+    "title": "🏆 2025 Accessibility Visual Design Golden Standard",
+    "subtitle": "Born-Accessible: Optimal Combination for Innate Accessibility",
+    "description": "Instantly applicable standard integrating WCAG 2.2 Level AA and global publisher best practices",
+    "ctaButton": "Download Quick Start Guide"
+  },
+  "principles": {
+    "title": "5 Core Principles",
+    "color": {
+      "title": "Okabe-Ito Palette",
+      "description": "Scientifically proven colorblind-safe 8-color palette",
+      "copied": "HEX code copied to clipboard!"
+    },
+    "typography": {
+      "title": "Atkinson Hyperlegible",
+      "description": "Enhanced legibility font designed for visual accessibility",
+      "settings": "Minimum 16px, 1.5x line height"
+    },
+    "contrast": {
+      "title": "WCAG 2.2 Contrast Ratios",
+      "description": "Meet minimum contrast standards for readability",
+      "aa": "AA: 4.5:1",
+      "aaa": "AAA: 7:1"
+    },
+    "dualEncoding": {
+      "title": "Color + Pattern",
+      "description": "Never rely on color alone - add patterns and textures",
+      "toggle": "Toggle Color"
+    },
+    "fileFormat": {
+      "title": "Vector First",
+      "description": "Prioritize scalable vector formats",
+      "priority": "SVG > EPS > PDF",
+      "resolution": "600dpi+ for raster"
+    }
+  },
+  "code": {
+    "title": "Integrated Code Examples",
+    "python": {
+      "title": "Python",
+      "description": "Complete matplotlib implementation"
+    },
+    "r": {
+      "title": "R",
+      "description": "ggplot2 accessible plotting"
+    },
+    "css": {
+      "title": "CSS",
+      "description": "Web design system"
+    },
+    "latex": {
+      "title": "LaTeX",
+      "description": "Academic publishing package"
+    },
+    "comments": {
+      "integratedFunction": "Integrated implementation of 5 principles working together",
+      "color": "1. Color: Apply Okabe-Ito palette",
+      "typography": "2. Typography: Clear font and sizing",
+      "minSize": "Minimum size guarantee",
+      "clarity": "Enhance clarity",
+      "contrast": "3. Contrast: Ensure 3:1+ with black borders",
+      "dualEncoding": "4. Dual encoding: Color + Pattern",
+      "vectorFirst": "5. Vector First: Save as SVG + metadata"
+    }
+  },
+  "validation": {
+    "title": "Validation Tool Matrix",
+    "item": "Validation Item",
+    "standard": "Golden Standard Value",
+    "tool": "Test Tool",
+    "test": "Test Now",
+    "items": {
+      "contrast": {
+        "item": "Color Contrast",
+        "value": "4.5:1 (AA)",
+        "tool": "WebAIM"
+      },
+      "colorblind": {
+        "item": "Colorblind Simulation",
+        "value": "Okabe-Ito Pass",
+        "tool": "Color Oracle"
+      },
+      "pdf": {
+        "item": "PDF Accessibility",
+        "value": "PDF/UA Compliant",
+        "tool": "PAC 2024"
+      },
+      "web": {
+        "item": "Web Accessibility",
+        "value": "WCAG 2.2 AA",
+        "tool": "WAVE"
+      }
+    }
+  },
+  "downloads": {
+    "title": "Download Center",
+    "python": {
+      "title": "Complete Python Package",
+      "file": "golden_standard_2025.py (15KB)"
+    },
+    "r": {
+      "title": "R Package & Functions",
+      "file": "golden_standard.R (12KB)"
+    },
+    "css": {
+      "title": "CSS Framework",
+      "file": "golden-standard.css (8KB)"
+    },
+    "latex": {
+      "title": "LaTeX Style File",
+      "file": "golden-standard.sty (6KB)"
+    },
+    "palette": {
+      "title": "Color Palette Set",
+      "files": "okabe-ito.ase (Adobe) + okabe-ito.json (Data)"
+    },
+    "font": {
+      "title": "Font Files",
+      "file": "Atkinson-Hyperlegible.zip (320KB)"
+    },
+    "download": "Download",
+    "downloadAll": "Download All"
+  },
+  "gallery": {
+    "title": "Real-World Application Examples",
+    "beforeAfter": "Before/After Comparison",
+    "chart": "Chart Transformation",
+    "pdf": "PDF Accessibility",
+    "web": "WCAG Compliant Web"
+  },
+  "quickRef": {
+    "title": "Quick Reference Card (Printable)",
+    "description": "Download A4-sized PDF summary card",
+    "includes": "Includes color codes, contrast ratios, font sizes, and checklist",
+    "download": "Download PDF"
+  },
+  "synergy": {
+    "title": "Integration Synergy of 5 Core Principles",
+    "subtitle": "How the Golden Standard Works",
+    "intro": "The 2025 Golden Standard operates as a complementary system where the 5 core principles are not individual features, but an integrated network. Each principle compensates for others' weaknesses and amplifies their strengths.",
+    "badges": {
+      "synergy": "Synergy",
+      "application": "Application",
+      "users": "Beneficiaries",
+      "role": "Role",
+      "standard": "Standard",
+      "backup": "Backup",
+      "preservation": "Preservation",
+      "metadata": "Metadata"
+    },
+    "layers": {
+      "title": "Integration Matrix",
+      "layer1": {
+        "title": "Layer 1: Primary Perception",
+        "combination": "Color (Okabe-Ito) × Typography (Atkinson Hyperlegible)",
+        "synergy": "Color distinction + Letter clarity = Immediate information recognition",
+        "applications": "Chart legends, axis labels, data labels",
+        "users": "General users, mild visual impairments"
+      },
+      "layer2": {
+        "title": "Layer 2: Validated Visibility",
+        "combination": "Contrast (WCAG 2.2) = Quality assurance for Color and Typography",
+        "synergy": "Numerical validation that Layer 1 actually works",
+        "applications": "Text 4.5:1, Graphics 3:1 or higher",
+        "users": "Low vision, presbyopia, bright environment users"
+      },
+      "layer3": {
+        "title": "Layer 3: Redundant Encoding",
+        "combination": "Dual Encoding (Color + Pattern/Shape)",
+        "synergy": "Backup identification through patterns when color information is lost",
+        "applications": "Bar chart hatching, line graph styles, data point shapes",
+        "users": "Colorblind users, black & white print users"
+      },
+      "layer4": {
+        "title": "Layer 4: Infinite Scalability",
+        "combination": "Vector First (SVG/EPS)",
+        "synergy": "All elements from Layer 1-3 preserved during magnification",
+        "applications": "Screen reader metadata embedded",
+        "users": "Screen magnifier users, screen reader users"
+      }
+    },
+    "scenarios": {
+      "title": "Real-World Application Scenarios",
+      "scenario1": {
+        "title": "Scenario 1: Color Vision Deficiency User Reading Research Chart",
+        "steps": [
+          "Okabe-Ito palette → Colors distinguishable even with red-green colorblindness",
+          "Pattern addition → Pattern identification when color distinction fails",
+          "Vector format → Pattern clarity maintained when magnified"
+        ]
+      },
+      "scenario2": {
+        "title": "Scenario 2: Low Vision User Reading Data",
+        "steps": [
+          "Atkinson font → Clear letter shapes",
+          "4.5:1 contrast → Clear distinction from background",
+          "Vector format → No pixelation even at 400% magnification"
+        ]
+      },
+      "scenario3": {
+        "title": "Scenario 3: Screen Reader User",
+        "steps": [
+          "SVG metadata → Chart description included",
+          "Structured text → Logical reading order",
+          "Alt text → Text conversion of visual information"
+        ]
+      }
+    },
+    "codeExample": {
+      "title": "Integrated Implementation Example",
+      "description": "Complete implementation with all 5 principles working together",
+      "codeTitle": "5 Principles in Action"
+    },
+    "results": {
+      "title": "Integration Results",
+      "subtitle": "Value that only the integrated system can provide, impossible with individual principles alone",
+      "table": {
+        "challenge": "Accessibility Challenge",
+        "singleLimit": "Single Principle Limitation",
+        "integrated": "Integrated Solution"
+      },
+      "items": [
+        {
+          "challenge": "Colorblind + Low vision",
+          "singleLimit": "Color alone insufficient, large text alone insufficient",
+          "integrated": "Okabe-Ito + Pattern + High contrast + Large font"
+        },
+        {
+          "challenge": "Black & white printing",
+          "singleLimit": "Complete loss of color information",
+          "integrated": "Distinction maintained through patterns and brightness differences"
+        },
+        {
+          "challenge": "Extreme magnification (400%)",
+          "singleLimit": "Raster images become pixelated",
+          "integrated": "Vector + Clear font = Perfect clarity"
+        },
+        {
+          "challenge": "Screen reader",
+          "singleLimit": "Visual information inaccessible",
+          "integrated": "SVG metadata + Structured alt text"
+        }
+      ],
+      "conclusion": "This is the 'Golden Standard': A complete system where all users can access information."
+    }
+  }
+}

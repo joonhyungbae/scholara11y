@@ -1,0 +1,200 @@
+{
+  "title": "참고 문헌 및 리소스",
+  "subtitle": "필수 접근성 표준, 가이드라인 및 도구",
+  "intro": "접근 가능한 학술 콘텐츠를 만들기 위한 공식 표준, 가이드라인 및 리소스의 큐레이션된 컬렉션입니다.",
+  "standards": {
+    "title": "공식 표준",
+    "wcag": {
+      "title": "WCAG 2.2 (웹 콘텐츠 접근성 가이드라인)",
+      "org": "W3C 웹 접근성 이니셔티브",
+      "description": "웹 접근성을 위한 주요 국제 표준",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/"
+    },
+    "pdfua": {
+      "title": "PDF/UA (ISO 14289-1:2014)",
+      "org": "ISO - 국제표준화기구",
+      "description": "PDF 문서를 위한 범용 접근성 표준",
+      "url": "https://www.iso.org/standard/64599.html"
+    },
+    "aria": {
+      "title": "WAI-ARIA 1.2",
+      "org": "W3C 웹 접근성 이니셔티브",
+      "description": "접근 가능한 리치 인터넷 애플리케이션 사양",
+      "url": "https://www.w3.org/TR/wai-aria-1.2/"
+    },
+    "section508": {
+      "title": "Section 508 표준",
+      "org": "미국 일반 서비스 관리국",
+      "description": "미국 연방 접근성 표준",
+      "url": "https://www.section508.gov/"
+    },
+    "en301549": {
+      "title": "EN 301 549",
+      "org": "유럽 전기통신 표준 연구소",
+      "description": "ICT 제품 및 서비스에 대한 유럽 접근성 요구사항",
+      "url": "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/"
+    }
+  },
+  "guidelines": {
+    "title": "구현 가이드라인",
+    "w3cTechniques": {
+      "title": "WCAG 2.2 기술",
+      "description": "WCAG 성공 기준 구현을 위한 상세 기술",
+      "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+    },
+    "pdfTechniques": {
+      "title": "WCAG를 위한 PDF 기술",
+      "description": "PDF를 접근 가능하게 만들기 위한 특정 기술",
+      "url": "https://www.w3.org/WAI/WCAG22/Techniques/#pdf"
+    },
+    "authoring": {
+      "title": "저작 도구 접근성 가이드라인",
+      "description": "접근 가능한 저작 도구 개발을 위한 가이드라인",
+      "url": "https://www.w3.org/WAI/standards-guidelines/atag/"
+    }
+  },
+  "tools": {
+    "title": "검증 및 테스트 도구",
+    "checkers": {
+      "title": "접근성 검사기",
+      "pac": {
+        "name": "PAC 2024",
+        "description": "무료 PDF 접근성 검사기",
+        "url": "https://pdfua.foundation/en/pdf-accessibility-checker-pac"
+      },
+      "wave": {
+        "name": "WAVE",
+        "description": "웹 접근성 평가 도구",
+        "url": "https://wave.webaim.org/"
+      },
+      "axe": {
+        "name": "axe DevTools",
+        "description": "접근성 테스트를 위한 브라우저 확장",
+        "url": "https://www.deque.com/axe/devtools/"
+      }
+    },
+    "simulators": {
+      "title": "색맹 시뮬레이터",
+      "colorOracle": {
+        "name": "Color Oracle",
+        "description": "무료 색맹 시뮬레이터 (Win/Mac/Linux)",
+        "url": "https://colororacle.org/"
+      },
+      "coblis": {
+        "name": "Coblis",
+        "description": "온라인 색맹 시뮬레이터",
+        "url": "https://www.color-blindness.com/coblis-color-blindness-simulator/"
+      }
+    },
+    "contrast": {
+      "title": "명암비 검사기",
+      "webaim": {
+        "name": "WebAIM 명암비 검사기",
+        "description": "온라인 명암비 계산기",
+        "url": "https://webaim.org/resources/contrastchecker/"
+      },
+      "tanaguru": {
+        "name": "Tanaguru 명암비 찾기",
+        "description": "접근 가능한 색상 대안 찾기",
+        "url": "https://contrast-finder.tanaguru.com/"
+      }
+    },
+    "screenReaders": {
+      "title": "스크린 리더",
+      "nvda": {
+        "name": "NVDA",
+        "description": "Windows용 무료 스크린 리더",
+        "url": "https://www.nvaccess.org/"
+      },
+      "jaws": {
+        "name": "JAWS",
+        "description": "전문 스크린 리더 (상용)",
+        "url": "https://www.freedomscientific.com/products/software/jaws/"
+      },
+      "voiceover": {
+        "name": "VoiceOver",
+        "description": "macOS/iOS용 내장 스크린 리더",
+        "url": "https://www.apple.com/accessibility/voiceover/"
+      }
+    }
+  },
+  "research": {
+    "title": "학술 연구",
+    "okabe": {
+      "title": "색상 범용 디자인 (Okabe & Ito, 2008)",
+      "citation": "Okabe, M., & Ito, K. (2008). 색상 범용 디자인 (CUD): 색맹인 사람들에게 친화적인 그림과 프레젠테이션을 만드는 방법.",
+      "url": "https://jfly.uni-koeln.de/color/"
+    },
+    "vision": {
+      "title": "색각 결핍 연구",
+      "description": "색맹 및 유병률에 관한 과학 논문",
+      "note": "최신 연구는 PubMed 또는 Google Scholar에서 검색"
+    }
+  },
+  "organizations": {
+    "title": "접근성 기관",
+    "w3c": {
+      "name": "W3C 웹 접근성 이니셔티브 (WAI)",
+      "description": "웹 접근성 표준을 위한 선도 기관",
+      "url": "https://www.w3.org/WAI/"
+    },
+    "webaim": {
+      "name": "WebAIM",
+      "description": "웹 접근성 교육 및 리소스",
+      "url": "https://webaim.org/"
+    },
+    "a11y": {
+      "name": "The A11Y Project",
+      "description": "접근성을 더 쉽게 만들기 위한 커뮤니티 주도 노력",
+      "url": "https://www.a11yproject.com/"
+    },
+    "daisy": {
+      "name": "DAISY Consortium",
+      "description": "디지털 접근 가능 정보 시스템",
+      "url": "https://daisy.org/"
+    }
+  },
+  "publishers": {
+    "title": "출판사 리소스",
+    "items": {
+      "nature": {
+        "name": "Nature 접근성 가이드라인",
+        "url": "https://www.nature.com/nature/for-authors"
+      },
+      "science": {
+        "name": "Science 저자 가이드라인",
+        "url": "https://www.science.org/content/page/instructions-authors"
+      },
+      "elsevier": {
+        "name": "Elsevier 저자 정책",
+        "url": "https://www.elsevier.com/authors/policies-and-guidelines"
+      },
+      "springer": {
+        "name": "Springer 저자 서비스",
+        "url": "https://www.springernature.com/gp/authors"
+      }
+    }
+  },
+  "learning": {
+    "title": "학습 리소스",
+    "courses": {
+      "title": "온라인 강좌",
+      "w3cx": {
+        "name": "W3Cx 웹 접근성 소개",
+        "description": "W3C의 무료 온라인 강좌",
+        "url": "https://www.edx.org/course/web-accessibility-introduction"
+      },
+      "deque": {
+        "name": "Deque University",
+        "description": "종합 접근성 교육",
+        "url": "https://dequeuniversity.com/"
+      }
+    },
+    "books": {
+      "title": "권장 도서",
+      "inclusive": "Inclusive Design Patterns - Heydon Pickering",
+      "practical": "Practical Web Inclusion and Accessibility - Ashley Firth",
+      "accessibility": "Accessibility for Everyone - Laura Kalbag"
+    }
+  }
+}

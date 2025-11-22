@@ -1,0 +1,200 @@
+{
+  "title": "References & Resources",
+  "subtitle": "Essential accessibility standards, guidelines, and tools",
+  "intro": "A curated collection of official standards, guidelines, and resources for creating accessible academic content.",
+  "standards": {
+    "title": "Official Standards",
+    "wcag": {
+      "title": "WCAG 2.2 (Web Content Accessibility Guidelines)",
+      "org": "W3C Web Accessibility Initiative",
+      "description": "The primary international standard for web accessibility",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/"
+    },
+    "pdfua": {
+      "title": "PDF/UA (ISO 14289-1:2014)",
+      "org": "ISO - International Organization for Standardization",
+      "description": "Universal Accessibility standard for PDF documents",
+      "url": "https://www.iso.org/standard/64599.html"
+    },
+    "aria": {
+      "title": "WAI-ARIA 1.2",
+      "org": "W3C Web Accessibility Initiative",
+      "description": "Accessible Rich Internet Applications specification",
+      "url": "https://www.w3.org/TR/wai-aria-1.2/"
+    },
+    "section508": {
+      "title": "Section 508 Standards",
+      "org": "U.S. General Services Administration",
+      "description": "U.S. federal accessibility standards",
+      "url": "https://www.section508.gov/"
+    },
+    "en301549": {
+      "title": "EN 301 549",
+      "org": "European Telecommunications Standards Institute",
+      "description": "European accessibility requirements for ICT products and services",
+      "url": "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/"
+    }
+  },
+  "guidelines": {
+    "title": "Implementation Guidelines",
+    "w3cTechniques": {
+      "title": "WCAG 2.2 Techniques",
+      "description": "Detailed techniques for implementing WCAG success criteria",
+      "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+    },
+    "pdfTechniques": {
+      "title": "PDF Techniques for WCAG",
+      "description": "Specific techniques for making PDFs accessible",
+      "url": "https://www.w3.org/WAI/WCAG22/Techniques/#pdf"
+    },
+    "authoring": {
+      "title": "Authoring Tool Accessibility Guidelines",
+      "description": "Guidelines for developing accessible authoring tools",
+      "url": "https://www.w3.org/WAI/standards-guidelines/atag/"
+    }
+  },
+  "tools": {
+    "title": "Validation & Testing Tools",
+    "checkers": {
+      "title": "Accessibility Checkers",
+      "pac": {
+        "name": "PAC 2024",
+        "description": "Free PDF accessibility checker",
+        "url": "https://pdfua.foundation/en/pdf-accessibility-checker-pac"
+      },
+      "wave": {
+        "name": "WAVE",
+        "description": "Web accessibility evaluation tool",
+        "url": "https://wave.webaim.org/"
+      },
+      "axe": {
+        "name": "axe DevTools",
+        "description": "Browser extension for accessibility testing",
+        "url": "https://www.deque.com/axe/devtools/"
+      }
+    },
+    "simulators": {
+      "title": "Colorblindness Simulators",
+      "colorOracle": {
+        "name": "Color Oracle",
+        "description": "Free colorblindness simulator (Win/Mac/Linux)",
+        "url": "https://colororacle.org/"
+      },
+      "coblis": {
+        "name": "Coblis",
+        "description": "Online color blindness simulator",
+        "url": "https://www.color-blindness.com/coblis-color-blindness-simulator/"
+      }
+    },
+    "contrast": {
+      "title": "Contrast Checkers",
+      "webaim": {
+        "name": "WebAIM Contrast Checker",
+        "description": "Online contrast ratio calculator",
+        "url": "https://webaim.org/resources/contrastchecker/"
+      },
+      "tanaguru": {
+        "name": "Tanaguru Contrast Finder",
+        "description": "Find accessible color alternatives",
+        "url": "https://contrast-finder.tanaguru.com/"
+      }
+    },
+    "screenReaders": {
+      "title": "Screen Readers",
+      "nvda": {
+        "name": "NVDA",
+        "description": "Free screen reader for Windows",
+        "url": "https://www.nvaccess.org/"
+      },
+      "jaws": {
+        "name": "JAWS",
+        "description": "Professional screen reader (commercial)",
+        "url": "https://www.freedomscientific.com/products/software/jaws/"
+      },
+      "voiceover": {
+        "name": "VoiceOver",
+        "description": "Built-in screen reader for macOS/iOS",
+        "url": "https://www.apple.com/accessibility/voiceover/"
+      }
+    }
+  },
+  "research": {
+    "title": "Academic Research",
+    "okabe": {
+      "title": "Color Universal Design (Okabe & Ito, 2008)",
+      "citation": "Okabe, M., & Ito, K. (2008). Color Universal Design (CUD): How to make figures and presentations that are friendly to colorblind people.",
+      "url": "https://jfly.uni-koeln.de/color/"
+    },
+    "vision": {
+      "title": "Color Vision Deficiency Research",
+      "description": "Scientific articles on color blindness and its prevalence",
+      "note": "Search PubMed or Google Scholar for latest research"
+    }
+  },
+  "organizations": {
+    "title": "Accessibility Organizations",
+    "w3c": {
+      "name": "W3C Web Accessibility Initiative (WAI)",
+      "description": "Leading organization for web accessibility standards",
+      "url": "https://www.w3.org/WAI/"
+    },
+    "webaim": {
+      "name": "WebAIM",
+      "description": "Web accessibility in mind - training and resources",
+      "url": "https://webaim.org/"
+    },
+    "a11y": {
+      "name": "The A11Y Project",
+      "description": "Community-driven effort to make accessibility easier",
+      "url": "https://www.a11yproject.com/"
+    },
+    "daisy": {
+      "name": "DAISY Consortium",
+      "description": "Digital accessible information systems",
+      "url": "https://daisy.org/"
+    }
+  },
+  "publishers": {
+    "title": "Publisher Resources",
+    "items": {
+      "nature": {
+        "name": "Nature Accessibility Guidelines",
+        "url": "https://www.nature.com/nature/for-authors"
+      },
+      "science": {
+        "name": "Science Author Guidelines",
+        "url": "https://www.science.org/content/page/instructions-authors"
+      },
+      "elsevier": {
+        "name": "Elsevier Author Policies",
+        "url": "https://www.elsevier.com/authors/policies-and-guidelines"
+      },
+      "springer": {
+        "name": "Springer Author Services",
+        "url": "https://www.springernature.com/gp/authors"
+      }
+    }
+  },
+  "learning": {
+    "title": "Learning Resources",
+    "courses": {
+      "title": "Online Courses",
+      "w3cx": {
+        "name": "W3Cx Introduction to Web Accessibility",
+        "description": "Free online course by W3C",
+        "url": "https://www.edx.org/course/web-accessibility-introduction"
+      },
+      "deque": {
+        "name": "Deque University",
+        "description": "Comprehensive accessibility training",
+        "url": "https://dequeuniversity.com/"
+      }
+    },
+    "books": {
+      "title": "Recommended Books",
+      "inclusive": "Inclusive Design Patterns by Heydon Pickering",
+      "practical": "Practical Web Inclusion and Accessibility by Ashley Firth",
+      "accessibility": "Accessibility for Everyone by Laura Kalbag"
+    }
+  }
+}

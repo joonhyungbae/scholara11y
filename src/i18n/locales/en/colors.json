@@ -1,0 +1,53 @@
+{
+  "title": "Accessible Color Palettes & Contrast Ratios",
+  "subtitle": "Colorblind-safe colors and WCAG 2.2 contrast requirements",
+  "okabePalette": {
+    "title": "Okabe-Ito Color Palette",
+    "description": "A colorblind-safe 8-color palette designed by Okabe and Ito, widely recommended in scientific publishing.",
+    "colors": {
+      "orange": "Orange",
+      "skyBlue": "Sky Blue",
+      "blueGreen": "Bluish Green",
+      "yellow": "Yellow",
+      "blue": "Blue",
+      "vermillion": "Vermillion",
+      "purple": "Reddish Purple",
+      "black": "Black"
+    },
+    "cssTitle": "CSS Custom Properties",
+    "cssDescription": "Use these CSS variables in your stylesheets:"
+  },
+  "contrastRatios": {
+    "title": "WCAG 2.2 Contrast Ratios",
+    "description": "Minimum contrast ratios required for WCAG 2.2 Level AA compliance",
+    "table": {
+      "element": "Element Type",
+      "levelAA": "Level AA",
+      "levelAAA": "Level AAA",
+      "normalText": "Normal text (< 18pt)",
+      "largeText": "Large text (≥ 18pt or bold ≥ 14pt)",
+      "uiComponents": "UI components & graphics",
+      "ratio45": "4.5:1",
+      "ratio3": "3:1",
+      "ratio7": "7:1"
+    }
+  },
+  "pythonExample": {
+    "title": "Python matplotlib Implementation",
+    "description": "Configure matplotlib to use the Okabe-Ito palette:"
+  },
+  "rExample": {
+    "title": "R ggplot2 Implementation",
+    "description": "Configure ggplot2 to use the Okabe-Ito palette:"
+  },
+  "bestPractices": {
+    "title": "Best Practices",
+    "items": {
+      "palette": "Always use colorblind-safe palettes",
+      "patterns": "Use patterns and textures in addition to color",
+      "contrast": "Ensure sufficient contrast between text and background",
+      "labels": "Add clear labels to all chart elements",
+      "testing": "Test designs with colorblind simulation tools"
+    }
+  }
+}

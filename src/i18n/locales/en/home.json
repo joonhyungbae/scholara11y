@@ -1,0 +1,62 @@
+{
+  "title": "Academic Publishing Accessibility Standards Guide 2025",
+  "subtitle": "Comprehensive accessibility guidelines for academic publishing based on WCAG 2.2 Level AA",
+  "description": "This guide provides practical accessibility standards and code examples for researchers, journal editors, and publishers. We cover everything from color selection to PDF production to help create accessible academic content.",
+  "stats": {
+    "colorBlindness": {
+      "title": "Color Blindness Prevalence",
+      "value": "8% (Male)",
+      "description": "Approximately 8% of males and 0.5% of females have color vision deficiency"
+    },
+    "euLaw": {
+      "title": "EU Accessibility Law",
+      "value": "2025",
+      "description": "EU member states must comply with the European Accessibility Act starting June 2025"
+    },
+    "contrastRatio": {
+      "title": "Minimum Contrast Ratio",
+      "value": "4.5:1",
+      "description": "WCAG 2.2 Level AA requires a minimum contrast ratio of 4.5:1 for normal text"
+    }
+  },
+  "quickNav": {
+    "title": "Quick Navigation",
+    "colors": {
+      "title": "Color Palettes",
+      "description": "Colorblind-safe Okabe-Ito palette and contrast ratio guidelines"
+    },
+    "typography": {
+      "title": "Typography",
+      "description": "Accessible LaTeX and CSS font settings"
+    },
+    "code": {
+      "title": "Code Snippets",
+      "description": "Ready-to-use Python, R, LaTeX, and CSS code examples"
+    },
+    "publishers": {
+      "title": "Publisher Requirements",
+      "description": "Accessibility requirements by publisher (Nature, Science, Elsevier, etc.)"
+    },
+    "pdfChecklist": {
+      "title": "PDF Checklist",
+      "description": "Step-by-step guide for creating accessible PDFs"
+    },
+    "downloads": {
+      "title": "Downloads",
+      "description": "Templates, checklists, and color palette files"
+    }
+  },
+  "resources": {
+    "title": "Featured Resources",
+    "wcag": {
+      "title": "WCAG 2.2 Guidelines",
+      "description": "Official W3C Web Content Accessibility Guidelines",
+      "link": "View Guidelines"
+    },
+    "pdfua": {
+      "title": "PDF/UA Standard",
+      "description": "ISO 14289-1 PDF Universal Accessibility Standard",
+      "link": "View Standard"
+    }
+  }
+}
