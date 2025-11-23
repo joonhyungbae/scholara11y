@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "🏆 2025 접근성 시각 디자인 골든 스탠다드",
+    "title": "2025 접근성 시각 디자인 제안 표준",
     "subtitle": "Born-Accessible: 태생적 접근성을 위한 최적 조합",
     "description": "WCAG 2.2 Level AA와 글로벌 출판사 Best Practice를 통합한 즉시 적용 가능한 표준",
     "ctaButton": "빠른 시작 가이드 다운로드"
@@ -62,12 +62,14 @@
       "contrast": "3. 대비율: 검은 테두리로 3:1 이상 보장",
       "dualEncoding": "4. 이중 인코딩: 색상 + 패턴",
       "vectorFirst": "5. Vector First: SVG로 저장 + 메타데이터"
-    }
+    },
+    "pythonFileDownload": "Python 파일 다운로드",
+    "copyButton": "복사"
   },
   "validation": {
     "title": "검증 도구 매트릭스",
     "item": "검증 항목",
-    "standard": "골든 스탠다드 값",
+    "standard": "제안 표준 값",
     "tool": "테스트 도구",
     "test": "즉시 테스트",
     "items": {
@@ -105,11 +107,11 @@
     },
     "css": {
       "title": "CSS 프레임워크",
-      "file": "golden-standard.css (8KB)"
+      "file": "proposed-standard.css (8KB)"
     },
     "latex": {
       "title": "LaTeX 스타일 파일",
-      "file": "golden-standard.sty (6KB)"
+      "file": "proposed-standard.sty (6KB)"
     },
     "palette": {
       "title": "색상 팔레트 세트",
@@ -137,7 +139,7 @@
   },
   "synergy": {
     "title": "5가지 핵심 원칙의 통합 시너지",
-    "subtitle": "골든 스탠다드의 작동 원리",
+    "subtitle": "제안 표준의 작동 원리",
     "intro": "2025 골든 스탠다드는 5가지 핵심 원칙이 개별적으로 작동하는 것이 아니라 상호보완적인 시스템으로 통합되어 있습니다. 각 원칙은 다른 원칙의 약점을 보완하고 강점을 증폭시킵니다.",
     "badges": {
       "synergy": "시너지",
@@ -242,7 +244,7 @@
           "integrated": "SVG 메타데이터 + 구조화된 대체 텍스트"
         }
       ],
-      "conclusion": "이것이 바로 '골든 스탠다드'입니다: 모든 사용자가 정보에 접근할 수 있는 완전한 시스템."
+      "conclusion": "이것이 바로 '제안 표준'입니다: 모든 사용자가 정보에 접근할 수 있는 완전한 시스템."
     }
   }
 }

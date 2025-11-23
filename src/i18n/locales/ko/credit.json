@@ -1,0 +1,38 @@
+{
+  "title": "저작권 및 크레딧",
+  "subtitle": "프로젝트 정보 및 기여자",
+  "project": {
+    "name": "Scholara11y",
+    "description": "학술 논문 작성 시 다양한 접근성 가이드라인을 따라야 하는 어려움을 해결하기 위해, 기존 가이드라인들을 통합하고 최적의 조합을 제시하는 표준을 개발하였습니다. 특정 출판사의 기준이 요구되는 경우에는 해당 기준을 우선적으로 따르지만, 별도의 기준이 없는 경우 본 표준을 활용함으로써 효율적인 학술 커뮤니케이션이 가능합니다.",
+    "creator": {
+      "name": "배준형 / Joonhyung Bae",
+      "description": {
+        "part1": "",
+        "kaist_ct_link": "KAIST 문화기술대학원",
+        "part2": " ",
+        "maclab_link": "Music and Audio Computing Lab(MACLab)",
+        "part3": "에서 박사과정 수료생입니다. 현재 KAIST에서 연구자로 활동하며 학술 콘텐츠의 접근성 향상을 위해 노력하고 있습니다. 동시에 작가 및 디자이너로서 학술 커뮤니케이션의 시각적 품질 향상에 기여하고 있으며,",
+        "ismir_link": "ISMIR 2025 국제학술대회",
+        "part4": "의 전체 디자인을 총괄하는 등 다양한 프로젝트에서 디자인 리드 역할을 수행한 경험이 있습니다."
+      },
+      "education": "KAIST 문화기술대학원 박사과정 수료생 (Music and Audio Computing Lab)",
+      "email": "jh.bae@kaist.ac.kr",
+      "website": "joonhyungbae.com",
+      "links": {
+        "kaist_ct": "KAIST 문화기술대학원",
+        "maclab": "MACLab (Music and Audio Computing Lab)"
+      },
+      "roles": {
+        "researcher": "연구자",
+        "writer": "작가",
+        "designer": "디자이너"
+      }
+    }
+  },
+  "license": {
+    "title": "라이선스 및 사용 권장사항",
+    "description": "본 프로젝트는 연구 및 학술 목적의 자유로운 사용을 권장합니다. Scholara11y의 제안 표준은 학술 커뮤니케이션의 접근성 향상을 위한 도구로서, 연구자들이 보다 효과적으로 시각적 콘텐츠를 제작할 수 있도록 개발되었습니다.",
+    "researchUse": "연구 및 교육 목적으로 자유롭게 사용 가능합니다"
+  },
+  "footer": "이 프로젝트는 학술 커뮤니케이션의 접근성 향상을 위한 지속적인 노력의 일환입니다."
+}

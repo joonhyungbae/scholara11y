@@ -17,37 +17,99 @@
         "captions": "상세한 그림 캡션 필요"
       }
     },
+    "guideLink": "공식 가이드",
+    "colorTitle": "색상 요구사항",
+    "colorItems": {
+      "palette": "Okabe-Ito 팔레트 사용 권장",
+      "contrast": "WCAG 2.2 AA 명도 대비 4.5:1 필수",
+      "graphics": "그래픽 요소 대비 3:1 이상",
+      "noColorOnly": "색상만으로 정보 전달 금지"
+    },
+    "figureTitle": "그림 준비",
+    "figureItems": {
+      "format": "형식: EPS, PDF, AI (벡터 권장)",
+      "resolution": "해상도: 300-1200 dpi",
+      "textSize": "최소 텍스트: 8pt, 권장 10-12pt",
+      "fonts": "글꼴: Arial, Helvetica 등 산세리프"
+    },
+    "changesTitle": "2025년 주요 변경사항",
+    "changes": {
+      "oct2025": "2025.10: 모든 신규 논문 태그된 PDF 의무화",
+      "apr2026": "2026.04: 전체 콘텐츠 WCAG 2.2 AA 준수",
+      "aiAltText": "Alt Text AI: 자동 대체 텍스트 생성 도구 제공"
+    },
+    "checklistTitle": "제출 전 체크리스트",
+    "checklist": {
+      "altText": "모든 그림에 대체 텍스트 포함",
+      "contrast": "색상 대비 4.5:1 이상 확인",
+      "tableHeaders": "표에 헤더 행/열 지정",
+      "metadata": "PDF 메타데이터 완성"
+    },
     "resources": "저자 가이드라인: https://www.nature.com/nature/for-authors"
   },
   "science": {
     "name": "Science / AAAS",
     "requirements": {
-      "title": "주요 요구사항",
+      "title": "Key Requirements",
       "items": {
-        "figures": "설명 캡션이 있는 고해상도 그림",
-        "alt": "복잡한 그림에 대한 대체 텍스트",
-        "readable": "기계 판독 가능한 데이터 테이블",
-        "colors": "색맹 안전 팔레트 권장",
-        "fonts": "최소 12pt 글꼴 크기",
-        "supplements": "접근 가능한 보충 자료"
+        "figures": "High-resolution figures with descriptive captions",
+        "alt": "Alternative text for complex figures",
+        "readable": "Machine-readable data tables",
+        "colors": "Colorblind-safe palettes recommended",
+        "fonts": "Minimum 12pt font size",
+        "supplements": "Accessible supplementary materials"
       }
     },
-    "tools": "AAAS는 저자를 위한 접근성 검사 도구 제공",
-    "resources": "지침: https://www.science.org/content/page/instructions-authors"
+    "tools": "AAAS provides accessibility checking tools for authors",
+    "resources": "Instructions: https://www.science.org/content/page/instructions-authors"
+  },
+  "publishers": {
+    "elsevier": "Elsevier",
+    "springer": "Springer Nature",
+    "wiley": "Wiley",
+    "taylorFrancis": "Taylor & Francis"
   },
   "elsevier": {
     "name": "Elsevier",
     "requirements": {
       "title": "주요 요구사항",
       "items": {
-        "pdf": "최종 출판물에 PDF/UA 준수",
+        "pdf": "최종 출판물 PDF/UA 준수",
         "structure": "제목이 있는 적절한 문서 구조",
-        "alt": "모든 시각적 요소에 alt 텍스트",
-        "math": "방정식에 MathML 또는 접근 가능한 LaTeX",
+        "alt": "모든 시각 요소에 대한 대체 텍스트",
+        "math": "방정식에 대한 MathML 또는 접근 가능한 LaTeX",
         "tables": "헤더가 있는 구조화된 테이블",
-        "references": "적절하게 연결된 참고 문헌",
+        "references": "적절하게 링크된 참고문헌",
         "metadata": "완전한 문서 메타데이터"
       }
+    },
+    "guideLink": "공식 가이드",
+    "colorTitle": "색상 요구사항",
+    "colorItems": {
+      "palette": "Okabe-Ito 팔레트 사용 권장",
+      "contrast": "WCAG 2.2 AA 명도 대비 4.5:1 필수",
+      "graphics": "그래픽 요소 대비 3:1 이상",
+      "noColorOnly": "색상만으로 정보 전달 금지"
+    },
+    "figureTitle": "그림 준비",
+    "figureItems": {
+      "format": "형식: EPS, PDF, AI (벡터 권장)",
+      "resolution": "해상도: 300-1200 dpi",
+      "textSize": "최소 텍스트: 8pt, 권장 10-12pt",
+      "fonts": "글꼴: Arial, Helvetica 등 산세리프"
+    },
+    "changesTitle": "2025년 주요 변경사항",
+    "changes": {
+      "oct2025": "2025.10: 모든 신규 논문 태그된 PDF 의무화",
+      "apr2026": "2026.04: 전체 콘텐츠 WCAG 2.2 AA 준수",
+      "aiAltText": "Alt Text AI: 자동 대체 텍스트 생성 도구 제공"
+    },
+    "checklistTitle": "제출 전 체크리스트",
+    "checklist": {
+      "altText": "모든 그림에 대체 텍스트 포함",
+      "contrast": "색상 대비 4.5:1 이상 확인",
+      "tableHeaders": "표에 헤더 행/열 지정",
+      "metadata": "PDF 메타데이터 완성"
     },
     "support": "Elsevier는 저자를 위한 접근성 지원 제공",
     "resources": "가이드: https://www.elsevier.com/authors/policies-and-guidelines"
@@ -67,6 +129,26 @@
         "language": "메타데이터의 언어 지정"
       }
     },
+    "guideLink": "공식 가이드",
+    "colorTitle": "색상 가이드라인",
+    "colorItems": {
+      "palette": "Bang Wong 색상 팔레트 권장",
+      "contrast": "대비율 4.5:1 필수 (일반 텍스트)",
+      "dualEncoding": "이중 인코딩 (색상 + 패턴) 권장"
+    },
+    "figureTitle": "그림 사양",
+    "figureItems": {
+      "format": "형식: EPS, PDF (벡터 우선)",
+      "resolution": "해상도: 300-1000 dpi",
+      "textSize": "최소 텍스트: 8pt",
+      "lineWidth": "선 두께: 최소 0.5pt"
+    },
+    "supportTitle": "저자 지원 도구",
+    "supportItems": {
+      "altAssistant": "Alt Text Assistant: 대체 텍스트 작성 가이드",
+      "contrastChecker": "Color Contrast Checker: 대비 검증 도구",
+      "latexTemplate": "LaTeX 템플릿: 접근성 최적화 템플릿 제공"
+    },
     "tools": "저자 서비스에 접근성 검사 포함",
     "resources": "저자: https://www.springernature.com/gp/authors"
   },
@@ -75,101 +157,188 @@
     "requirements": {
       "title": "주요 요구사항",
       "items": {
-        "wcag": "최소 WCAG 2.0 Level AA",
-        "alt": "모든 그림과 이미지에 alt 텍스트",
+        "wcag": "WCAG 2.0 Level AA 최소",
+        "alt": "모든 그림과 이미지에 대한 대체 텍스트",
         "tables": "접근 가능한 테이블 형식",
         "fonts": "최소 12pt 글꼴 크기",
-        "contrast": "일반 텍스트 4.5:1 명암비",
+        "contrast": "일반 텍스트에 대한 4.5:1 명암비",
         "pdf": "PDF/UA 준수 보충 자료",
-        "multimedia": "비디오 콘텐츠 자막"
+        "multimedia": "비디오 콘텐츠에 대한 캡션"
       }
+    },
+    "guideLink": "공식 가이드",
+    "visualTitle": "시각화 요구사항",
+    "visualItems": {
+      "palette": "ColorBrewer 팔레트 권장",
+      "contrast": "명도 대비 4.5:1 (WCAG AA)",
+      "labeling": "직접 라벨링 (데이터 포인트에 값 표시)"
+    },
+    "figureTitle": "그림 형식",
+    "figureItems": {
+      "format": "형식: EPS, TIFF (고품질)",
+      "resolution": "해상도: 300-1200 dpi",
+      "textSize": "최소 텍스트: 8pt (Arial/Helvetica)",
+      "colorMode": "컬러 모드: RGB (온라인), CMYK (인쇄)"
+    },
+    "policyTitle": "접근성 정책",
+    "policyItems": {
+      "wcag": "WCAG 2.2 Level AA 준수",
+      "pdfua": "PDF/UA 권장 (필수 아님)",
+      "altText": "대체 텍스트 모든 그림에 필수"
     },
     "support": "저자 서비스를 통한 접근성 지원 가능",
     "resources": "가이드라인: https://authorservices.wiley.com/"
   },
   "plos": {
     "name": "PLOS (Public Library of Science)",
-    "openAccess": "강력한 접근성 약속을 가진 오픈 액세스 출판사",
+    "openAccess": "Open access publisher with strong accessibility commitment",
     "requirements": {
-      "title": "주요 요구사항",
+      "title": "Key Requirements",
       "items": {
-        "alt": "모든 그림에 대한 포괄적인 alt 텍스트",
-        "data": "접근 가능한 데이터 가용성",
-        "supplements": "접근 가능한 보충 정보",
-        "colors": "색맹 친화적 색상 구성",
-        "format": "접근 가능한 문서 형식",
-        "captions": "상세하고 설명적인 캡션"
+        "alt": "Comprehensive alt text for all figures",
+        "data": "Accessible data availability",
+        "supplements": "Accessible supplementary information",
+        "colors": "Colorblind-friendly color schemes",
+        "format": "Accessible document formatting",
+        "captions": "Detailed, descriptive captions"
       }
     },
-    "tools": "제출 시스템에 접근성 검사 포함",
-    "resources": "가이드라인: https://plos.org/publish/"
+    "tools": "Submission system includes accessibility checks",
+    "resources": "Guidelines: https://plos.org/publish/"
   },
-  "ieee": {
-    "name": "IEEE",
-    "requirements": {
-      "title": "주요 요구사항",
-      "items": {
-        "pdf": "PDF/UA 준수 최종 논문",
-        "alt": "그림과 방정식에 alt 텍스트",
-        "structure": "적절한 문서 구조",
-        "fonts": "포함된 접근 가능한 글꼴",
-        "tables": "접근 가능한 테이블 형식",
-        "math": "접근 가능한 수학 표기법"
-      }
+  "taylorFrancis": {
+    "name": "Taylor & Francis",
+    "guideLink": "공식 가이드",
+    "colorTitle": "색상 표준",
+    "colorItems": {
+      "palette": "Okabe-Ito 팔레트 사용",
+      "contrast": "WCAG 2.2 AA 명도 대비",
+      "dualEncoding": "색상 + 패턴 이중 인코딩"
     },
-    "template": "IEEE는 접근 가능한 LaTeX 템플릿 제공",
-    "resources": "저자 센터: https://ieeeauthorcenter.ieee.org/"
+    "figureTitle": "그림 사양",
+    "figureItems": {
+      "format": "형식: EPS, PDF",
+      "resolution": "해상도: 300-600 dpi",
+      "textSize": "최소 텍스트: 6pt (특별한 경우), 권장 8-12pt"
+    },
+    "futureTitle": "향후 계획",
+    "futureItems": {
+      "aiTools": "AI 기반 접근성 도구 개발 중",
+      "pdfua": "PDF/UA 표준 점진적 도입",
+      "education": "저자 교육 프로그램 확대"
+    },
+    "resources": "저자 센터: https://taylorandfrancis.com/about/corporate-responsibility/accessibility-at-taylor-francis/"
   },
   "comparison": {
-    "title": "빠른 비교 표",
+    "title": "비교표",
+    "publishers": {
+      "elsevier": "Elsevier",
+      "springer": "Springer",
+      "wiley": "Wiley",
+      "taylorFrancis": "Taylor & Francis"
+    },
     "table": {
-      "publisher": "출판사",
-      "wcag": "WCAG 수준",
+      "values": {
+        "colorPalettes": {
+          "elsevier": "Okabe-Ito",
+          "springer": "Wong",
+          "wiley": "ColorBrewer",
+          "taylorFrancis": "Okabe-Ito"
+        },
+        "minTextSizes": {
+          "elsevier": "8pt",
+          "springer": "8pt",
+          "wiley": "8pt",
+          "taylorFrancis": "6pt"
+        },
+        "altTextSizes": {
+          "elsevier": "8-12pt",
+          "springer": "8-12pt",
+          "wiley": "8-11pt",
+          "taylorFrancis": "8-12pt"
+        },
+        "formats": {
+          "elsevier": "EPS, PDF, AI",
+          "springer": "EPS, PDF",
+          "wiley": "EPS, TIFF",
+          "taylorFrancis": "EPS, PDF"
+        },
+        "resolutions": {
+          "elsevier": "300-1200 dpi",
+          "springer": "300-1000 dpi",
+          "wiley": "300-1200 dpi",
+          "taylorFrancis": "300-600 dpi"
+        },
+        "luminance": "4.5:1 (AA)",
+        "aiTools": {
+          "elsevier": "Alt Text AI (2025)",
+          "springer": "Alt Text Assistant",
+          "wiley": "-",
+          "taylorFrancis": "개발 중"
+        }
+      }
+    },
+    "table": {
+      "publisher": "Publisher",
+      "wcag": "WCAG Level",
       "pdfua": "PDF/UA",
-      "minFont": "최소 글꼴 크기",
-      "contrast": "최소 명암비",
+      "minFont": "Min Font Size",
+      "contrast": "Min Contrast",
+      "headers": {
+        "item": "항목",
+        "publisher": "출판사",
+        "colorPalette": "색상 팔레트",
+        "minTextSize": "최소 텍스트 크기",
+        "altText": "대체 텍스트",
+        "format": "형식",
+        "resolution": "해상도",
+        "luminance": "휘도 대비",
+        "pdfuaRequired": "PDF/UA 필수",
+        "aiTools": "AI 도구",
+        "from202510": "2025.10부터",
+        "recommended": "권장"
+      },
       "nature": {
         "wcag": "AA (2.1)",
-        "pdfua": "필수",
+        "pdfua": "Required",
         "minFont": "10pt",
         "contrast": "4.5:1"
       },
       "science": {
         "wcag": "AA",
-        "pdfua": "권장",
+        "pdfua": "Recommended",
         "minFont": "12pt",
         "contrast": "4.5:1"
       },
       "elsevier": {
         "wcag": "AA",
-        "pdfua": "필수",
+        "pdfua": "Required",
         "minFont": "11pt",
         "contrast": "4.5:1"
       },
       "springer": {
         "wcag": "AA (2.1)",
-        "pdfua": "필수",
+        "pdfua": "Required",
         "minFont": "11pt",
         "contrast": "4.5:1"
       },
       "wiley": {
         "wcag": "AA (2.0)",
-        "pdfua": "필수",
+        "pdfua": "Required",
         "minFont": "12pt",
         "contrast": "4.5:1"
       }
     }
   },
   "tips": {
-    "title": "모든 출판사를 위한 일반 팁",
+    "title": "일반 가이드라인",
     "items": {
-      "early": "사후 고려가 아닌 처음부터 접근성 고려",
-      "guidelines": "제출 전 출판사 가이드라인 검토",
-      "tools": "준비 중 접근성 검사 도구 사용",
-      "alt": "모든 시각적 요소에 설명 alt 텍스트 작성",
-      "test": "가능하면 스크린 리더로 문서 테스트",
-      "contact": "질문이 있으면 출판사 지원에 문의",
-      "examples": "예로서 출판된 접근 가능한 기사 검토"
+      "contrast": "색상 대비 최소 4.5:1 (WCAG AA) 준수",
+      "altText": "모든 그림과 차트에 대체 텍스트 포함",
+      "colorPalette": "색맹 안전 색상 팔레트 사용 (Okabe-Ito 등)",
+      "dualEncoding": "이중 인코딩: 색상 + 패턴/선 스타일 병행",
+      "directLabeling": "직접 라벨링으로 범례 의존도 감소",
+      "vectorFormat": "고해상도 벡터 형식 (EPS, PDF) 우선 사용"
     }
   }
 }

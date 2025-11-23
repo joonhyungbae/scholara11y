@@ -75,6 +75,15 @@
       "document": "구현한 모든 접근성 기능 문서화"
     }
   },
+  "tabs": {
+    "python": "Python",
+    "r": "R",
+    "javascript": "JavaScript"
+  },
+  "sections": {
+    "pythonExamples": "Python 예제",
+    "javascriptD3": "JavaScript & D3.js"
+  },
   "comments": {
     "wcagCompliant": "WCAG 2.2 준수 차트 생성 예제",
     "settings": "설정",

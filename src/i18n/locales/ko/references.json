@@ -64,12 +64,12 @@
       },
       "wave": {
         "name": "WAVE",
-        "description": "웹 접근성 평가 도구",
+        "description": "웹 접근성 평가 도구. 시각적 피드백 제공.",
         "url": "https://wave.webaim.org/"
       },
       "axe": {
         "name": "axe DevTools",
-        "description": "접근성 테스트를 위한 브라우저 확장",
+        "description": "브라우저 확장 프로그램. 웹 페이지 접근성 자동 검사.",
         "url": "https://www.deque.com/axe/devtools/"
       }
     },
@@ -77,7 +77,7 @@
       "title": "색맹 시뮬레이터",
       "colorOracle": {
         "name": "Color Oracle",
-        "description": "무료 색맹 시뮬레이터 (Win/Mac/Linux)",
+        "description": "실시간 색맹 시뮬레이터. 화면을 색맹 시점으로 확인.",
         "url": "https://colororacle.org/"
       },
       "coblis": {
@@ -90,7 +90,7 @@
       "title": "명암비 검사기",
       "webaim": {
         "name": "WebAIM 명암비 검사기",
-        "description": "온라인 명암비 계산기",
+        "description": "색상 대비율 계산기. WCAG 준수 여부 즉시 확인.",
         "url": "https://webaim.org/resources/contrastchecker/"
       },
       "tanaguru": {
@@ -103,7 +103,7 @@
       "title": "스크린 리더",
       "nvda": {
         "name": "NVDA",
-        "description": "Windows용 무료 스크린 리더",
+        "description": "무료 오픈소스 스크린 리더. 실제 사용자 경험 테스트.",
         "url": "https://www.nvaccess.org/"
       },
       "jaws": {
@@ -122,6 +122,7 @@
     "title": "학술 연구",
     "okabe": {
       "title": "색상 범용 디자인 (Okabe & Ito, 2008)",
+      "description": "색맹 안전 색상 팔레트 개발과 적용. 학술 출판에서 널리 사용되는 Okabe-Ito 팔레트의 원론.",
       "citation": "Okabe, M., & Ito, K. (2008). 색상 범용 디자인 (CUD): 색맹인 사람들에게 친화적인 그림과 프레젠테이션을 만드는 방법.",
       "url": "https://jfly.uni-koeln.de/color/"
     },
@@ -129,6 +130,14 @@
       "title": "색각 결핍 연구",
       "description": "색맹 및 유병률에 관한 과학 논문",
       "note": "최신 연구는 PubMed 또는 Google Scholar에서 검색"
+    },
+    "visualization": {
+      "title": "\"Accessible Data Visualization\" - IEEE VIS (2021)",
+      "description": "데이터 시각화의 접근성 향상 방법. 다중 모달리티와 대체 표현 전략."
+    },
+    "framework": {
+      "title": "\"Accessibility Evaluation Framework for Scholarly Documents\" - JCDL (2022)",
+      "description": "학술 문서의 접근성 평가 프레임워크. PDF/UA 준수 현황과 개선 방향."
     }
   },
   "organizations": {
@@ -136,16 +145,17 @@
     "w3c": {
       "name": "W3C 웹 접근성 이니셔티브 (WAI)",
       "description": "웹 접근성 표준을 위한 선도 기관",
-      "url": "https://www.w3.org/WAI/"
+      "url": "https://www.w3.org/WAI/",
+      "community": "공식 W3C 접근성 커뮤니티 그룹"
     },
     "webaim": {
       "name": "WebAIM",
-      "description": "웹 접근성 교육 및 리소스",
+      "description": "이미지와 시각 자료의 접근성 향상에 특화된 리소스 센터. 대체 텍스트 작성 가이드와 모범 사례.",
       "url": "https://webaim.org/"
     },
     "a11y": {
       "name": "The A11Y Project",
-      "description": "접근성을 더 쉽게 만들기 위한 커뮤니티 주도 노력",
+      "description": "커뮤니티 기반 접근성 리소스. 체크리스트, 가이드, 실용적 팁 모음.",
       "url": "https://www.a11yproject.com/"
     },
     "daisy": {
@@ -186,7 +196,7 @@
       },
       "deque": {
         "name": "Deque University",
-        "description": "종합 접근성 교육",
+        "description": "웹 접근성 전문 교육 기관. 온라인 강좌, 워크샵, 인증 프로그램 제공.",
         "url": "https://dequeuniversity.com/"
       }
     },
@@ -195,6 +205,114 @@
       "inclusive": "Inclusive Design Patterns - Heydon Pickering",
       "practical": "Practical Web Inclusion and Accessibility - Ashley Firth",
       "accessibility": "Accessibility for Everyone - Laura Kalbag"
+    },
+    "tutorials": {
+      "title": "WAI Tutorials",
+      "description": "W3C 공식 접근성 튜토리얼. 페이지 구조, 메뉴, 이미지, 표, 폼 등 실전 가이드."
+    },
+    "additional": {
+      "title": "추가 리소스",
+      "blogs": {
+        "title": "유용한 블로그",
+        "items": {
+          "inclusive": "Inclusive Design 24 - 연례 온라인 컨퍼런스",
+          "deque": "Deque Blog - 접근성 기술 동향",
+          "adrian": "Adrian Roselli - 실무 접근성 팁",
+          "sara": "Sara Soueidan - 프론트엔드 접근성"
+        }
+      },
+      "podcasts": {
+        "title": "팟캐스트",
+        "items": {
+          "rules": "A11y Rules - 접근성 규칙과 사례",
+          "craft": "Accessibility Craft - 실전 기법",
+          "ebu": "EBU Access Cast - 유럽 방송 접근성"
+        }
+      },
+      "communities": {
+        "w3c": {
+          "name": "공식 W3C 접근성 커뮤니티 그룹",
+          "description": "W3C의 접근성 관련 워킹 그룹과 이슈 토론 참여."
+        },
+        "reddit": {
+          "name": "Reddit 접근성 커뮤니티",
+          "description": "글로벌 접근성 전문가들과 실무자들의 커뮤니티."
+        },
+        "newsletter": {
+          "name": "접근성 뉴스레터 및 블로그",
+          "description": "최신 접근성 뉴스, 표준 업데이트, 모범 사례 제공."
+        }
+      }
+    },
+    "research": {
+      "title": "주요 참고 논문"
+    },
+    "buttons": {
+      "use": "사용하기",
+      "join": "참여하기",
+      "subscribe": "구독하기"
+    },
+    "mathml": {
+      "title": "MathML 접근성"
+    },
+    "aria": {
+      "authoring": {
+        "title": "ARIA 저작 관행"
+      }
+    },
+    "tools": {
+      "checkers": {
+        "pac": {
+          "name": "PAC 2024"
+        },
+        "wave": {
+          "name": "WAVE"
+        },
+        "axe": {
+          "name": "Axe DevTools"
+        }
+      },
+      "simulators": {
+        "colorOracle": {
+          "name": "Color Oracle"
+        }
+      },
+      "contrast": {
+        "webaim": {
+          "name": "명암비 계산기"
+        }
+      },
+      "screenReaders": {
+        "nvda": {
+          "name": "NVDA"
+        }
+      }
+    },
+    "organizations": {
+      "webaim": {
+        "name": "DIAGRAM Center"
+      },
+      "courses": {
+        "deque": {
+          "name": "WebAIM Training"
+        }
+      },
+      "a11y": {
+        "name": "The A11Y Project"
+      },
+      "tutorials": {
+        "name": "WAI Tutorials"
+      },
+      "w3c": {
+        "communityName": "W3C 접근성 커뮤니티"
+      },
+      "reddit": {
+        "name": "r/accessibility"
+      },
+      "newsletter": {
+        "name": "a11y.coffee"
+      }
     }
-  }
+  },
+  "download": "다운로드"
 }

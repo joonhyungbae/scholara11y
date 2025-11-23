@@ -1,4 +1,6 @@
 import { Layout } from "@/components/Layout";
+import { PageHeader } from "@/components/PageHeader";
+import { PageSection } from "@/components/PageSection";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
@@ -11,7 +13,7 @@ const CodeLibrary = () => {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "코드 라이브러리 - 학술 출판 접근성 가이드",
-    "description": "접근성 있는 학술 출판을 위한 즉시 사용 가능한 코드 스니펫과 템플릿 모음. LaTeX, CSS, JavaScript, Python 등 다양한 프로그래밍 언어 지원.",
+    "description": "접근성 있는 학술 출판을 위한 즉시 usage 가능한 코드 스니펫과 템플릿 모음. LaTeX, CSS, JavaScript, Python 등 다양한 프로그래밍 언어 지원.",
     "url": "https://scholara11y.vercel.app/code-library",
     "isPartOf": {
       "@type": "WebSite",
@@ -66,33 +68,29 @@ const CodeLibrary = () => {
   return (
     <Layout
       pageTitle="코드 라이브러리"
-      pageDescription="접근성 있는 학술 출판을 위한 즉시 사용 가능한 코드 스니펫 모음. LaTeX, CSS, JavaScript, Python 등 다양한 언어의 템플릿과 예제 코드 제공."
+      pageDescription="접근성 있는 학술 출판을 위한 즉시 usage 가능한 코드 스니펫 모음. LaTeX, CSS, JavaScript, Python 등 다양한 언어의 템플릿과 예제 코드 제공."
       pageKeywords={["LaTeX 템플릿", "CSS 접근성", "JavaScript 접근성", "Python 시각화", "코드 스니펫", "학술 출판 코드", "접근성 템플릿"]}
       structuredData={pageStructuredData}
     >
       <div className="space-y-12">
         {/* Header */}
-        <div className="space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight text-foreground">
-            {t('title')}
-          </h1>
-          <p className="text-xl text-muted-foreground">
-            {t('subtitle')}
-          </p>
-        </div>
+        <PageHeader
+          title={t('title')}
+          subtitle={t('subtitle')}
+        />
 
         {/* Language Tabs */}
         <Tabs defaultValue="python" className="w-full">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="python">Python</TabsTrigger>
-            <TabsTrigger value="r">R</TabsTrigger>
-            <TabsTrigger value="javascript">JavaScript</TabsTrigger>
+            <TabsTrigger value="python">{t('tabs.python')}</TabsTrigger>
+            <TabsTrigger value="r">{t('tabs.r')}</TabsTrigger>
+            <TabsTrigger value="javascript">{t('tabs.javascript')}</TabsTrigger>
           </TabsList>
 
           {/* Python Tab */}
           <TabsContent value="python" className="space-y-8">
             <section className="space-y-6">
-              <h2 className="text-2xl font-bold text-foreground">{t('pythonSection.title')}</h2>
+              <h2 className="text-2xl font-bold text-foreground">{t('sections.pythonExamples')}</h2>
               
               <CodeBlock
                 language="python"
@@ -109,27 +107,27 @@ def create_wcag_compliant_chart():
     plt.rcParams['axes.titlesize'] = 16
     plt.rcParams['legend.fontsize'] = 12
     plt.rcParams['figure.titlesize'] = 18
-    
-    # 데이터
+
+    # ${t('comments.data')}
     categories = ['Q1', 'Q2', 'Q3', 'Q4']
     values_a = [25, 32, 28, 35]
     values_b = [20, 25, 30, 32]
     
-    # 그림 생성
+    # ${t('comments.figureCreation')}
     fig, ax = plt.subplots(figsize=(10, 6))
-    
+
     x = np.arange(len(categories))
     width = 0.35
-    
-    # Okabe-Ito 색상과 패턴
-    bars1 = ax.bar(x - width/2, values_a, width, 
+
+    # ${t('comments.okabeItoColors')}
+    bars1 = ax.bar(x - width/2, values_a, width,
                    label='Series A', color='#0072B2',
                    edgecolor='black', linewidth=2, hatch='///')
     bars2 = ax.bar(x + width/2, values_b, width,
                    label='Series B', color='#D55E00',
                    edgecolor='black', linewidth=2, hatch='\\\\\\\\\\\\')
-    
-    # 직접 라벨링
+
+    # ${t('comments.directLabeling')}
     for bars in [bars1, bars2]:
         for bar in bars:
             height = bar.get_height()
@@ -140,24 +138,24 @@ def create_wcag_compliant_chart():
                        ha='center', va='bottom',
                        fontsize=11, fontweight='bold')
     
-    # 축 설정
+    # ${t('comments.axisSettings')}
     ax.set_xlabel('Quarter', fontweight='bold')
     ax.set_ylabel('Values', fontweight='bold')
-    ax.set_title('Quarterly Performance Comparison', 
+    ax.set_title('Quarterly Performance Comparison',
                  fontweight='bold', pad=20)
     ax.set_xticks(x)
     ax.set_xticklabels(categories)
-    ax.legend(loc='upper left', frameon=True, 
+    ax.legend(loc='upper left', frameon=True,
               fancybox=False, shadow=False)
     ax.grid(axis='y', alpha=0.3, linestyle='--')
     ax.set_axisbelow(True)
-    
-    # y축 범위 설정
+
+    # ${t('comments.rangeSettings')}
     ax.set_ylim(0, max(max(values_a), max(values_b)) * 1.15)
-    
+
     plt.tight_layout()
-    
-    # 메타데이터 포함 저장
+
+    # ${t('comments.metadataSave')}
     metadata = {
         'Title': 'Quarterly Performance Comparison',
         'Author': 'Research Team',
@@ -171,7 +169,7 @@ def create_wcag_compliant_chart():
     
     return fig
 
-# 사용
+# usage
 fig = create_wcag_compliant_chart()
 plt.show()`}
               />
@@ -181,24 +179,24 @@ plt.show()`}
                 title="okabe_ito_palette.py"
                 code={`import matplotlib.pyplot as plt
 
-# Okabe-Ito 색상 팔레트 (색맹 안전)
+# ${t('comments.okabeItoPalette')} (${t('comments.black')})
 OKABE_ITO_COLORS = [
-    '#000000',  # 검정
-    '#E69F00',  # 주황
-    '#56B4E9',  # 하늘색
-    '#009E73',  # 청록색
-    '#F0E442',  # 노랑
-    '#0072B2',  # 파랑
-    '#D55E00',  # 주홍
-    '#CC79A7'   # 자홍
+    '#000000',  # ${t('comments.black')}
+    '#E69F00',  # ${t('comments.orange')}
+    '#56B4E9',  # ${t('comments.skyBlue')}
+    '#009E73',  # ${t('comments.bluishGreen')}
+    '#F0E442',  # ${t('comments.yellow')}
+    '#0072B2',  # ${t('comments.blue')}
+    '#D55E00',  # ${t('comments.vermillion')}
+    '#CC79A7'   # ${t('comments.reddishPurple')}
 ]
 
-# 전역 설정
+# ${t('comments.globalSettings')}
 plt.rcParams['axes.prop_cycle'] = plt.cycler(color=OKABE_ITO_COLORS)
 
-# 이중 인코딩 예시: 색상 + 패턴
+# ${t('comments.dualEncodingExample')}
 def create_accessible_bar_chart(data, labels):
-    """색상과 패턴을 함께 사용한 접근성 높은 차트"""
+    """${t('comments.accessibleChart')}"""
     patterns = ['/', '\\\\', '|', '-', '+', 'x', 'o', '.']
     colors = OKABE_ITO_COLORS[:len(data)]
     
@@ -206,7 +204,7 @@ def create_accessible_bar_chart(data, labels):
     bars = ax.bar(labels, data, color=colors, 
                   edgecolor='black', linewidth=2)
     
-    # 패턴 추가
+    # add patterns
     for bar, pattern in zip(bars, patterns):
         bar.set_hatch(pattern)
     
@@ -214,7 +212,7 @@ def create_accessible_bar_chart(data, labels):
     ax.set_title('Accessible Bar Chart Example', 
                  fontsize=16, weight='bold')
     
-    # 직접 라벨링
+    # Direct labeling
     for bar in bars:
         height = bar.get_height()
         ax.text(bar.get_x() + bar.get_width()/2., height,
@@ -224,7 +222,7 @@ def create_accessible_bar_chart(data, labels):
     plt.tight_layout()
     return fig
 
-# 사용 예시
+# usage example
 data = [23, 45, 56, 78, 32, 45]
 labels = ['A', 'B', 'C', 'D', 'E', 'F']
 fig = create_accessible_bar_chart(data, labels)
@@ -238,44 +236,45 @@ plt.show()`}
 import numpy as np
 
 def create_accessible_line_chart():
-    """접근성 높은 선 그래프"""
-    
-    # 데이터
+    """${t('comments.accessibleLineChart')}"""
+
+    # ${t('comments.sampleData')}
     x = np.linspace(0, 10, 100)
     y1 = np.sin(x)
     y2 = np.cos(x)
     y3 = np.sin(x) * np.exp(-x/10)
-    
+
     fig, ax = plt.subplots(figsize=(10, 6))
-    
-    # Okabe-Ito 색상과 다양한 선 스타일
-    ax.plot(x, y1, color='#0072B2', linewidth=2.5, 
-            linestyle='-', label='Series A', marker='o', 
+
+    # ${t('comments.okabeColors')}
+    ax.plot(x, y1, color='#0072B2', linewidth=2.5,
+            linestyle='-', label='Series A', marker='o',
             markersize=4, markevery=10)
-    ax.plot(x, y2, color='#D55E00', linewidth=2.5, 
-            linestyle='--', label='Series B', marker='s', 
+    ax.plot(x, y2, color='#D55E00', linewidth=2.5,
+            linestyle='--', label='Series B', marker='s',
             markersize=4, markevery=10)
-    ax.plot(x, y3, color='#009E73', linewidth=2.5, 
-            linestyle='-.', label='Series C', marker='^', 
+    ax.plot(x, y3, color='#009E73', linewidth=2.5,
+            linestyle='-.', label='Series C', marker='^',
             markersize=4, markevery=10)
-    
-    # 축 설정
+
+    # ${t('comments.axisSettings2')}
     ax.set_xlabel('Time (s)', fontsize=14, fontweight='bold')
     ax.set_ylabel('Amplitude', fontsize=14, fontweight='bold')
-    ax.set_title('Time Series Comparison', 
+    ax.set_title('Time Series Comparison',
                  fontsize=16, fontweight='bold', pad=20)
-    
-    # 범례 (명확한 배경)
-    ax.legend(loc='best', frameon=True, fancybox=False, 
+
+    # ${t('comments.legend')}
+    ax.legend(loc='best', frameon=True, fancybox=False,
               shadow=False, fontsize=12)
-    
-    # 그리드
+
+    # ${t('comments.grid')}
     ax.grid(True, alpha=0.3, linestyle='--')
     ax.set_axisbelow(True)
-    
+
     plt.tight_layout()
     return fig
 
+# ${t('comments.usage')}
 fig = create_accessible_line_chart()
 plt.show()`}
               />
@@ -292,13 +291,13 @@ plt.show()`}
                 title="accessible_ggplot2.R"
                 code={`library(ggplot2)
 
-# Okabe-Ito 팔레트 정의
+# ${t('comments.okabeItoPalette2')}
 okabe_ito <- c(
   "#000000", "#E69F00", "#56B4E9", "#009E73",
   "#F0E442", "#0072B2", "#D55E00", "#CC79A7"
 )
 
-# 접근성 테마 설정
+# ${t('comments.accessibleTheme')}
 theme_accessible <- function() {
   theme_minimal(base_size = 14) +
   theme(
@@ -315,14 +314,14 @@ theme_accessible <- function() {
   )
 }
 
-# 샘플 데이터
+# ${t('comments.sampleData2')}
 data <- data.frame(
   category = rep(c("A", "B", "C", "D"), each = 3),
   group = rep(c("Group 1", "Group 2", "Group 3"), 4),
   value = c(23, 45, 32, 56, 43, 54, 67, 45, 38, 34, 56, 48)
 )
 
-# 접근성 높은 막대 그래프
+# ${t('comments.accessibleBarChart')}
 ggplot(data, aes(x = category, y = value, fill = group)) +
   geom_bar(stat = "identity", position = "dodge",
            color = "black", linewidth = 1) +
@@ -334,8 +333,8 @@ ggplot(data, aes(x = category, y = value, fill = group)) +
     fill = "Group"
   ) +
   theme_accessible() +
-  # 직접 라벨링
-  geom_text(aes(label = value), 
+  # ${t('comments.directLabeling3')}
+  geom_text(aes(label = value),
             position = position_dodge(width = 0.9),
             vjust = -0.5, size = 4, fontface = "bold")
 
@@ -346,9 +345,9 @@ ggsave("accessible_chart.pdf", width = 10, height = 6, dpi = 300)`}
                 language="r"
                 title="pattern_fill_ggplot2.R"
                 code={`library(ggplot2)
-library(ggpattern)  # 패턴 채우기 지원
+library(ggpattern)  # pattern fill support
 
-# 색상과 패턴을 함께 사용
+# use color and pattern together
 data <- data.frame(
   category = c("A", "B", "C", "D"),
   value = c(25, 45, 35, 60)
@@ -384,7 +383,7 @@ ggplot(data, aes(x = category, y = value,
                 title="accessible_line_chart.R"
                 code={`library(ggplot2)
 
-# 시간 시계열 데이터
+# time series data
 time_data <- data.frame(
   time = rep(1:50, 3),
   value = c(
@@ -395,7 +394,7 @@ time_data <- data.frame(
   series = rep(c("Series A", "Series B", "Series C"), each = 50)
 )
 
-# 접근성 높은 선 그래프
+# accessible line chart
 ggplot(time_data, aes(x = time, y = value, 
                       color = series, linetype = series)) +
   geom_line(linewidth = 1.2) +
@@ -419,18 +418,18 @@ ggsave("line_chart_accessible.pdf", width = 10, height = 6, dpi = 300)`}
           {/* JavaScript Tab */}
           <TabsContent value="javascript" className="space-y-8">
             <section className="space-y-6">
-              <h2 className="text-2xl font-bold text-foreground">JavaScript & D3.js</h2>
+              <h2 className="text-2xl font-bold text-foreground">{t('sections.javascriptD3')}</h2>
               
               <CodeBlock
                 language="javascript"
                 title="plotly_accessible.js"
-                code={`// Plotly.js 접근성 설정
+                code={`// Plotly.js accessibility settings
 const okabeIto = [
   '#000000', '#E69F00', '#56B4E9', '#009E73',
   '#F0E442', '#0072B2', '#D55E00', '#CC79A7'
 ];
 
-// 데이터
+// data
 const data = [
   {
     x: ['Q1', 'Q2', 'Q3', 'Q4'],
@@ -460,7 +459,7 @@ const data = [
   }
 ];
 
-// 레이아웃 설정
+// layout settings
 const layout = {
   title: {
     text: 'Quarterly Performance Comparison',
@@ -488,7 +487,7 @@ const layout = {
   }
 };
 
-// 접근성 설정
+// accessibility settings
 const config = {
   displayModeBar: true,
   displaylogo: false,
@@ -508,7 +507,7 @@ Plotly.newPlot('chart', data, layout, config);`}
               <CodeBlock
                 language="javascript"
                 title="d3_accessible.js"
-                code={`// D3.js 접근성 높은 차트
+                code={`// D3.js accessible chart
 const okabeIto = [
   '#000000', '#E69F00', '#56B4E9', '#009E73',
   '#F0E442', '#0072B2', '#D55E00', '#CC79A7'
@@ -521,7 +520,7 @@ const data = [
   { category: 'D', value: 60 }
 ];
 
-// SVG 설정
+// SVG settings
 const margin = { top: 40, right: 30, bottom: 60, left: 60 };
 const width = 800 - margin.left - margin.right;
 const height = 500 - margin.top - margin.bottom;
@@ -535,7 +534,7 @@ const svg = d3.select('#chart')
   .append('g')
   .attr('transform', \`translate(\${margin.left},\${margin.top})\`);
 
-// 스케일
+// scale
 const x = d3.scaleBand()
   .domain(data.map(d => d.category))
   .range([0, width])
@@ -545,7 +544,7 @@ const y = d3.scaleLinear()
   .domain([0, d3.max(data, d => d.value) * 1.1])
   .range([height, 0]);
 
-// 축
+// axis
 svg.append('g')
   .attr('transform', \`translate(0,\${height})\`)
   .call(d3.axisBottom(x))
@@ -558,7 +557,7 @@ svg.append('g')
   .selectAll('text')
   .style('font-size', '12px');
 
-// 막대 그래프
+// bar chart
 svg.selectAll('.bar')
   .data(data)
   .enter()
@@ -575,7 +574,7 @@ svg.selectAll('.bar')
   .attr('aria-label', d => \`Category \${d.category}: \${d.value}\`)
   .attr('tabindex', '0');
 
-// 값 라벨
+// value labels
 svg.selectAll('.label')
   .data(data)
   .enter()
@@ -588,7 +587,7 @@ svg.selectAll('.label')
   .style('font-weight', 'bold')
   .text(d => d.value);
 
-// 제목
+// title
 svg.append('text')
   .attr('x', width / 2)
   .attr('y', -20)
@@ -607,27 +606,27 @@ svg.append('text')
           <ul className="space-y-3 text-muted-foreground">
             <li className="flex items-start gap-3">
               <span className="text-primary font-bold mt-1">1.</span>
-              <span><strong>Okabe-Ito 팔레트 사용:</strong> 색맹 안전 색상 선택</span>
+              <span><strong>Okabe-Ito 팔레트 사용: 색맹 안전 색상 선택</strong></span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary font-bold mt-1">2.</span>
-              <span><strong>이중 인코딩:</strong> 색상 + 패턴/선 스타일 병행</span>
+              <span><strong>이중 인코딩: 색상 + 패턴/선 스타일 병행</strong></span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary font-bold mt-1">3.</span>
-              <span><strong>직접 라벨링:</strong> 모든 데이터 포인트에 값 표시</span>
+              <span><strong>직접 라벨링: 모든 데이터 포인트에 값 표시</strong></span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary font-bold mt-1">4.</span>
-              <span><strong>명확한 테두리:</strong> 2px 검정 테두리로 요소 구분</span>
+              <span><strong>명확한 테두리: 2px 검정 테두리로 요소 구분</strong></span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary font-bold mt-1">5.</span>
-              <span><strong>메타데이터 포함:</strong> SVG/PDF 저장 시 설명 추가</span>
+              <span><strong>메타데이터 포함: SVG/PDF 저장 시 설명 추가</strong></span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary font-bold mt-1">6.</span>
-              <span><strong>ARIA 레이블:</strong> 인터랙티브 차트에 접근성 속성</span>
+              <span><strong>ARIA 레이블: 인터랙티브 차트에 접근성 속성</strong></span>
             </li>
           </ul>
         </Card>

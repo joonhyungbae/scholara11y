@@ -26,8 +26,8 @@ const Index = () => {
         {/* Key Statistics Section */}
         <section aria-labelledby="key-statistics">
           <h2 id="key-statistics" className="sr-only">주요 통계</h2>
-          <div className="grid gap-6 md:grid-cols-3" role="list">
-            <div role="listitem">
+          <div className="flex flex-col gap-6 md:flex-row md:gap-6" role="list">
+            <div role="listitem" className="flex-1">
               <StatCard
                 title={t('stats.colorBlindness.title')}
                 value={t('stats.colorBlindness.value')}
@@ -35,7 +35,7 @@ const Index = () => {
                 icon={Eye}
               />
             </div>
-            <div role="listitem">
+            <div role="listitem" className="flex-1">
               <StatCard
                 title={t('stats.euLaw.title')}
                 value={t('stats.euLaw.value')}
@@ -43,7 +43,7 @@ const Index = () => {
                 icon={Calendar}
               />
             </div>
-            <div role="listitem">
+            <div role="listitem" className="flex-1">
               <StatCard
                 title={t('stats.contrastRatio.title')}
                 value={t('stats.contrastRatio.value')}
@@ -60,59 +60,70 @@ const Index = () => {
             <h2 id="quick-navigation" className="text-3xl font-bold text-foreground">{t('quickNav.title')}</h2>
           </header>
 
+          <div className="mt-8"></div>
+
           <nav aria-label="빠른 탐색 메뉴">
-            <div className="grid gap-4 md:grid-cols-2" role="list">
+            <div className="space-y-6">
+              {/* Featured: Proposed Standard */}
               <div role="listitem">
                 <NavCard
-                  title={t('quickNav.colors.title')}
-                  description={t('quickNav.colors.description')}
+                  title={t('quickNav.proposedStandard.title')}
+                  description={t('quickNav.proposedStandard.description')}
                   icon={Palette}
-                  href="/colors"
+                  href="/proposed-standard"
+                  variant="featured"
                 />
               </div>
-              <div role="listitem">
-                <NavCard
-                  title={t('quickNav.typography.title')}
-                  description={t('quickNav.typography.description')}
-                  icon={Type}
-                  href="/typography"
-                />
-              </div>
-              <div role="listitem">
-                <NavCard
-                  title={t('quickNav.code.title')}
-                  description={t('quickNav.code.description')}
-                  icon={Code}
-                  href="/code-library"
-                />
-              </div>
-              <div role="listitem">
-                <NavCard
-                  title={t('quickNav.publishers.title')}
-                  description={t('quickNav.publishers.description')}
-                  icon={Building2}
-                  href="/publishers"
-                />
-              </div>
-              <div role="listitem">
-                <NavCard
-                  title={t('quickNav.pdfChecklist.title')}
-                  description={t('quickNav.pdfChecklist.description')}
-                  icon={CheckSquare}
-                  href="/pdf-checklist"
-                />
-              </div>
-              <div role="listitem">
-                <NavCard
-                  title={t('quickNav.downloads.title')}
-                  description={t('quickNav.downloads.description')}
-                  icon={Download}
-                  href="/downloads"
-                />
+
+              {/* Secondary Navigation Grid */}
+              <div className="grid gap-4 md:grid-cols-2" role="list">
+                <div role="listitem">
+                  <NavCard
+                    title={t('quickNav.pdfChecklist.title')}
+                    description={t('quickNav.pdfChecklist.description')}
+                    icon={CheckSquare}
+                    href="/pdf-checklist"
+                  />
+                </div>
+                <div role="listitem">
+                  <NavCard
+                    title={t('quickNav.typography.title')}
+                    description={t('quickNav.typography.description')}
+                    icon={Type}
+                    href="/typography"
+                  />
+                </div>
+                <div role="listitem">
+                  <NavCard
+                    title={t('quickNav.code.title')}
+                    description={t('quickNav.code.description')}
+                    icon={Code}
+                    href="/code-library"
+                  />
+                </div>
+                <div role="listitem">
+                  <NavCard
+                    title={t('quickNav.publishers.title')}
+                    description={t('quickNav.publishers.description')}
+                    icon={Building2}
+                    href="/publishers"
+                  />
+                </div>
+                <div role="listitem" className="md:col-span-2">
+                  <NavCard
+                    title={t('quickNav.downloads.title')}
+                    description={t('quickNav.downloads.description')}
+                    icon={Download}
+                    href="/downloads"
+                  />
+                </div>
               </div>
             </div>
           </nav>
         </section>
+
+        {/* Spacer */}
+        <div className="py-8"></div>
 
         {/* Featured Resources Section */}
         <section aria-labelledby="featured-resources">

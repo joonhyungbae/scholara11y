@@ -1,25 +1,27 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Copy, Check } from "lucide-react";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
 interface CodeBlockProps {
   code: string;
   language: string;
-  title?: string;
+  title?: string | ReactNode;
 }
 
 export function CodeBlock({ code, language, title }: CodeBlockProps) {
   const [copied, setCopied] = useState(false);
+  const { t } = useTranslation('common');
 
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(code);
       setCopied(true);
-      toast.success("코드가 클립보드에 복사되었습니다");
+      toast.success(t('codeBlock.copied'));
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      toast.error("복사에 실패했습니다");
+      toast.error(t('codeBlock.copyFailed') || "복사에 실패했습니다");
     }
   };
 
@@ -45,12 +47,12 @@ export function CodeBlock({ code, language, title }: CodeBlockProps) {
           {copied ? (
             <>
               <Check className="mr-2 h-3 w-3" />
-              복사됨
+              {t('codeBlock.copied')}
             </>
           ) : (
             <>
               <Copy className="mr-2 h-3 w-3" />
-              복사
+              {t('codeBlock.copy')}
             </>
           )}
         </Button>

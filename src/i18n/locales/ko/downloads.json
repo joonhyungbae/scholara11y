@@ -111,13 +111,54 @@
       "title": "Python 접근성 스크립트",
       "description": "접근성 검사 자동화 및 접근 가능한 플롯 생성을 위한 Python 스크립트 모음입니다.",
       "contents": "내용: matplotlib 설정, 명암비 검사기, alt 텍스트 생성기",
-      "download": "ZIP 다운로드"
+      "download": "ZIP 다운로드",
+      "dependency": "Python 의존성",
+      "dependencyDesc": "접근성 준수 데이터 시각화에 필요한 Python 패키지 목록",
+      "installTitle": "설치 방법:",
+      "config": "matplotlib 설정",
+      "configDesc": "접근성 최적화된 matplotlib 기본 설정 파일",
+      "installPath": "설치 위치:"
     },
     "r": {
       "title": "R 접근성 패키지",
       "description": "접근 가능한 ggplot2 시각화를 만들기 위한 함수가 포함된 R 패키지입니다.",
       "contents": "내용: ggplot2 테마, 색상 스케일, 내보내기 함수",
-      "download": "패키지 다운로드"
+      "download": "패키지 다운로드",
+      "package": "R 패키지 설치",
+      "packageDesc": "접근성 준수 시각화를 위한 R 패키지 일괄 설치 스크립트",
+      "runTitle": "실행 방법:",
+      "env": "R 환경 설정",
+      "envDesc": "R 시작 시 자동으로 로드되는 접근성 설정",
+      "installPath": "설치 위치:"
+    }
+  },
+  "templates": {
+    "paper": "논문 템플릿",
+    "paperDesc": "PDF/UA 준수 학술 논문 LaTeX 템플릿",
+    "css": "CSS 템플릿",
+    "cssDesc": "WCAG 2.2 AA 준수 CSS 스타일 템플릿"
+  },
+  "standards": {
+    "coding": "코딩 표준",
+    "codingDesc": "일관된 코드 스타일을 위한 EditorConfig 설정"
+  },
+  "instructions": {
+    "title": "사용 안내",
+    "step1": {
+      "title": "1. 코드 복사",
+      "desc": "각 코드 블록 우측 상단의 복사 버튼을 클릭하여 코드를 복사하세요."
+    },
+    "step2": {
+      "title": "2. 파일 생성",
+      "desc": "복사한 코드를 해당 파일명으로 저장하세요 (예: requirements.txt)."
+    },
+    "step3": {
+      "title": "3. 환경 적용",
+      "desc": "각 파일의 설명에 따라 적절한 위치에 배치하고 설치/적용하세요."
+    },
+    "step4": {
+      "title": "4. 커스터마이즈",
+      "desc": "필요에 따라 설정을 수정하여 사용하세요."
     }
   },
   "license": {

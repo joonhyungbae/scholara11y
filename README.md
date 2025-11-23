@@ -28,6 +28,72 @@ npm install
 npm run dev
 ```
 
+## Design System
+
+This project uses a comprehensive design system built on Tailwind CSS and shadcn/ui for consistent user experience.
+
+### Color System
+
+The application uses a CSS custom properties-based color system with light and dark mode support:
+
+- **Primary Colors**: Blue tones for interactive elements
+- **Semantic Colors**: Green for success, Red for errors, Yellow for warnings
+- **Neutral Colors**: Grays for text and backgrounds
+- **Okabe-Ito Palette**: Colorblind-safe colors for data visualization
+
+### Typography
+
+- **Font Family**: System fonts for optimal performance
+- **Scale**: Consistent heading hierarchy (text-5xl to text-sm)
+- **Line Height**: 1.5 for body text, 1.2 for headings
+- **Accessibility**: Minimum 16px font size, proper contrast ratios
+
+### Spacing
+
+- **Scale**: Uses Tailwind's spacing scale (space-y-12, space-y-6, etc.)
+- **Consistent Layout**: 2rem container padding, responsive margins
+
+### Components
+
+#### Layout Components
+- `Layout`: Main application layout with sidebar navigation
+- `PageHeader`: Consistent page headers with title and subtitle
+- `PageSection`: Reusable section wrapper with optional title
+
+#### UI Components
+- Built on shadcn/ui foundation
+- Consistent button styles, form elements, cards
+- Accessible by default with ARIA attributes
+
+### Usage Guidelines
+
+#### Colors
+```css
+/* Use CSS custom properties instead of hardcoded values */
+.my-element {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+}
+```
+
+#### Typography
+```jsx
+// Consistent heading hierarchy
+<h1 className="text-5xl font-bold tracking-tight text-foreground">Page Title</h1>
+<h2 className="text-2xl font-bold text-foreground">Section Title</h2>
+<p className="text-base text-muted-foreground">Body text</p>
+```
+
+#### Spacing
+```jsx
+// Consistent spacing patterns
+<div className="space-y-12"> {/* Major sections */}
+  <div className="space-y-6"> {/* Subsections */}
+    <div className="space-y-4"> {/* Content blocks */}</div>
+  </div>
+</div>
+```
+
 ## Technologies Used
 
 This project is built with:
@@ -37,6 +103,9 @@ This project is built with:
 - **React** - UI library
 - **shadcn/ui** - Component library
 - **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **React i18next** - Internationalization
+- **React Helmet Async** - Document head management
 
 ## Available Scripts
 

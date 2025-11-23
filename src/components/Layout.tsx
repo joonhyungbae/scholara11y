@@ -2,7 +2,7 @@ import { ReactNode, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
-import { BookOpen, Palette, Type, FileText, Code, CheckSquare, Building2, Download, Library, Menu, X, Star } from "lucide-react";
+import { BookOpen, Type, FileText, Code, CheckSquare, Building2, Download, Library, Menu, X, Star, Crown } from "lucide-react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
@@ -22,9 +22,8 @@ export function Layout({ children, pageTitle, pageDescription, pageKeywords, str
 
   const navigation = [
     { name: t('nav.home'), href: "/", icon: BookOpen },
-    { name: t('nav.goldenStandard'), href: "/golden-standard", icon: Star },
+    { name: t('nav.proposedStandard'), href: "/proposed-standard", icon: Star },
     { name: t('nav.regulations'), href: "/regulations", icon: FileText },
-    { name: t('nav.colors'), href: "/colors", icon: Palette },
     { name: t('nav.typography'), href: "/typography", icon: Type },
     { name: t('nav.altText'), href: "/alt-text", icon: FileText },
     { name: t('nav.codeLibrary'), href: "/code-library", icon: Code },
@@ -32,6 +31,7 @@ export function Layout({ children, pageTitle, pageDescription, pageKeywords, str
     { name: t('nav.publishers'), href: "/publishers", icon: Building2 },
     { name: t('nav.downloads'), href: "/downloads", icon: Download },
     { name: t('nav.references'), href: "/references", icon: Library },
+    { name: t('nav.credit'), href: "/credit", icon: Crown },
   ];
 
   const fullTitle = pageTitle ? `${pageTitle} | Scholara11y` : "Scholara11y";
@@ -136,6 +136,20 @@ export function Layout({ children, pageTitle, pageDescription, pageKeywords, str
           {children}
         </div>
       </main>
+
+      {/* Site Footer */}
+      <footer className="lg:pl-64 border-t border-border bg-muted/30 mt-auto" role="contentinfo">
+        <div className="mx-auto max-w-7xl px-2 sm:px-3 lg:px-4 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-sm text-muted-foreground">
+              <p>© 2025 Scholara11y</p>
+            </div>
+            <div className="text-sm text-muted-foreground">
+              <p>{t('footer.lastUpdated')}</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     </>
   );

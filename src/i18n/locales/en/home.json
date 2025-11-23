@@ -21,9 +21,9 @@
   },
   "quickNav": {
     "title": "Quick Navigation",
-    "colors": {
-      "title": "Color Palettes",
-      "description": "Colorblind-safe Okabe-Ito palette and contrast ratio guidelines"
+    "proposedStandard": {
+      "title": "Proposed Standard",
+      "description": "Complete accessibility guidelines with Okabe-Ito palette and contrast ratios"
     },
     "typography": {
       "title": "Typography",

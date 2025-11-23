@@ -1,4 +1,6 @@
 import { Layout } from "@/components/Layout";
+import { PageHeader } from "@/components/PageHeader";
+import { PageSection } from "@/components/PageSection";
 import { useTranslation } from "react-i18next";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -6,11 +8,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CodeBlock } from "@/components/CodeBlock";
-import { Download, Trophy, Palette, Type, Contrast, Layers, FileImage, ExternalLink, Check } from "lucide-react";
+import { Download, Palette, Type, Contrast, Layers, FileImage, ExternalLink, Check, Code } from "lucide-react";
 import { toast } from "sonner";
 
-const GoldenStandard = () => {
-  const { t } = useTranslation('goldenStandard');
+const ProposedStandard = () => {
+  const { t } = useTranslation('proposedStandard');
 
   const okabeItoColors = [
     { name: "Black", hex: "#000000", rgb: "0, 0, 0" },
@@ -28,18 +30,18 @@ const GoldenStandard = () => {
     toast.success(t('principles.color.copied'));
   };
 
-  const pythonCode = `# golden_standard_2025.py
+  const pythonCode = `# proposed_standard_2025.py
 import matplotlib.pyplot as plt
 import numpy as np
 
-class GoldenStandard2025:
+class ProposedStandard2025:
     # Okabe-Ito Palette
     COLORS = ['#000000', '#E69F00', '#56B4E9', '#009E73',
               '#F0E442', '#0072B2', '#D55E00', '#CC79A7']
-    
+
     # Hatching Patterns
     PATTERNS = ['/', '\\\\', '|', '-', '+', 'x', 'o', '.']
-    
+
     def create_accessible_chart(self, data, title, alt_text):
         plt.rcParams.update({
             'font.size': 12,
@@ -50,104 +52,187 @@ class GoldenStandard2025:
             'axes.spines.top': False,
             'axes.spines.right': False
         })
-        
+
         fig, ax = plt.subplots(figsize=(10, 6))
-        
+
         # Bar chart example
-        bars = ax.bar(range(len(data)), data, 
+        bars = ax.bar(range(len(data)), data,
                       color=self.COLORS[:len(data)],
                       edgecolor='black', linewidth=2)
-        
+
         # Add patterns
         for bar, pattern in zip(bars, self.PATTERNS):
             bar.set_hatch(pattern)
-        
+
         # Direct labeling
         for bar in bars:
             height = bar.get_height()
             ax.text(bar.get_x() + bar.get_width()/2., height,
                    f'{height:.1f}', ha='center', va='bottom',
                    fontweight='bold')
-        
+
         ax.set_title(title, fontweight='bold', pad=20)
         ax.grid(axis='y', alpha=0.3, linestyle='--')
-        
-        # Save with SVG metadata
+
+        # Save with metadata in multiple formats
         metadata = {'Title': title, 'Description': alt_text}
-        plt.savefig('accessible_chart.svg', format='svg', 
-                   metadata=metadata, dpi=300)
-        
+        # SVG for vector graphics (recommended)
+        plt.savefig('accessible_chart.svg', format='svg',
+                   metadata=metadata, dpi=300, bbox_inches='tight')
+        # PNG for web display
+        plt.savefig('accessible_chart.png', format='png',
+                   dpi=300, bbox_inches='tight')
+
         return fig
 
-# Usage example
-gs = GoldenStandard2025()
-data = [23.5, 45.2, 67.8, 34.1, 89.3, 12.6]
-gs.create_accessible_chart(data, 
-    'Research Results', 
-    'Bar chart showing research results across 6 conditions')`;
+    def create_line_chart(self, x_data, y_data, title):
+        """Create accessible line chart with multiple series"""
+        fig, ax = plt.subplots(figsize=(10, 6))
 
-  const rCode = `# golden_standard.R
+        colors = self.COLORS[1:4]  # Skip black for lines
+        linestyles = ['-', '--', '-.']
+
+        for i, (y, label) in enumerate(zip(y_data, ['Series A', 'Series B', 'Series C'])):
+            ax.plot(x_data, y, color=colors[i], linewidth=2.5,
+                   linestyle=linestyles[i], label=label, marker='o',
+                   markersize=4, markevery=5)
+
+        ax.set_xlabel('Time (s)', fontweight='bold')
+        ax.set_ylabel('Amplitude', fontweight='bold')
+        ax.set_title(title, fontweight='bold', pad=20)
+        ax.legend(loc='best', frameon=True, fancybox=False, shadow=False)
+        ax.grid(True, alpha=0.3, linestyle='--')
+
+        return fig
+
+# Usage examples
+gs = ProposedStandard2025()
+
+# Bar chart
+data = [23.5, 45.2, 67.8, 34.1, 89.3, 12.6]
+gs.create_accessible_chart(data, 'Research Results',
+    'Bar chart showing research results across 6 conditions')
+
+# Line chart
+x = np.linspace(0, 10, 50)
+y1 = np.sin(x)
+y2 = np.cos(x)
+y3 = np.sin(x) * np.exp(-x/10)
+gs.create_line_chart(x, [y1, y2, y3], 'Time Series Comparison')`;
+
+  const rCode = `# proposed_standard.R
 library(ggplot2)
 
 # Okabe-Ito Palette
 okabe_ito <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
                "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
-create_accessible_plot <- function(data) {
-  ggplot(data, aes(x = category, y = value, fill = group)) +
-    geom_bar(stat = "identity", position = "dodge",
-             color = "black", size = 1.5) +
-    scale_fill_manual(values = okabe_ito) +
-    geom_text(aes(label = round(value, 1)), 
-              vjust = -0.5, fontface = "bold") +
-    theme_minimal(base_size = 14) +
-    theme(
-      text = element_text(family = "Arial"),
-      plot.title = element_text(size = 16, face = "bold"),
-      axis.title = element_text(face = "bold"),
-      panel.grid.minor = element_blank(),
-      panel.grid.major.x = element_blank()
-    )
+# Accessible theme
+theme_accessible <- function() {
+  theme_minimal(base_size = 14) +
+  theme(
+    text = element_text(family = "Arial"),
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14, face = "bold"),
+    legend.position = "bottom",
+    legend.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "gray90"),
+    plot.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "white", color = NA)
+  )
 }
 
-# Usage example
-data <- data.frame(
-  category = rep(c("A", "B", "C"), each = 3),
-  group = rep(c("X", "Y", "Z"), 3),
-  value = c(23.5, 45.2, 67.8, 34.1, 89.3, 12.6, 56.7, 78.9, 23.4)
+# Bar chart function
+create_accessible_bar_chart <- function(data, title) {
+  ggplot(data, aes(x = category, y = value, fill = group)) +
+    geom_bar(stat = "identity", position = "dodge",
+             color = "black", linewidth = 1) +
+    scale_fill_manual(values = okabe_ito[2:4]) +
+    labs(
+      title = title,
+      x = "Category",
+      y = "Value",
+      fill = "Group"
+    ) +
+    theme_accessible() +
+    geom_text(aes(label = value),
+              position = position_dodge(width = 0.9),
+              vjust = -0.5, size = 4, fontface = "bold")
+}
+
+# Line chart function
+create_accessible_line_chart <- function(data, title) {
+  ggplot(data, aes(x = time, y = value, color = series, linetype = series)) +
+    geom_line(linewidth = 1.2) +
+    geom_point(size = 2, shape = 21, fill = "white") +
+    scale_color_manual(values = okabe_ito[2:4]) +
+    scale_linetype_manual(values = c("solid", "dashed", "dotted")) +
+    labs(
+      title = title,
+      x = "Time (s)",
+      y = "Amplitude",
+      color = "Series",
+      linetype = "Series"
+    ) +
+    theme_accessible()
+}
+
+# Usage examples
+
+# Bar chart data
+bar_data <- data.frame(
+  category = rep(c("A", "B", "C", "D"), each = 3),
+  group = rep(c("Group 1", "Group 2", "Group 3"), 4),
+  value = c(23, 45, 32, 56, 43, 54, 67, 45, 38, 34, 56, 48)
 )
 
-plot <- create_accessible_plot(data)
-ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
+bar_plot <- create_accessible_bar_chart(bar_data, "Accessible Bar Chart with ggplot2")
+ggsave("accessible_bar_chart.pdf", bar_plot, width = 10, height = 6, dpi = 300)
 
-  const cssCode = `/* golden-standard-2025.css */
+# Line chart data
+line_data <- data.frame(
+  time = rep(1:50, 3),
+  value = c(
+    sin(1:50 / 5) + rnorm(50, 0, 0.1),
+    cos(1:50 / 5) + rnorm(50, 0, 0.1),
+    sin(1:50 / 5) * 0.5 + rnorm(50, 0, 0.1)
+  ),
+  series = rep(c("Series A", "Series B", "Series C"), each = 50)
+)
+
+line_plot <- create_accessible_line_chart(line_data, "Time Series with Multiple Encoding")
+ggsave("accessible_line_chart.pdf", line_plot, width = 10, height = 6, dpi = 300)`;
+
+  const cssCode = `/* proposed-standard-2025.css */
 :root {
   /* Okabe-Ito Color Variables */
-  --gs-black: #000000;
-  --gs-orange: #E69F00;
-  --gs-sky-blue: #56B4E9;
-  --gs-bluish-green: #009E73;
-  --gs-yellow: #F0E442;
-  --gs-blue: #0072B2;
-  --gs-vermillion: #D55E00;
-  --gs-reddish-purple: #CC79A7;
+  --ps-black: #000000;
+  --ps-orange: #E69F00;
+  --ps-sky-blue: #56B4E9;
+  --ps-bluish-green: #009E73;
+  --ps-yellow: #F0E442;
+  --ps-blue: #0072B2;
+  --ps-vermillion: #D55E00;
+  --ps-reddish-purple: #CC79A7;
   
   /* Typography */
-  --gs-font-stack: 'Atkinson Hyperlegible', -apple-system, Arial, sans-serif;
-  --gs-font-size: clamp(16px, 2.5vw, 18px);
-  --gs-line-height: 1.5;
-  --gs-heading-weight: 700;
+  --ps-font-stack: 'Atkinson Hyperlegible', -apple-system, Arial, sans-serif;
+  --ps-font-size: clamp(16px, 2.5vw, 18px);
+  --ps-line-height: 1.5;
+  --ps-heading-weight: 700;
   
   /* Contrast */
-  --gs-contrast-aa: 4.5;
-  --gs-contrast-aaa: 7.0;
+  --ps-contrast-aa: 4.5;
+  --ps-contrast-aaa: 7.0;
 }
 
 .accessible-content {
-  font-family: var(--gs-font-stack);
-  font-size: var(--gs-font-size);
-  line-height: var(--gs-line-height);
-  color: var(--gs-black);
+  font-family: var(--ps-font-stack);
+  font-size: var(--ps-font-size);
+  line-height: var(--ps-line-height);
+  color: var(--ps-black);
   background: white;
 }
 
@@ -161,16 +246,16 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
 }
 
 /* Color Classes */
-.color-orange { color: var(--gs-orange); }
-.color-sky-blue { color: var(--gs-sky-blue); }
-.color-bluish-green { color: var(--gs-bluish-green); }
-.color-yellow { color: var(--gs-yellow); }
-.color-blue { color: var(--gs-blue); }
-.color-vermillion { color: var(--gs-vermillion); }
-.color-reddish-purple { color: var(--gs-reddish-purple); }`;
+.color-orange { color: var(--ps-orange); }
+.color-sky-blue { color: var(--ps-sky-blue); }
+.color-bluish-green { color: var(--ps-bluish-green); }
+.color-yellow { color: var(--ps-yellow); }
+.color-blue { color: var(--ps-blue); }
+.color-vermillion { color: var(--ps-vermillion); }
+.color-reddish-purple { color: var(--ps-reddish-purple); }`;
 
-  const latexCode = `% golden-standard.sty
-\\ProvidesPackage{golden-standard}[2025/01/01 Golden Standard Accessibility]
+  const latexCode = `% proposed-standard.sty
+\\ProvidesPackage{proposed-standard}[2025/01/01 Proposed Standard Accessibility]
 
 \\RequirePackage{graphicx}
 \\RequirePackage{xcolor}
@@ -199,7 +284,7 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
 % Usage:
 % \\accessfig{0.8}{chart.pdf}{Research Results}{Bar chart showing...}`;
 
-  const integratedPythonCode = `def create_golden_standard_visualization(data):
+  const integratedPythonCode = `def create_proposed_standard_visualization(data):
     """${t('code.comments.integratedFunction')}"""
 
     # ${t('code.comments.color')}
@@ -255,28 +340,142 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
   return (
     <Layout>
       <div className="space-y-12">
-        {/* Hero Section */}
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-background border-2 border-primary/20 p-8 md:p-12">
-          <div className="relative z-10 space-y-6">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
-              <Trophy className="h-4 w-4" />
-              Golden Standard 2025
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-              {t('hero.title')}
-            </h1>
-            <p className="text-xl text-primary font-semibold">
-              {t('hero.subtitle')}
-            </p>
-            <p className="text-lg text-muted-foreground max-w-3xl">
-              {t('hero.description')}
-            </p>
+        <PageHeader
+          title={t('hero.title')}
+          subtitle={t('hero.subtitle')}
+          subtitleClassName="text-primary font-semibold"
+          description={t('hero.description')}
+        />
+
+
+        {/* Generated Examples */}
+        <PageSection
+          title="Generated Example Charts"
+          subtitle="Accessible charts created with Python code"
+          icon={<FileImage className="h-5 w-5" />}
+        >
+          <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
+            {/* Bar Chart Example */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <FileImage className="h-5 w-5" />
+                  Bar Chart
+                </CardTitle>
+                <CardDescription>
+                  Okabe-Ito colors with patterns
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="rounded-lg border border-border overflow-hidden">
+                    <img
+                      src="/accessible_bar_chart.png"
+                      alt="Quarterly Research Results - Bar chart showing research results across 6 quarters"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="flex gap-2">
+                      <Button variant="outline" size="sm" asChild className="flex-1">
+                      <a href="/accessible_bar_chart.svg" download="accessible_bar_chart.svg">
+                        <Download className="h-3 w-3 mr-2" />
+                        Download SVG
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="sm" asChild className="flex-1">
+                      <a href="/accessible_bar_chart.png" download="accessible_bar_chart.png">
+                        <Download className="h-3 w-3 mr-2" />
+                        Download PNG
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Line Chart Example */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <FileImage className="h-5 w-5" />
+                  Line Chart
+                </CardTitle>
+                <CardDescription>
+                  Multiple series with color & style encoding
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="rounded-lg border border-border overflow-hidden">
+                    <img
+                      src="/accessible_line_chart.png"
+                      alt="Time Series Comparison - Line chart with multiple series"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="flex gap-2">
+                      <Button variant="outline" size="sm" asChild className="flex-1">
+                      <a href="/accessible_line_chart.svg" download="accessible_line_chart.svg">
+                        <Download className="h-3 w-3 mr-2" />
+                        Download SVG
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="sm" asChild className="flex-1">
+                      <a href="/accessible_line_chart.png" download="accessible_line_chart.png">
+                        <Download className="h-3 w-3 mr-2" />
+                        Download PNG
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Scatter Plot Example */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <FileImage className="h-5 w-5" />
+                  Scatter Plot
+                </CardTitle>
+                <CardDescription>
+                  Scatter plot with labeled data points
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="rounded-lg border border-border overflow-hidden">
+                    <img
+                      src="/accessible_scatter_plot.png"
+                      alt="Performance vs Experience Scatter Plot - Scatter plot with data points"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="flex gap-2">
+                      <Button variant="outline" size="sm" asChild className="flex-1">
+                      <a href="/accessible_scatter_plot.svg" download="accessible_scatter_plot.svg">
+                        <Download className="h-3 w-3 mr-2" />
+                        Download SVG
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="sm" asChild className="flex-1">
+                      <a href="/accessible_scatter_plot.png" download="accessible_scatter_plot.png">
+                        <Download className="h-3 w-3 mr-2" />
+                        Download PNG
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
-        </div>
+        </PageSection>
 
         {/* Integrated Code Examples */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold text-foreground">{t('code.title')}</h2>
+        <PageSection
+          title={t('code.title')}
+          icon={<Code className="h-5 w-5" />}
+        >
           
           <Tabs defaultValue="python" className="w-full">
             <TabsList className="grid w-full grid-cols-4">
@@ -287,7 +486,23 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
             </TabsList>
             
             <TabsContent value="python">
-              <CodeBlock code={pythonCode} language="python" title={t('code.python.description')} />
+              <div className="space-y-4">
+                <CodeBlock
+                  code={pythonCode}
+                  language="python"
+                  title={
+                    <div className="flex items-center justify-between">
+                      <span>{t('code.python.description')}</span>
+                      <Button variant="outline" size="sm" asChild className="gap-2">
+                        <a href="/proposed_standard_2025.py" download="proposed_standard_2025.py">
+                          <Download className="h-3 w-3" />
+                          {t('code.pythonFileDownload')}
+                        </a>
+                      </Button>
+                    </div>
+                  }
+                />
+              </div>
             </TabsContent>
             
             <TabsContent value="r">
@@ -302,11 +517,13 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
               <CodeBlock code={latexCode} language="latex" title={t('code.latex.description')} />
             </TabsContent>
           </Tabs>
-        </section>
+        </PageSection>
 
         {/* 5 Core Principles */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold text-foreground">{t('principles.title')}</h2>
+        <PageSection
+          title={t('principles.title')}
+          icon={<Palette className="h-5 w-5" />}
+        >
           
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Card 1 - Color Palette */}
@@ -338,16 +555,6 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
                     </button>
                   ))}
                 </div>
-                <div className="mt-4 flex gap-2">
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <Download className="h-3 w-3" />
-                    .ase
-                  </Button>
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <Download className="h-3 w-3" />
-                    .json
-                  </Button>
-                </div>
               </CardContent>
             </Card>
 
@@ -372,10 +579,6 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
                     </p>
                   </div>
                   <p className="text-sm text-muted-foreground">{t('principles.typography.settings')}</p>
-                  <Button variant="outline" size="sm" className="gap-2 w-full">
-                    <Download className="h-3 w-3" />
-                    {t('downloads.font.title')}
-                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -459,14 +662,67 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
               </CardContent>
             </Card>
           </div>
-        </section>
+        </PageSection>
+
+        {/* Contrast Ratios Table */}
+        <PageSection
+          title="WCAG 대비율 요구사항"
+          subtitle="텍스트와 배경 간 최소 대비율 기준표"
+        >
+          <Card>
+            <CardContent className="p-0">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-muted">
+                    <tr>
+                      <th className="border-b border-border px-6 py-4 text-left text-sm font-semibold text-foreground">
+                        요소 유형
+                      </th>
+                      <th className="border-b border-border px-6 py-4 text-left text-sm font-semibold text-foreground">
+                        AA 등급
+                      </th>
+                      <th className="border-b border-border px-6 py-4 text-left text-sm font-semibold text-foreground">
+                        AAA 등급
+                      </th>
+                      <th className="border-b border-border px-6 py-4 text-left text-sm font-semibold text-foreground">
+                        텍스트 크기 기준
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    <tr>
+                      <td className="px-6 py-4 text-sm text-foreground">일반 텍스트</td>
+                      <td className="px-6 py-4 text-sm font-semibold text-primary">4.5:1</td>
+                      <td className="px-6 py-4 text-sm font-semibold text-primary">7:1</td>
+                      <td className="px-6 py-4 text-sm text-muted-foreground">&lt; 18pt (24px)</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 text-sm text-foreground">큰 텍스트</td>
+                      <td className="px-6 py-4 text-sm font-semibold text-primary">3:1</td>
+                      <td className="px-6 py-4 text-sm font-semibold text-primary">4.5:1</td>
+                      <td className="px-6 py-4 text-sm text-muted-foreground">≥ 18pt or 14pt Bold</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 text-sm text-foreground">UI 컴포넌트</td>
+                      <td className="px-6 py-4 text-sm font-semibold text-primary">3:1</td>
+                      <td className="px-6 py-4 text-sm text-muted-foreground">-</td>
+                      <td className="px-6 py-4 text-sm text-muted-foreground">Charts, icons, buttons</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </CardContent>
+          </Card>
+        </PageSection>
 
         {/* Integration Synergy Section */}
-        <section className="space-y-8">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold text-foreground">{t('synergy.title')}</h2>
+        <PageSection
+          title={t('synergy.title')}
+          subtitle={t('synergy.intro')}
+          className="space-y-8"
+        >
+          <div className="text-center space-y-2 mb-6">
             <p className="text-xl text-primary font-semibold">{t('synergy.subtitle')}</p>
-            <p className="text-muted-foreground max-w-3xl mx-auto">{t('synergy.intro')}</p>
           </div>
 
           {/* Integration Matrix - 4 Layers */}
@@ -671,11 +927,13 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
               </p>
             </div>
           </div>
-        </section>
+        </PageSection>
 
         {/* Validation Matrix */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold text-foreground">{t('validation.title')}</h2>
+        <PageSection
+          title={t('validation.title')}
+          icon={<Check className="h-5 w-5" />}
+        >
           
           <div className="rounded-lg border border-border overflow-hidden">
             <div className="overflow-x-auto">
@@ -713,10 +971,10 @@ ggsave("accessible_plot.svg", plot, width = 10, height = 6)`;
               </table>
             </div>
           </div>
-        </section>
+        </PageSection>
       </div>
     </Layout>
   );
 };
 
-export default GoldenStandard;
+export default ProposedStandard;

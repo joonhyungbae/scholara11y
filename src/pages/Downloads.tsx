@@ -31,37 +31,37 @@ const Downloads = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold text-foreground">requirements.txt</h3>
-                <span className="text-sm text-muted-foreground">Python 의존성</span>
+                <span className="text-sm text-muted-foreground">{t('scripts.python.dependency')}</span>
               </div>
               <p className="text-muted-foreground">
-                접근성 준수 데이터 시각화에 필요한 Python 패키지 목록
+                {t('scripts.python.dependencyDesc')}
               </p>
               <CodeBlock
                 language="text"
                 title="requirements.txt"
-                code={`# 데이터 시각화
+                code={`# data visualization
 matplotlib==3.7.1
 seaborn==0.12.2
 plotly==5.14.1
 
-# 데이터 처리
+# data processing
 numpy==1.24.3
 pandas==2.0.2
 
-# 색맹 시뮬레이션
+# colorblind simulation
 colorspacious==1.1.2
 
-# 색상 팔레트
+# color palette
 colorcet==3.0.1
 
-# 이미지 처리
+# image processing
 Pillow==10.0.0
 
-# PDF 생성
+# PDF generation
 reportlab==4.0.4`}
               />
               <div className="text-sm text-muted-foreground mt-4">
-                <strong>설치 방법:</strong>
+                <strong>{t('scripts.python.installTitle')}</strong>
                 <code className="block mt-2 p-3 bg-muted rounded">
                   pip install -r requirements.txt
                 </code>
@@ -73,50 +73,50 @@ reportlab==4.0.4`}
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold text-foreground">matplotlibrc</h3>
-                <span className="text-sm text-muted-foreground">matplotlib 설정</span>
+                <span className="text-sm text-muted-foreground">{t('scripts.python.config')}</span>
               </div>
               <p className="text-muted-foreground">
-                접근성 최적화된 matplotlib 기본 설정 파일
+                {t('scripts.python.configDesc')}
               </p>
               <CodeBlock
                 language="ini"
                 title="matplotlibrc"
-                code={`# 접근성 최적화 matplotlib 설정
+                code={`# accessibility-optimized matplotlib settings
 
-# 폰트 설정
+# font settings
 font.family: sans-serif
 font.sans-serif: Arial, Helvetica, DejaVu Sans
 font.size: 12
 
-# 축 설정
+# axis settings
 axes.labelsize: 14
 axes.titlesize: 16
 axes.linewidth: 1.5
 axes.edgecolor: black
 axes.prop_cycle: cycler('color', ['000000', 'E69F00', '56B4E9', '009E73', 'F0E442', '0072B2', 'D55E00', 'CC79A7'])
 
-# 범례 설정
+# legend settings
 legend.fontsize: 12
 legend.frameon: True
 legend.fancybox: False
 legend.shadow: False
 legend.edgecolor: black
 
-# 그리드 설정
+# grid settings
 grid.alpha: 0.3
 grid.linestyle: --
 
-# 선 설정
+# line settings
 lines.linewidth: 2.5
 lines.markersize: 6
 
-# 틱 설정
+# Tick settings
 xtick.labelsize: 12
 ytick.labelsize: 12
 xtick.major.width: 1.5
 ytick.major.width: 1.5
 
-# 그림 설정
+# Figure settings
 figure.titlesize: 18
 figure.dpi: 100
 savefig.dpi: 300
@@ -124,7 +124,7 @@ savefig.bbox: tight
 savefig.format: pdf`}
               />
               <div className="text-sm text-muted-foreground mt-4">
-                <strong>설치 위치:</strong>
+                <strong>{t('scripts.python.installPath')}</strong>
                 <code className="block mt-2 p-3 bg-muted rounded">
                   ~/.matplotlib/matplotlibrc
                 </code>
@@ -144,49 +144,49 @@ savefig.format: pdf`}
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold text-foreground">install_packages.R</h3>
-                <span className="text-sm text-muted-foreground">R 패키지 설치</span>
+                <span className="text-sm text-muted-foreground">{t('scripts.r.package')}</span>
               </div>
               <p className="text-muted-foreground">
-                접근성 준수 시각화를 위한 R 패키지 일괄 설치 스크립트
+                {t('scripts.r.packageDesc')}
               </p>
               <CodeBlock
                 language="r"
                 title="install_packages.R"
-                code={`# 접근성 데이터 시각화 패키지 설치 스크립트
+                code={`# Accessible Data Visualization Package Installation Script
 
-# 기본 시각화
+# Basic visualization
 install.packages("ggplot2")
 install.packages("lattice")
 
-# 색상 팔레트
+# color palette
 install.packages("viridis")
 install.packages("RColorBrewer")
 install.packages("colorspace")
 
-# 색맹 시뮬레이션
+# colorblind simulation
 install.packages("colorBlindness")
 install.packages("dichromat")
 
-# 테마 및 스타일
+# Themes and styles
 install.packages("ggthemes")
 install.packages("scales")
 
-# 다중 플롯
+# Multiple plots
 install.packages("gridExtra")
 install.packages("patchwork")
 
-# 인터랙티브 차트
+# Interactive charts
 install.packages("plotly")
 
-# 데이터 조작
+# Data manipulation
 install.packages("dplyr")
 install.packages("tidyr")
 
-# 패키지 설치 확인
-cat("\\n모든 패키지가 설치되었습니다!\\n")`}
+# Package installation verification
+cat("\\nAll packages have been installed!\\n")`}
               />
               <div className="text-sm text-muted-foreground mt-4">
-                <strong>실행 방법:</strong>
+                <strong>{t('scripts.r.runTitle')}</strong>
                 <code className="block mt-2 p-3 bg-muted rounded">
                   source("install_packages.R")
                 </code>
@@ -198,29 +198,29 @@ cat("\\n모든 패키지가 설치되었습니다!\\n")`}
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold text-foreground">.Rprofile</h3>
-                <span className="text-sm text-muted-foreground">R 환경 설정</span>
+                <span className="text-sm text-muted-foreground">{t('scripts.r.env')}</span>
               </div>
               <p className="text-muted-foreground">
-                R 시작 시 자동으로 로드되는 접근성 설정
+                {t('scripts.r.envDesc')}
               </p>
               <CodeBlock
                 language="r"
                 title=".Rprofile"
-                code={`# 접근성 최적화 R 환경 설정
+                code={`# accessibility-optimized R environment settings
 
-# Okabe-Ito 색상 팔레트
+# Okabe-Ito color palette
 .okabe_ito <- c(
   "#000000", "#E69F00", "#56B4E9", "#009E73",
   "#F0E442", "#0072B2", "#D55E00", "#CC79A7"
 )
 
-# 기본 색상 팔레트 설정
+# Default color palette settings
 options(
   ggplot2.discrete.colour = .okabe_ito,
   ggplot2.discrete.fill = .okabe_ito
 )
 
-# 기본 테마 설정
+# Default theme settings
 library(ggplot2)
 theme_set(
   theme_minimal(base_size = 14) +
@@ -232,13 +232,13 @@ theme_set(
   )
 )
 
-# 환경 변수
+# Environment variables
 Sys.setenv(R_HISTSIZE = 10000)
 
-cat("접근성 설정이 로드되었습니다!\\n")`}
+cat("Accessibility settings loaded!\\n")`}
               />
               <div className="text-sm text-muted-foreground mt-4">
-                <strong>설치 위치:</strong>
+                <strong>{t('scripts.python.installPath')}</strong>
                 <code className="block mt-2 p-3 bg-muted rounded">
                   ~/.Rprofile
                 </code>
@@ -258,32 +258,32 @@ cat("접근성 설정이 로드되었습니다!\\n")`}
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold text-foreground">accessible_article.tex</h3>
-                <span className="text-sm text-muted-foreground">논문 템플릿</span>
+                <span className="text-sm text-muted-foreground">{t('templates.paper')}</span>
               </div>
               <p className="text-muted-foreground">
-                PDF/UA 준수 학술 논문 LaTeX 템플릿
+                {t('templates.paperDesc')}
               </p>
               <CodeBlock
                 language="latex"
                 title="accessible_article.tex"
                 code={`\\documentclass[12pt]{article}
 
-% 접근성 패키지
+% Accessibility packages
 \\usepackage[a-2u]{pdfx}
 \\usepackage[tagged]{accessibility}
 \\usepackage{fontspec}
 \\usepackage[hidelinks]{hyperref}
 \\usepackage{graphicx}
 
-% 폰트 설정
+% Font settings
 \\setmainfont{Arial}
 \\setsansfont{Helvetica}
 \\setmonofont{Courier New}
 
-% 행간 설정
+% Line spacing settings
 \\linespread{1.5}
 
-% 문서 메타데이터
+% Document metadata
 \\hypersetup{
     pdftitle={Your Article Title},
     pdfauthor={Author Name},
@@ -292,7 +292,7 @@ cat("접근성 설정이 로드되었습니다!\\n")`}
     pdflang={en-US}
 }
 
-% 그림 매크로
+% Figure macro
 \\newcommand{\\accessiblefigure}[4]{
   \\begin{figure}[ht]
     \\centering
@@ -317,7 +317,7 @@ Your abstract here...
 \\section{Introduction}
 Your content here...
 
-% 접근성 높은 그림 예시
+% Accessible figure example
 \\accessiblefigure{0.8}{figure1}{
   Caption text
 }{
@@ -350,29 +350,29 @@ Conclusion...
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold text-foreground">accessible_styles.css</h3>
-                <span className="text-sm text-muted-foreground">CSS 템플릿</span>
+                <span className="text-sm text-muted-foreground">{t('templates.css')}</span>
               </div>
               <p className="text-muted-foreground">
-                WCAG 2.2 AA 준수 CSS 스타일 템플릿
+                {t('templates.cssDesc')}
               </p>
               <CodeBlock
                 language="css"
                 title="accessible_styles.css"
-                code={`/* 접근성 최적화 CSS */
+                code={`/* accessibility-optimized CSS */
 
-/* 기본 타이포그래피 */
+/* basic typography */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   word-spacing: 0.05em;
-  color: #000;
-  background: #fff;
+  color: hsl(222 47% 11%);
+  background: hsl(0 0% 98%);
 }
 
-/* 제목 */
+/* headings */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-top: 2em;
@@ -384,13 +384,13 @@ h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.5em; }
 
-/* 문단 */
+/* paragraphs */
 p {
   margin-bottom: 1.5em;
   max-width: 70ch;
 }
 
-/* 링크 */
+/* links */
 a {
   color: #0072B2;
   text-decoration: underline;
@@ -405,7 +405,7 @@ a:focus {
   outline-offset: 2px;
 }
 
-/* 버튼 */
+/* buttons */
 button {
   min-width: 44px;
   min-height: 44px;
@@ -419,7 +419,7 @@ button:focus {
   outline-offset: 2px;
 }
 
-/* 스크린 리더 전용 */
+/* screen reader only */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -432,25 +432,25 @@ button:focus {
   border-width: 0;
 }
 
-/* 고대비 모드 */
+/* high contrast mode */
 @media (prefers-contrast: high) {
   body {
-    background: #000;
-    color: #fff;
+    background: hsl(222 47% 11%);
+    color: hsl(0 0% 98%);
   }
-  
+
   a {
     color: #56B4E9;
   }
 }
 
-/* 다크 모드 */
+/* dark mode */
 @media (prefers-color-scheme: dark) {
   body {
-    background: #1a1a1a;
-    color: #e0e0e0;
+    background: hsl(217 33% 17%);
+    color: hsl(0 0% 98%);
   }
-  
+
   a {
     color: #56B4E9;
   }
@@ -463,19 +463,19 @@ button:focus {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold text-foreground">.editorconfig</h3>
-                <span className="text-sm text-muted-foreground">코딩 표준</span>
+                <span className="text-sm text-muted-foreground">{t('standards.coding')}</span>
               </div>
               <p className="text-muted-foreground">
-                일관된 코드 스타일을 위한 EditorConfig 설정
+                {t('standards.codingDesc')}
               </p>
               <CodeBlock
                 language="ini"
                 title=".editorconfig"
-                code={`# EditorConfig - 접근성 코드 표준
+                code={`# EditorConfig - accessibility code standards
 
 root = true
 
-# 모든 파일
+# All files
 [*]
 charset = utf-8
 end_of_line = lf
@@ -507,23 +507,23 @@ indent_size = 2`}
 
         {/* Usage Guide */}
         <Card className="p-6 bg-muted/50">
-          <h2 className="text-2xl font-bold text-foreground mb-4">사용 안내</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-4">{t('instructions.title')}</h2>
           <div className="space-y-4 text-muted-foreground">
             <div>
-              <h3 className="font-semibold text-foreground mb-2">1. 코드 복사</h3>
-              <p>각 코드 블록 우측 상단의 복사 버튼을 클릭하여 코드를 복사하세요.</p>
+              <h3 className="font-semibold text-foreground mb-2">{t('instructions.step1.title')}</h3>
+              <p>{t('instructions.step1.desc')}</p>
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-2">2. 파일 생성</h3>
-              <p>복사한 코드를 해당 파일명으로 저장하세요 (예: requirements.txt).</p>
+              <h3 className="font-semibold text-foreground mb-2">{t('instructions.step2.title')}</h3>
+              <p>{t('instructions.step2.desc')}</p>
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-2">3. 환경 적용</h3>
-              <p>각 파일의 설명에 따라 적절한 위치에 배치하고 설치/적용하세요.</p>
+              <h3 className="font-semibold text-foreground mb-2">{t('instructions.step3.title')}</h3>
+              <p>{t('instructions.step3.desc')}</p>
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-2">4. 커스터마이즈</h3>
-              <p>필요에 따라 설정을 수정하여 사용하세요.</p>
+              <h3 className="font-semibold text-foreground mb-2">{t('instructions.step4.title')}</h3>
+              <p>{t('instructions.step4.desc')}</p>
             </div>
           </div>
         </Card>

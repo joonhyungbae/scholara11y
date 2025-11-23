@@ -6,10 +6,8 @@ import commonEn from './locales/en/common.json';
 import commonKo from './locales/ko/common.json';
 import homeEn from './locales/en/home.json';
 import homeKo from './locales/ko/home.json';
-import goldenStandardEn from './locales/en/goldenStandard.json';
-import goldenStandardKo from './locales/ko/goldenStandard.json';
-import colorsEn from './locales/en/colors.json';
-import colorsKo from './locales/ko/colors.json';
+import proposedStandardEn from './locales/en/proposedStandard.json';
+import proposedStandardKo from './locales/ko/proposedStandard.json';
 import typographyEn from './locales/en/typography.json';
 import typographyKo from './locales/ko/typography.json';
 import altTextEn from './locales/en/altText.json';
@@ -26,6 +24,8 @@ import downloadsEn from './locales/en/downloads.json';
 import downloadsKo from './locales/ko/downloads.json';
 import referencesEn from './locales/en/references.json';
 import referencesKo from './locales/ko/references.json';
+import creditEn from './locales/en/credit.json';
+import creditKo from './locales/ko/credit.json';
 
 i18n
   .use(LanguageDetector)
@@ -35,8 +35,7 @@ i18n
       en: {
         common: commonEn,
         home: homeEn,
-        goldenStandard: goldenStandardEn,
-        colors: colorsEn,
+        proposedStandard: proposedStandardEn,
         typography: typographyEn,
         altText: altTextEn,
         regulations: regulationsEn,
@@ -45,12 +44,12 @@ i18n
         publishers: publishersEn,
         downloads: downloadsEn,
         references: referencesEn,
+        credit: creditEn,
       },
       ko: {
         common: commonKo,
         home: homeKo,
-        goldenStandard: goldenStandardKo,
-        colors: colorsKo,
+        proposedStandard: proposedStandardKo,
         typography: typographyKo,
         altText: altTextKo,
         regulations: regulationsKo,
@@ -59,6 +58,7 @@ i18n
         publishers: publishersKo,
         downloads: downloadsKo,
         references: referencesKo,
+        credit: creditKo,
       },
     },
     lng: 'en',

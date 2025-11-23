@@ -154,5 +154,101 @@
       "w3c": "W3C PDF Techniques for WCAG",
       "pac": "PAC 2024 User Guide"
     }
+  },
+  "checklistItems": {
+    "logicalOrder": "Logical reading order:",
+    "logicalOrderDesc": "Content arranged in meaningful sequence",
+    "altText": "Image alt text:",
+    "altTextDesc": "Add descriptions to all images and figures",
+    "tableHeaders": "Table headers:",
+    "tableHeadersDesc": "Clearly define row/column headers in tables",
+    "embedFonts": "Font embedding:",
+    "embedFontsDesc": "Include all fonts in PDF",
+    "completeMetadata": "Complete metadata:",
+    "completeMetadataDesc": "Enter author, subject, keywords, etc.",
+    "colorContrast": "Color contrast:",
+    "colorContrastDesc": "Text to background contrast 4.5:1 or higher",
+    "addBookmarks": "Add bookmarks:",
+    "addBookmarksDesc": "Add navigation bookmarks for each section",
+    "adobeTitle": "Open tools:",
+    "adobeTitleDesc": "Tools → Accessibility → Full Check",
+    "adobeOption": "Select options:",
+    "adobeOptionDesc": "Check 'Create reports and comments'",
+    "adobeExecute": "Run check:",
+    "adobeExecuteDesc": "Click Start button",
+    "adobeFix": "Fix issues:",
+    "adobeFixDesc": "Right-click red-marked items to fix",
+    "adobeRecheck": "Recheck:",
+    "adobeRecheckDesc": "Repeat until all items pass",
+    "adobeFinal": "Final verification:",
+    "adobeFinalDesc": "Additional validation with PAC 2024",
+    "issueTagMissing": "Missing tags",
+    "issueTagMissingDesc": "Document lacks tag structure",
+    "issueTagMissingFix": "Run 'Add Tags to Document' in Acrobat Pro, then verify reading order",
+    "issueAltMissing": "Missing alt text",
+    "issueAltMissingDesc": "Images lack alt text",
+    "issueAltMissingFix": "Right-click each image → Properties → Add alt text",
+    "issueWrongOrder": "Wrong reading order",
+    "issueWrongOrderDesc": "Content not read in logical order",
+    "issueWrongOrderFix": "Tools → Accessibility → Reading Order → Rearrange",
+    "issueLowContrast": "Low color contrast",
+    "issueLowContrastDesc": "Text and background contrast is low",
+    "issueLowContrastFix": "Modify colors in source document, then regenerate PDF"
+  },
+  "tools": {
+    "pac": {
+      "description": "Free PDF accessibility checker. Automatically verifies PDF/UA standard compliance.",
+      "featuresTitle": "Validation items:",
+      "features": {
+        "tags": "Tag structure inspection",
+        "alt": "Alt text verification",
+        "reading": "Reading order analysis",
+        "metadata": "Metadata validation"
+      },
+      "download": "Download PAC"
+    },
+    "acrobat": {
+      "description": "Professional PDF editing and accessibility checking tool. Provides detailed accessibility reports.",
+      "featuresTitle": "Key features:",
+      "features": {
+        "autoTag": "Automatic tag generation",
+        "readingOrder": "Reading order editing",
+        "bulkAlt": "Bulk alt text addition",
+        "fullCheck": "Full accessibility check"
+      },
+      "guide": "View accessibility guide"
+    },
+    "nvda": {
+      "title": "NVDA Screen Reader",
+      "description": "Free open-source screen reader. Can test actual PDF document accessibility.",
+      "methodsTitle": "Testing methods:",
+      "methods": {
+        "readingOrder": "Verify logical reading order",
+        "altText": "Test alt text reading",
+        "tables": "Check table navigation",
+        "links": "Verify link accessibility"
+      },
+      "download": "Download NVDA"
+    },
+    "verapdf": {
+      "description": "PDF/A standard validation tool. Verifies long-term preservation PDF formats.",
+      "scopeTitle": "Validation scope:",
+      "scope": {
+        "compliance": "PDF/A-2u compliance check",
+        "fonts": "Font embedding inspection",
+        "colors": "Color profile verification",
+        "metadata": "Metadata validation"
+      },
+      "download": "Download veraPDF"
+    }
+  },
+  "latexSettings": {
+    "title": "LaTeX PDF/UA Settings"
+  },
+  "adobeSteps": {
+    "title": "Adobe Acrobat Pro Accessibility Check Steps"
+  },
+  "commonIssues": {
+    "title": "Common Issues and Solutions"
   }
 }

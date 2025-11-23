@@ -58,13 +58,12 @@ const References = () => {
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
-                    <h3 className="text-xl font-semibold text-foreground">PDF/UA (ISO 14289-1)</h3>
+                    <h3 className="text-xl font-semibold text-foreground">{t('standards.pdfua.title')}</h3>
                     <p className="text-muted-foreground">
-                      PDF Universal Accessibility international standard.
-                      Requirements and validation methods for creating accessible PDF documents.
+                      {t('standards.pdfua.description')}
                     </p>
                     <div className="flex items-center gap-2 text-sm text-primary">
-                      <span className="font-medium">ISO 표준</span>
+                      <span className="font-medium">{t('standards.pdfua.title')}</span>
                     </div>
                   </div>
                   <ExternalLink className="h-5 w-5 text-primary flex-shrink-0" />
@@ -81,13 +80,12 @@ const References = () => {
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
-                    <h3 className="text-xl font-semibold text-foreground">MathML Accessibility</h3>
+                    <h3 className="text-xl font-semibold text-foreground">{t('mathml.title')}</h3>
                     <p className="text-muted-foreground">
-                      수학 표기법의 접근성 표준. 
-                      스크린 리더가 읽을 수 있는 수식 작성 가이드.
+                      {t('standards.aria.description')}
                     </p>
                     <div className="flex items-center gap-2 text-sm text-primary">
-                      <span className="font-medium">W3C 권장사항</span>
+                      <span className="font-medium">{t('standards.aria.title')}</span>
                     </div>
                   </div>
                   <ExternalLink className="h-5 w-5 text-primary flex-shrink-0" />
@@ -104,13 +102,12 @@ const References = () => {
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
-                    <h3 className="text-xl font-semibold text-foreground">ARIA Authoring Practices</h3>
+                    <h3 className="text-xl font-semibold text-foreground">{t('aria.authoring.title')}</h3>
                     <p className="text-muted-foreground">
-                      웹 애플리케이션 접근성 향상을 위한 ARIA 속성 사용 가이드.
-                      역할, 상태, 속성 패턴 모음.
+                      {t('guidelines.w3cTechniques.description')}
                     </p>
                     <div className="flex items-center gap-2 text-sm text-primary">
-                      <span className="font-medium">WAI 가이드</span>
+                      <span className="font-medium">{t('guidelines.w3cTechniques.title')}</span>
                     </div>
                   </div>
                   <ExternalLink className="h-5 w-5 text-primary flex-shrink-0" />
@@ -136,13 +133,13 @@ const References = () => {
             >
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-foreground">PAC 2024</h3>
+                  <h3 className="text-lg font-semibold text-foreground">{t('tools.checkers.pac.name')}</h3>
                   <p className="text-sm text-muted-foreground">
-                    무료 PDF 접근성 검사 도구. PDF/UA 표준 검증.
+                    {t('tools.checkers.pac.description')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <ExternalLink className="h-4 w-4" />
-                    다운로드
+                    {t('download')}
                   </div>
                 </div>
               </Card>
@@ -156,13 +153,13 @@ const References = () => {
             >
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-foreground">Color Oracle</h3>
+                  <h3 className="text-lg font-semibold text-foreground">{t('tools.simulators.colorOracle.name')}</h3>
                   <p className="text-sm text-muted-foreground">
-                    실시간 색맹 시뮬레이터. 화면을 색맹 시점으로 확인.
+                    {t('tools.simulators.colorOracle.description')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <ExternalLink className="h-4 w-4" />
-                    다운로드
+                    {t('download')}
                   </div>
                 </div>
               </Card>
@@ -176,13 +173,13 @@ const References = () => {
             >
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-foreground">Axe DevTools</h3>
+                  <h3 className="text-lg font-semibold text-foreground">{t('tools.checkers.axe.name')}</h3>
                   <p className="text-sm text-muted-foreground">
-                    브라우저 확장 프로그램. 웹 페이지 접근성 자동 검사.
+                    {t('tools.checkers.axe.description')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <ExternalLink className="h-4 w-4" />
-                    다운로드
+                    {t('download')}
                   </div>
                 </div>
               </Card>
@@ -196,13 +193,13 @@ const References = () => {
             >
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-foreground">WAVE</h3>
+                  <h3 className="text-lg font-semibold text-foreground">{t('tools.checkers.wave.name')}</h3>
                   <p className="text-sm text-muted-foreground">
-                    웹 접근성 평가 도구. 시각적 피드백 제공.
+                    {t('tools.checkers.wave.description')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <ExternalLink className="h-4 w-4" />
-                    사용하기
+{t('buttons.use')}
                   </div>
                 </div>
               </Card>
@@ -216,13 +213,13 @@ const References = () => {
             >
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-foreground">Contrast Ratio</h3>
+                  <h3 className="text-lg font-semibold text-foreground">{t('tools.contrast.webaim.name')}</h3>
                   <p className="text-sm text-muted-foreground">
-                    색상 대비율 계산기. WCAG 준수 여부 즉시 확인.
+                    {t('tools.contrast.webaim.description')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <ExternalLink className="h-4 w-4" />
-                    사용하기
+{t('buttons.use')}
                   </div>
                 </div>
               </Card>
@@ -236,13 +233,13 @@ const References = () => {
             >
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-foreground">NVDA</h3>
+                  <h3 className="text-lg font-semibold text-foreground">{t('tools.screenReaders.nvda.name')}</h3>
                   <p className="text-sm text-muted-foreground">
-                    무료 오픈소스 스크린 리더. 실제 사용자 경험 테스트.
+                    {t('tools.screenReaders.nvda.description')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <ExternalLink className="h-4 w-4" />
-                    다운로드
+                    {t('download')}
                   </div>
                 </div>
               </Card>
@@ -267,10 +264,9 @@ const References = () => {
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
-                    <h3 className="text-xl font-semibold text-foreground">DIAGRAM Center</h3>
+                    <h3 className="text-xl font-semibold text-foreground">{t('organizations.webaim.name')}</h3>
                     <p className="text-muted-foreground">
-                      이미지와 시각 자료의 접근성 향상에 특화된 리소스 센터.
-                      대체 텍스트 작성 가이드와 모범 사례.
+                      {t('organizations.webaim.description')}
                     </p>
                   </div>
                   <ExternalLink className="h-5 w-5 text-primary flex-shrink-0" />
@@ -287,10 +283,9 @@ const References = () => {
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
-                    <h3 className="text-xl font-semibold text-foreground">WebAIM Training</h3>
+                    <h3 className="text-xl font-semibold text-foreground">{t('organizations.courses.deque.name')}</h3>
                     <p className="text-muted-foreground">
-                      웹 접근성 전문 교육 기관. 온라인 강좌, 워크샵, 
-                      인증 프로그램 제공.
+                      {t('learning.courses.deque.description')}
                     </p>
                   </div>
                   <ExternalLink className="h-5 w-5 text-primary flex-shrink-0" />
@@ -307,10 +302,9 @@ const References = () => {
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
-                    <h3 className="text-xl font-semibold text-foreground">The A11y Project</h3>
+                    <h3 className="text-xl font-semibold text-foreground">{t('organizations.a11y.name')}</h3>
                     <p className="text-muted-foreground">
-                      커뮤니티 기반 접근성 리소스. 체크리스트, 가이드, 
-                      실용적 팁 모음.
+                      {t('organizations.a11y.description')}
                     </p>
                   </div>
                   <ExternalLink className="h-5 w-5 text-primary flex-shrink-0" />
@@ -327,10 +321,9 @@ const References = () => {
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
-                    <h3 className="text-xl font-semibold text-foreground">WAI Tutorials</h3>
+                    <h3 className="text-xl font-semibold text-foreground">{t('organizations.tutorials.name')}</h3>
                     <p className="text-muted-foreground">
-                      W3C 공식 접근성 튜토리얼. 페이지 구조, 메뉴, 이미지, 
-                      표, 폼 등 실전 가이드.
+                      {t('learning.tutorials.description')}
                     </p>
                   </div>
                   <ExternalLink className="h-5 w-5 text-primary flex-shrink-0" />
@@ -356,13 +349,13 @@ const References = () => {
             >
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-foreground">W3C Accessibility Community</h3>
+                  <h3 className="text-lg font-semibold text-foreground">{t('organizations.w3c.communityName')}</h3>
                   <p className="text-sm text-muted-foreground">
-                    공식 W3C 접근성 커뮤니티 그룹
+                    {t('organizations.w3c.community')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <ExternalLink className="h-4 w-4" />
-                    참여하기
+{t('buttons.join')}
                   </div>
                 </div>
               </Card>
@@ -376,13 +369,13 @@ const References = () => {
             >
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-foreground">r/accessibility</h3>
+                  <h3 className="text-lg font-semibold text-foreground">{t('organizations.reddit.name')}</h3>
                   <p className="text-sm text-muted-foreground">
-                    Reddit 접근성 커뮤니티
+                    {t('organizations.reddit.description')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <ExternalLink className="h-4 w-4" />
-                    참여하기
+{t('buttons.join')}
                   </div>
                 </div>
               </Card>
@@ -396,13 +389,13 @@ const References = () => {
             >
               <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-foreground">a11y.coffee</h3>
+                  <h3 className="text-lg font-semibold text-foreground">{t('organizations.newsletter.name')}</h3>
                   <p className="text-sm text-muted-foreground">
-                    접근성 뉴스레터 및 블로그
+                    {t('learning.additional.communities.newsletter.name')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <ExternalLink className="h-4 w-4" />
-                    구독하기
+{t('buttons.subscribe')}
                   </div>
                 </div>
               </Card>
@@ -416,14 +409,14 @@ const References = () => {
           
           <Card className="p-6">
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-foreground">주요 참고 논문</h3>
+              <h3 className="text-xl font-semibold text-foreground">{t('research.title')}</h3>
               <ul className="space-y-4">
                 <li className="border-l-2 border-primary pl-4">
                   <p className="font-semibold text-foreground">
                     "Color Universal Design (CUD)" - Okabe & Ito (2008)
                   </p>
                   <p className="text-sm text-muted-foreground mt-1">
-                    색맹 안전 색상 팔레트 개발과 적용. 학술 출판에서 널리 사용되는 Okabe-Ito 팔레트의 원론.
+                    {t('research.okabe.description')}
                   </p>
                 </li>
                 <li className="border-l-2 border-primary pl-4">
@@ -431,7 +424,7 @@ const References = () => {
                     "Accessible Data Visualization" - IEEE VIS (2021)
                   </p>
                   <p className="text-sm text-muted-foreground mt-1">
-                    데이터 시각화의 접근성 향상 방법. 다중 모달리티와 대체 표현 전략.
+                    {t('research.visualization.description')}
                   </p>
                 </li>
                 <li className="border-l-2 border-primary pl-4">
@@ -439,7 +432,7 @@ const References = () => {
                     "Evaluating the Accessibility of Scientific Documents" - CHI (2022)
                   </p>
                   <p className="text-sm text-muted-foreground mt-1">
-                    학술 문서의 접근성 평가 프레임워크. PDF/UA 준수 현황과 개선 방향.
+                    {t('research.framework.description')}
                   </p>
                 </li>
               </ul>
@@ -449,23 +442,23 @@ const References = () => {
 
         {/* Additional Resources */}
         <Card className="p-6 bg-muted/50">
-          <h2 className="text-2xl font-bold text-foreground mb-4">추가 리소스</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-4">{t('learning.additional.title')}</h2>
           <div className="grid gap-4 md:grid-cols-2">
             <div>
-              <h3 className="font-semibold text-foreground mb-2">유용한 블로그</h3>
+              <h3 className="font-semibold text-foreground mb-2">{t('learning.additional.blogs.title')}</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Inclusive Design 24 - 연례 온라인 컨퍼런스</li>
-                <li>• Deque Blog - 접근성 기술 동향</li>
-                <li>• Adrian Roselli - 실무 접근성 팁</li>
-                <li>• Sara Soueidan - 프론트엔드 접근성</li>
+                <li>• {t('learning.additional.blogs.items.inclusive')}</li>
+                <li>• {t('learning.additional.blogs.items.deque')}</li>
+                <li>• {t('learning.additional.blogs.items.adrian')}</li>
+                <li>• {t('learning.additional.blogs.items.sara')}</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-2">팟캐스트</h3>
+              <h3 className="font-semibold text-foreground mb-2">{t('learning.additional.podcasts.title')}</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• A11y Rules - 접근성 규칙과 사례</li>
-                <li>• Accessibility Craft - 실전 기법</li>
-                <li>• EBU Access Cast - 유럽 방송 접근성</li>
+                <li>• {t('learning.additional.podcasts.items.rules')}</li>
+                <li>• {t('learning.additional.podcasts.items.craft')}</li>
+                <li>• {t('learning.additional.podcasts.items.ebu')}</li>
               </ul>
             </div>
           </div>

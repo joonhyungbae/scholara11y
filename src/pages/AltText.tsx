@@ -134,7 +134,7 @@ const AltText = () => {
   <img src="chart.svg" 
        alt="2020-2024년 성장률 막대 그래프"
        aria-describedby="chart-desc">
-  <figcaption>Figure 1: Annual Growth Rate</figcaption>
+  <figcaption>그림 1: 연간 성장률</figcaption>
   <div id="chart-desc" class="sr-only">
     막대 그래프는 연간 성장률 변화를 보여줍니다. 
     2020년 15%, 2021년 28%, 2022년 45%, 2023년 38%, 2024년 30%입니다.
@@ -197,7 +197,7 @@ const AltText = () => {
   <img src="multi-panel.svg"
        alt="3개 패널로 구성된 실험 결과"
        aria-describedby="panel-desc">
-  <figcaption>Figure 2: 온도별 반응 속도 변화</figcaption>
+  <figcaption>그림 2: 온도별 반응 속도 변화</figcaption>
   
   <div id="panel-desc" class="sr-only">
     <p>패널 A: 25°C에서 선형 증가 패턴 (R² = 0.95)</p>
@@ -236,7 +236,7 @@ const AltText = () => {
 }
 
 % 사용 예시
-\\accessiblefigure{0.8}{results-chart}{Experimental Results}{
+\\accessiblefigure{0.8}{results-chart}{실험 결과}{
   막대 그래프는 3개 조건에서의 평균 반응 시간을 보여줍니다.
   대조군 250ms, 조건A 180ms, 조건B 150ms로 
   조건B에서 가장 빠른 반응을 보였습니다.
@@ -343,7 +343,7 @@ const AltText = () => {
           <CodeBlock
             language="css"
             title={t('cssCodeTitle')}
-            code={`/* 스크린 리더 전용 콘텐츠 (시각적으로 숨김) */
+            code={`/* Screen reader only content (visually hidden) */
 .sr-only {
   position: absolute;
   width: 1px;

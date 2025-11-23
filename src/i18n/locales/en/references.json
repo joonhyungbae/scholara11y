@@ -64,12 +64,12 @@
       },
       "wave": {
         "name": "WAVE",
-        "description": "Web accessibility evaluation tool",
+        "description": "Web accessibility evaluation tool. Provides visual feedback.",
         "url": "https://wave.webaim.org/"
       },
       "axe": {
         "name": "axe DevTools",
-        "description": "Browser extension for accessibility testing",
+        "description": "Browser extension. Automated web page accessibility inspection.",
         "url": "https://www.deque.com/axe/devtools/"
       }
     },
@@ -77,7 +77,7 @@
       "title": "Colorblindness Simulators",
       "colorOracle": {
         "name": "Color Oracle",
-        "description": "Free colorblindness simulator (Win/Mac/Linux)",
+        "description": "Real-time colorblindness simulator. View screen from colorblind perspective.",
         "url": "https://colororacle.org/"
       },
       "coblis": {
@@ -90,7 +90,7 @@
       "title": "Contrast Checkers",
       "webaim": {
         "name": "WebAIM Contrast Checker",
-        "description": "Online contrast ratio calculator",
+        "description": "Color contrast ratio calculator. Check WCAG compliance instantly.",
         "url": "https://webaim.org/resources/contrastchecker/"
       },
       "tanaguru": {
@@ -103,7 +103,7 @@
       "title": "Screen Readers",
       "nvda": {
         "name": "NVDA",
-        "description": "Free screen reader for Windows",
+        "description": "Free open-source screen reader. Test real user experience.",
         "url": "https://www.nvaccess.org/"
       },
       "jaws": {
@@ -136,7 +136,8 @@
     "w3c": {
       "name": "W3C Web Accessibility Initiative (WAI)",
       "description": "Leading organization for web accessibility standards",
-      "url": "https://www.w3.org/WAI/"
+      "url": "https://www.w3.org/WAI/",
+      "community": "Official W3C Accessibility Community Group"
     },
     "webaim": {
       "name": "WebAIM",
@@ -195,6 +196,129 @@
       "inclusive": "Inclusive Design Patterns by Heydon Pickering",
       "practical": "Practical Web Inclusion and Accessibility by Ashley Firth",
       "accessibility": "Accessibility for Everyone by Laura Kalbag"
+    },
+    "additional": {
+      "title": "Additional Resources",
+      "blogs": {
+        "title": "Useful Blogs",
+        "items": {
+          "inclusive": "Inclusive Design 24 - Annual online conference",
+          "deque": "Deque Blog - Accessibility technology trends",
+          "adrian": "Adrian Roselli - Practical accessibility tips",
+          "sara": "Sara Soueidan - Frontend accessibility"
+        }
+      },
+      "podcasts": {
+        "title": "Podcasts",
+        "items": {
+          "rules": "A11y Rules - Accessibility rules and cases",
+          "craft": "Accessibility Craft - Practical techniques",
+          "ebu": "EBU Access Cast - European broadcasting accessibility"
+        }
+      }
+    },
+    "additional": {
+      "title": "Additional Resources",
+      "blogs": {
+        "title": "Useful Blogs",
+        "items": {
+          "inclusive": "Inclusive Design 24 - Annual online conference",
+          "deque": "Deque Blog - Accessibility technology trends",
+          "adrian": "Adrian Roselli - Practical accessibility tips",
+          "sara": "Sara Soueidan - Frontend accessibility"
+        }
+      },
+      "podcasts": {
+        "title": "Podcasts",
+        "items": {
+          "rules": "A11y Rules - Accessibility rules and cases",
+          "craft": "Accessibility Craft - Practical techniques",
+          "ebu": "EBU Access Cast - European broadcasting accessibility"
+        }
+      },
+      "communities": {
+        "w3c": {
+          "name": "Official W3C Accessibility Community Group",
+          "description": "Participate in W3C's accessibility working groups and issue discussions."
+        },
+        "reddit": {
+          "name": "Reddit Accessibility Community",
+          "description": "Global community of accessibility experts and practitioners."
+        },
+        "newsletter": {
+          "name": "Accessibility Newsletters & Blogs",
+          "description": "Latest accessibility news, standards updates, and best practices."
+        }
+      }
+    },
+    "research": {
+      "title": "Key Reference Papers"
+    },
+    "buttons": {
+      "use": "Use",
+      "join": "Join",
+      "subscribe": "Subscribe"
+    },
+    "mathml": {
+      "title": "MathML Accessibility"
+    },
+    "aria": {
+      "authoring": {
+        "title": "ARIA Authoring Practices"
+      }
+    },
+    "tools": {
+      "checkers": {
+        "pac": {
+          "name": "PAC 2024"
+        },
+        "wave": {
+          "name": "WAVE"
+        },
+        "axe": {
+          "name": "Axe DevTools"
+        }
+      },
+      "simulators": {
+        "colorOracle": {
+          "name": "Color Oracle"
+        }
+      },
+      "contrast": {
+        "webaim": {
+          "name": "Contrast Ratio"
+        }
+      },
+      "screenReaders": {
+        "nvda": {
+          "name": "NVDA"
+        }
+      }
+    },
+    "organizations": {
+      "webaim": {
+        "name": "DIAGRAM Center"
+      },
+      "courses": {
+        "deque": {
+          "name": "WebAIM Training"
+        }
+      },
+      "a11y": {
+        "name": "The A11y Project"
+      },
+      "tutorials": {
+        "name": "WAI Tutorials"
+      },
+      "w3c": {
+        "communityName": "W3C Accessibility Community"
+      },
+      "reddit": {
+        "name": "r/accessibility"
+      },
+      "newsletter": {
+        "name": "a11y.coffee"
+      }
     }
   }
 }

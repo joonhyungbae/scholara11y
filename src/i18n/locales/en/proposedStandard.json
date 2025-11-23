@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "🏆 2025 Accessibility Visual Design Golden Standard",
+    "title": "2025 Accessibility Visual Design Proposed Standard",
     "subtitle": "Born-Accessible: Optimal Combination for Innate Accessibility",
     "description": "Instantly applicable standard integrating WCAG 2.2 Level AA and global publisher best practices",
     "ctaButton": "Download Quick Start Guide"
@@ -62,12 +62,14 @@
       "contrast": "3. Contrast: Ensure 3:1+ with black borders",
       "dualEncoding": "4. Dual encoding: Color + Pattern",
       "vectorFirst": "5. Vector First: Save as SVG + metadata"
-    }
+    },
+    "pythonFileDownload": "Download Python File",
+    "copyButton": "Copy"
   },
   "validation": {
     "title": "Validation Tool Matrix",
     "item": "Validation Item",
-    "standard": "Golden Standard Value",
+    "standard": "Proposed Standard Value",
     "tool": "Test Tool",
     "test": "Test Now",
     "items": {
@@ -105,11 +107,11 @@
     },
     "css": {
       "title": "CSS Framework",
-      "file": "golden-standard.css (8KB)"
+      "file": "proposed-standard.css (8KB)"
     },
     "latex": {
       "title": "LaTeX Style File",
-      "file": "golden-standard.sty (6KB)"
+      "file": "proposed-standard.sty (6KB)"
     },
     "palette": {
       "title": "Color Palette Set",
@@ -137,8 +139,8 @@
   },
   "synergy": {
     "title": "Integration Synergy of 5 Core Principles",
-    "subtitle": "How the Golden Standard Works",
-    "intro": "The 2025 Golden Standard operates as a complementary system where the 5 core principles are not individual features, but an integrated network. Each principle compensates for others' weaknesses and amplifies their strengths.",
+    "subtitle": "How the Proposed Standard Works",
+    "intro": "The 2025 Proposed Standard operates as a complementary system where the 5 core principles are not individual features, but an integrated network. Each principle compensates for others' weaknesses and amplifies their strengths.",
     "badges": {
       "synergy": "Synergy",
       "application": "Application",
@@ -242,7 +244,7 @@
           "integrated": "SVG metadata + Structured alt text"
         }
       ],
-      "conclusion": "This is the 'Golden Standard': A complete system where all users can access information."
+      "conclusion": "This is the 'Proposed Standard': A complete system where all users can access information."
     }
   }
 }

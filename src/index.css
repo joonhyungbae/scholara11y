@@ -127,3 +127,34 @@ All colors MUST be HSL.
     @apply bg-transparent text-inherit px-0 py-0;
   }
 }
+
+@layer components {
+  /* Design System Utilities */
+  .content-spacing {
+    @apply space-y-12;
+  }
+
+  .section-spacing {
+    @apply space-y-6;
+  }
+
+  .subsection-spacing {
+    @apply space-y-4;
+  }
+
+  .card-hover {
+    @apply transition-all hover:shadow-lg hover:border-primary/50;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent;
+  }
+
+  .border-accent {
+    @apply border-2 border-accent/20;
+  }
+
+  .bg-accent-subtle {
+    @apply bg-accent/5;
+  }
+}

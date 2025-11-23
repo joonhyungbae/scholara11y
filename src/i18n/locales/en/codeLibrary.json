@@ -75,6 +75,15 @@
       "document": "Document any accessibility features you implement"
     }
   },
+  "tabs": {
+    "python": "Python",
+    "r": "R",
+    "javascript": "JavaScript"
+  },
+  "sections": {
+    "pythonExamples": "Python Examples",
+    "javascriptD3": "JavaScript & D3.js"
+  },
   "comments": {
     "wcagCompliant": "WCAG 2.2 compliant chart creation example",
     "settings": "Settings",

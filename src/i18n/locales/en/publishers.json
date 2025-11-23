@@ -17,6 +17,34 @@
         "captions": "Detailed figure captions required"
       }
     },
+    "guideLink": "Official Guide",
+    "colorTitle": "Color Requirements",
+    "colorItems": {
+      "palette": "Okabe-Ito palette recommended",
+      "contrast": "WCAG 2.2 AA luminance contrast 4.5:1 required",
+      "graphics": "Graphic elements contrast 3:1 or higher",
+      "noColorOnly": "Prohibit conveying information using color alone"
+    },
+    "figureTitle": "Figure Preparation",
+    "figureItems": {
+      "format": "Format: EPS, PDF, AI (vector preferred)",
+      "resolution": "Resolution: 300-1200 dpi",
+      "textSize": "Minimum text: 8pt, recommended 10-12pt",
+      "fonts": "Fonts: Arial, Helvetica, etc. sans-serif"
+    },
+    "changesTitle": "2025 Major Changes",
+    "changes": {
+      "oct2025": "2025.10: All new papers PDF tagging mandatory",
+      "apr2026": "2026.04: Full content WCAG 2.2 AA compliance",
+      "aiAltText": "Alt Text AI: Automated alt text generation tool provided"
+    },
+    "checklistTitle": "Pre-submission Checklist",
+    "checklist": {
+      "altText": "All figures include alt text",
+      "contrast": "Color contrast 4.5:1 or higher verified",
+      "tableHeaders": "Tables have header rows/columns specified",
+      "metadata": "PDF metadata completed"
+    },
     "resources": "Author guidelines: https://www.nature.com/nature/for-authors"
   },
   "science": {
@@ -35,6 +63,12 @@
     "tools": "AAAS provides accessibility checking tools for authors",
     "resources": "Instructions: https://www.science.org/content/page/instructions-authors"
   },
+  "publishers": {
+    "elsevier": "Elsevier",
+    "springer": "Springer Nature",
+    "wiley": "Wiley",
+    "taylorFrancis": "Taylor & Francis"
+  },
   "elsevier": {
     "name": "Elsevier",
     "requirements": {
@@ -48,6 +82,34 @@
         "references": "Properly linked references",
         "metadata": "Complete document metadata"
       }
+    },
+    "guideLink": "Official Guide",
+    "colorTitle": "Color Requirements",
+    "colorItems": {
+      "palette": "Okabe-Ito palette recommended",
+      "contrast": "WCAG 2.2 AA luminance contrast 4.5:1 required",
+      "graphics": "Graphic elements contrast 3:1 or higher",
+      "noColorOnly": "Prohibit conveying information using color alone"
+    },
+    "figureTitle": "Figure Preparation",
+    "figureItems": {
+      "format": "Format: EPS, PDF, AI (vector preferred)",
+      "resolution": "Resolution: 300-1200 dpi",
+      "textSize": "Minimum text: 8pt, recommended 10-12pt",
+      "fonts": "Fonts: Arial, Helvetica, etc. sans-serif"
+    },
+    "changesTitle": "2025 Major Changes",
+    "changes": {
+      "oct2025": "2025.10: All new papers PDF tagging mandatory",
+      "apr2026": "2026.04: Full content WCAG 2.2 AA compliance",
+      "aiAltText": "Alt Text AI: Automated alt text generation tool provided"
+    },
+    "checklistTitle": "Pre-submission Checklist",
+    "checklist": {
+      "altText": "All figures include alt text",
+      "contrast": "Color contrast 4.5:1 or higher verified",
+      "tableHeaders": "Tables have header rows/columns specified",
+      "metadata": "PDF metadata completed"
     },
     "support": "Elsevier provides accessibility support for authors",
     "resources": "Guide: https://www.elsevier.com/authors/policies-and-guidelines"
@@ -104,6 +166,29 @@
     "tools": "Submission system includes accessibility checks",
     "resources": "Guidelines: https://plos.org/publish/"
   },
+  "taylorFrancis": {
+    "name": "Taylor & Francis",
+    "guideLink": "Official Guide",
+    "colorTitle": "Color Standards",
+    "colorItems": {
+      "palette": "Okabe-Ito palette used",
+      "contrast": "WCAG 2.2 AA luminance contrast",
+      "dualEncoding": "Color + pattern dual encoding"
+    },
+    "figureTitle": "Figure Specifications",
+    "figureItems": {
+      "format": "Format: EPS, PDF",
+      "resolution": "Resolution: 300-600 dpi",
+      "textSize": "Minimum text: 6pt (special cases), recommended 8-12pt"
+    },
+    "futureTitle": "Future Plans",
+    "futureItems": {
+      "aiTools": "AI-based accessibility tools in development",
+      "pdfua": "Progressive adoption of PDF/UA standards",
+      "education": "Expansion of author education programs"
+    },
+    "resources": "Author center: https://taylorandfrancis.com/about/corporate-responsibility/accessibility-at-taylor-francis/"
+  },
   "ieee": {
     "name": "IEEE",
     "requirements": {
@@ -122,12 +207,73 @@
   },
   "comparison": {
     "title": "Quick Comparison Table",
+    "publishers": {
+      "elsevier": "Elsevier",
+      "springer": "Springer",
+      "wiley": "Wiley",
+      "taylorFrancis": "Taylor & Francis"
+    },
+    "table": {
+      "values": {
+        "colorPalettes": {
+          "elsevier": "Okabe-Ito",
+          "springer": "Wong",
+          "wiley": "ColorBrewer",
+          "taylorFrancis": "Okabe-Ito"
+        },
+        "minTextSizes": {
+          "elsevier": "8pt",
+          "springer": "8pt",
+          "wiley": "8pt",
+          "taylorFrancis": "6pt"
+        },
+        "altTextSizes": {
+          "elsevier": "8-12pt",
+          "springer": "8-12pt",
+          "wiley": "8-11pt",
+          "taylorFrancis": "8-12pt"
+        },
+        "formats": {
+          "elsevier": "EPS, PDF, AI",
+          "springer": "EPS, PDF",
+          "wiley": "EPS, TIFF",
+          "taylorFrancis": "EPS, PDF"
+        },
+        "resolutions": {
+          "elsevier": "300-1200 dpi",
+          "springer": "300-1000 dpi",
+          "wiley": "300-1200 dpi",
+          "taylorFrancis": "300-600 dpi"
+        },
+        "luminance": "4.5:1 (AA)",
+        "aiTools": {
+          "elsevier": "Alt Text AI (2025)",
+          "springer": "Alt Text Assistant",
+          "wiley": "-",
+          "taylorFrancis": "In Development"
+        }
+      }
+    },
     "table": {
       "publisher": "Publisher",
       "wcag": "WCAG Level",
       "pdfua": "PDF/UA",
       "minFont": "Min Font Size",
       "contrast": "Min Contrast",
+      "headers": {
+        "item": "Item",
+        "publisher": "Publisher",
+        "colorPalette": "Color Palette",
+        "minTextSize": "Minimum Text Size",
+        "altText": "Alt Text",
+        "format": "Format",
+        "resolution": "Resolution",
+        "luminance": "Luminance Contrast",
+        "pdfuaRequired": "PDF/UA Required",
+        "aiTools": "AI Tools",
+        "from202510": "From 2025.10",
+        "recommended": "Recommended"
+      },
       "nature": {
         "wcag": "AA (2.1)",
         "pdfua": "Required",
@@ -161,15 +307,14 @@
     }
   },
   "tips": {
-    "title": "General Tips for All Publishers",
+    "title": "General Guidelines",
     "items": {
-      "early": "Consider accessibility from the start, not as an afterthought",
-      "guidelines": "Review publisher guidelines before submission",
-      "tools": "Use accessibility checking tools during preparation",
-      "alt": "Write descriptive alt text for all visual elements",
-      "test": "Test documents with screen readers when possible",
-      "contact": "Contact publisher support if you have questions",
-      "examples": "Review published accessible articles as examples"
+      "contrast": "Minimum color contrast 4.5:1 (WCAG AA) compliance",
+      "altText": "Include alt text for all figures and charts",
+      "colorPalette": "Use colorblind-safe color palettes (Okabe-Ito, etc.)",
+      "dualEncoding": "Dual encoding: color + pattern/line style combination",
+      "directLabeling": "Direct labeling to reduce legend dependency",
+      "vectorFormat": "Prioritize high-resolution vector formats (EPS, PDF)"
     }
   }
 }

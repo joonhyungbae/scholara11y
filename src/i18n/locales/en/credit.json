@@ -1,0 +1,38 @@
+{
+  "title": "Copyright & Credits",
+  "subtitle": "Project Information & Contributors",
+  "project": {
+    "name": "Scholara11y",
+    "description": "To address the challenges researchers face in following various accessibility guidelines when creating figures for academic papers, this project integrates existing guidelines and proposes an optimal combination of standards. While specific publisher requirements should always be prioritized, this standard serves as a practical guide for cases where no specific guidelines are mandated, enabling more efficient academic communication.",
+    "creator": {
+      "name": "Joonhyung Bae / 배준형",
+      "description": {
+        "part1": "PhD Candidate at ",
+        "kaist_ct_link": "KAIST Graduate School of Culture Technology",
+        "part2": " 's ",
+        "maclab_link": "Music and Audio Computing Lab (MACLab)",
+        "part3": ". Currently working as a researcher at KAIST to improve the accessibility of academic content. As a writer and designer, he contributes to enhancing the visual quality of academic communication, with notable experience leading the overall design for ",
+        "ismir_link": "ISMIR 2025 international conference",
+        "part4": "."
+      },
+      "education": "PhD Candidate, KAIST Graduate School of Culture Technology (Music and Audio Computing Lab)",
+      "email": "jh.bae@kaist.ac.kr",
+      "website": "joonhyungbae.com",
+      "links": {
+        "kaist_ct": "KAIST Graduate School of Culture Technology",
+        "maclab": "MACLab (Music and Audio Computing Lab)"
+      },
+      "roles": {
+        "researcher": "Researcher",
+        "writer": "Writer",
+        "designer": "Designer"
+      }
+    }
+  },
+  "license": {
+    "title": "License & Usage Recommendations",
+    "description": "This project encourages free use for research and academic purposes. The Scholara11y proposed standard is developed as a tool to improve accessibility in academic communication, enabling researchers to create visual content more effectively.",
+    "researchUse": "Free to use for research and educational purposes"
+  },
+  "footer": "This project is part of ongoing efforts to improve accessibility in academic communication."
+}

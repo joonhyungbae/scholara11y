@@ -1,4 +1,6 @@
 import { Layout } from "@/components/Layout";
+import { PageHeader } from "@/components/PageHeader";
+import { PageSection } from "@/components/PageSection";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslation } from 'react-i18next';
@@ -62,16 +64,25 @@ Your content here...
 
   const cssCode = `/* Accessible Typography for Web Publications */
 
+/* Using design system colors */
+:root {
+  --text-primary: hsl(222 47% 11%);
+  --bg-primary: hsl(0 0% 98%);
+  --link-color: hsl(221 83% 53%);
+  --link-hover: hsl(221 83% 43%);
+  --code-bg: hsl(210 40% 96%);
+}
+
 /* Base settings */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Arial, Helvetica, sans-serif;
   font-size: 16px;  /* Minimum 16px */
   line-height: 1.5; /* 150% line height */
   letter-spacing: 0.02em;
   word-spacing: 0.05em;
-  color: #1a1a1a;
-  background: #ffffff;
+  color: var(--text-primary);
+  background: var(--bg-primary);
 }
 
 /* Heading hierarchy */
@@ -95,17 +106,17 @@ p {
 
 /* Links */
 a {
-  color: #0066cc;
+  color: var(--link-color);
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
 
 a:hover {
-  color: #0052a3;
+  color: var(--link-hover);
 }
 
 a:focus {
-  outline: 3px solid #0066cc;
+  outline: 3px solid var(--link-color);
   outline-offset: 2px;
 }
 
@@ -113,7 +124,7 @@ a:focus {
 code {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.9em;
-  background: #f5f5f5;
+  background: var(--code-bg);
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
@@ -121,40 +132,33 @@ code {
 /* High contrast mode support */
 @media (prefers-contrast: high) {
   body {
-    background: #000000;
-    color: #ffffff;
+    background: hsl(222 47% 11%);
+    color: hsl(0 0% 98%);
   }
-  
+
   a {
-    color: #4da6ff;
+    color: hsl(221 83% 63%);
   }
-  
+
   code {
-    background: #1a1a1a;
-    color: #ffffff;
+    background: hsl(217 33% 17%);
+    color: hsl(0 0% 98%);
   }
 }`;
 
   return (
     <Layout>
       <div className="space-y-12">
-        <div className="space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight text-foreground">
-            {t('title')}
-          </h1>
-          <p className="text-lg text-muted-foreground">
-            {t('subtitle')}
-          </p>
-        </div>
+        <PageHeader
+          title={t('title')}
+          subtitle={t('subtitle')}
+        />
 
         {/* Core Requirements */}
-        <div className="space-y-6">
-          <div>
-            <h2 className="text-2xl font-bold text-foreground">{t('coreRequirements.title')}</h2>
-            <p className="mt-2 text-muted-foreground">
-              {t('subtitle')}
-            </p>
-          </div>
+        <PageSection
+          title={t('coreRequirements.title')}
+          subtitle={t('subtitle')}
+        >
 
           <div className="grid gap-4 md:grid-cols-2">
             <Card>
@@ -193,48 +197,37 @@ code {
               </CardContent>
             </Card>
           </div>
-        </div>
+        </PageSection>
 
         {/* LaTeX Template */}
-        <div className="space-y-6">
-          <div>
-            <h2 className="text-2xl font-bold text-foreground">{t('latexTitle')}</h2>
-            <p className="mt-2 text-muted-foreground">
-              {t('latexDescription')}
-            </p>
-          </div>
-
+        <PageSection
+          title={t('latexTitle')}
+          subtitle={t('latexDescription')}
+        >
           <CodeBlock
             code={latexCode}
             language="LaTeX"
             title={t('latexTitle')}
           />
-        </div>
+        </PageSection>
 
         {/* CSS Template */}
-        <div className="space-y-6">
-          <div>
-            <h2 className="text-2xl font-bold text-foreground">{t('cssTitle')}</h2>
-            <p className="mt-2 text-muted-foreground">
-              {t('cssDescription')}
-            </p>
-          </div>
-
+        <PageSection
+          title={t('cssTitle')}
+          subtitle={t('cssDescription')}
+        >
           <CodeBlock
             code={cssCode}
             language="CSS"
             title={t('cssTitle')}
           />
-        </div>
+        </PageSection>
 
         {/* Publisher Requirements */}
-        <div className="space-y-6">
-          <div>
-            <h2 className="text-2xl font-bold text-foreground">{t('publisherFonts.title')}</h2>
-            <p className="mt-2 text-muted-foreground">
-              {t('subtitle')}
-            </p>
-          </div>
+        <PageSection
+          title={t('publisherFonts.title')}
+          subtitle={t('subtitle')}
+        >
 
           <Card>
             <CardContent className="p-0">
@@ -286,7 +279,7 @@ code {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </PageSection>
 
         {/* Best Practices */}
         <Card className="border-2 border-accent/20 bg-accent/5">

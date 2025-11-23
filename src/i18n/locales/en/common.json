@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "goldenStandard": "Golden Standard 2025",
+    "proposedStandard": "Proposed Standard",
     "regulations": "Regulations & Standards",
     "colors": "Color Guidelines",
     "typography": "Typography",
@@ -10,15 +10,25 @@
     "pdfChecklist": "PDF Checklist",
     "publishers": "Publisher Requirements",
     "downloads": "Downloads",
-    "references": "References"
+    "references": "References",
+    "credit": "Credit"
   },
   "site": {
     "title": "Academic Publishing Accessibility",
     "subtitle": "WCAG 2.2 Practical Guide",
     "copyright": "© 2025 Academic Publishing Accessibility Guide"
   },
+  "footer": {
+    "lastUpdated": "Last updated: November 23, 2025"
+  },
   "notFound": {
     "message": "Oops! Page not found",
     "returnHome": "Return to Home"
-  }
+  },
+  "codeBlock": {
+    "copy": "Copy",
+    "copied": "Copied!",
+    "copyFailed": "Copy failed"
+  },
+  "featured": "Featured"
 }

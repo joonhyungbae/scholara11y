@@ -124,5 +124,61 @@
     "title": "License & Usage",
     "description": "All templates, checklists, and code provided here are released under Creative Commons CC0 1.0 Universal (Public Domain Dedication). You are free to use, modify, and distribute these resources for any purpose, including commercial use, without attribution.",
     "warranty": "These resources are provided as-is without warranty. Always verify compliance with your publisher's specific requirements."
+  },
+  "scripts": {
+    "title": "Code Scripts",
+    "python": {
+      "title": "Python Accessibility Scripts",
+      "description": "A collection of Python scripts for automating accessibility checks and generating accessible plots.",
+      "contents": "Contents: matplotlib configuration, contrast checker, alt text generator",
+      "download": "Download ZIP",
+      "dependency": "Python Dependencies",
+      "dependencyDesc": "List of Python packages needed for accessible data visualization",
+      "installTitle": "Installation:",
+      "config": "matplotlib Configuration",
+      "configDesc": "Accessibility-optimized matplotlib default configuration file",
+      "installPath": "Installation Path:"
+    },
+    "r": {
+      "title": "R Accessibility Package",
+      "description": "An R package containing functions for creating accessible ggplot2 visualizations.",
+      "contents": "Contents: ggplot2 themes, color scales, export functions",
+      "download": "Download Package",
+      "package": "R Package Installation",
+      "packageDesc": "Batch installation script for R packages for accessible visualization",
+      "runTitle": "How to Run:",
+      "env": "R Environment Setup",
+      "envDesc": "Accessibility settings that load automatically when R starts",
+      "installPath": "Installation Path:"
+    }
+  },
+  "templates": {
+    "paper": "Paper Template",
+    "paperDesc": "PDF/UA compliant academic paper LaTeX template",
+    "css": "CSS Template",
+    "cssDesc": "WCAG 2.2 AA compliant CSS style template"
+  },
+  "standards": {
+    "coding": "Coding Standards",
+    "codingDesc": "EditorConfig settings for consistent code style"
+  },
+  "instructions": {
+    "title": "Usage Guide",
+    "step1": {
+      "title": "1. Copy Code",
+      "desc": "Click the copy button in the top-right of each code block to copy the code."
+    },
+    "step2": {
+      "title": "2. Create Files",
+      "desc": "Save the copied code as the appropriate filename (e.g., requirements.txt)."
+    },
+    "step3": {
+      "title": "3. Apply to Environment",
+      "desc": "Place in the appropriate location and install/apply according to each file's description."
+    },
+    "step4": {
+      "title": "4. Customize",
+      "desc": "Modify the settings as needed for your use case."
+    }
   }
 }
