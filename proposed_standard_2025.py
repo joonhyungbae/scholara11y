@@ -83,7 +83,7 @@ class ProposedStandard2025:
         plt.rcParams['axes.spines.right'] = False
 
     def create_accessible_chart(self, data, title="Accessible Chart", alt_text="",
-                               labels=None, save_path=None):
+                               labels=None, save_path=None, save_formats=['svg', 'png']):
         """
         Create an accessible bar chart following Proposed Standard 2025
 
@@ -93,6 +93,7 @@ class ProposedStandard2025:
         - alt_text: Alternative text for screen readers (string)
         - labels: X-axis labels (list, optional)
         - save_path: File path to save (optional)
+        - save_formats: List of formats to save ['svg', 'png'] (default: both)
 
         Returns:
         - matplotlib figure object
@@ -131,18 +132,29 @@ class ProposedStandard2025:
 
         # Save with metadata if path provided
         if save_path:
+            base_path = save_path.rsplit('.', 1)[0] if '.' in save_path else save_path
             metadata = {
                 'Title': title,
                 'Description': alt_text or f'Bar chart showing {len(data)} data points',
                 'Creator': 'Proposed Standard 2025'
             }
-            plt.savefig(save_path, format='svg', metadata=metadata, dpi=300, bbox_inches='tight')
-            print(f"Chart saved to: {save_path}")
+
+            for fmt in save_formats:
+                if fmt.lower() == 'svg':
+                    file_path = f"{base_path}.svg"
+                    plt.savefig(file_path, format='svg', metadata=metadata, dpi=300, bbox_inches='tight')
+                    print(f"SVG chart saved to: {file_path}")
+                elif fmt.lower() == 'png':
+                    file_path = f"{base_path}.png"
+                    plt.savefig(file_path, format='png', dpi=300, bbox_inches='tight')
+                    print(f"PNG chart saved to: {file_path}")
+
+            print(f"Charts saved in formats: {', '.join(save_formats)}")
 
         return fig
 
     def create_line_chart(self, x_data, y_data_list, title="Time Series",
-                         labels=None, save_path=None):
+                         labels=None, save_path=None, save_formats=['svg', 'png']):
         """
         Create an accessible line chart with multiple series
 
@@ -186,18 +198,29 @@ class ProposedStandard2025:
 
         # Save with metadata if path provided
         if save_path:
+            base_path = save_path.rsplit('.', 1)[0] if '.' in save_path else save_path
             metadata = {
                 'Title': title,
                 'Description': f'Line chart with {len(y_data_list)} series',
                 'Creator': 'Proposed Standard 2025'
             }
-            plt.savefig(save_path, format='svg', metadata=metadata, dpi=300, bbox_inches='tight')
-            print(f"Chart saved to: {save_path}")
+
+            for fmt in save_formats:
+                if fmt.lower() == 'svg':
+                    file_path = f"{base_path}.svg"
+                    plt.savefig(file_path, format='svg', metadata=metadata, dpi=300, bbox_inches='tight')
+                    print(f"SVG chart saved to: {file_path}")
+                elif fmt.lower() == 'png':
+                    file_path = f"{base_path}.png"
+                    plt.savefig(file_path, format='png', dpi=300, bbox_inches='tight')
+                    print(f"PNG chart saved to: {file_path}")
+
+            print(f"Charts saved in formats: {', '.join(save_formats)}")
 
         return fig
 
     def create_scatter_plot(self, x_data, y_data, title="Scatter Plot",
-                           xlabel="X", ylabel="Y", save_path=None):
+                           xlabel="X", ylabel="Y", save_path=None, save_formats=['svg', 'png']):
         """
         Create an accessible scatter plot
 
@@ -228,13 +251,24 @@ class ProposedStandard2025:
         ax.grid(True, alpha=0.3, linestyle='--')
 
         if save_path:
+            base_path = save_path.rsplit('.', 1)[0] if '.' in save_path else save_path
             metadata = {
                 'Title': title,
                 'Description': f'Scatter plot with {len(x_data)} data points',
                 'Creator': 'Proposed Standard 2025'
             }
-            plt.savefig(save_path, format='svg', metadata=metadata, dpi=300, bbox_inches='tight')
-            print(f"Chart saved to: {save_path}")
+
+            for fmt in save_formats:
+                if fmt.lower() == 'svg':
+                    file_path = f"{base_path}.svg"
+                    plt.savefig(file_path, format='svg', metadata=metadata, dpi=300, bbox_inches='tight')
+                    print(f"SVG chart saved to: {file_path}")
+                elif fmt.lower() == 'png':
+                    file_path = f"{base_path}.png"
+                    plt.savefig(file_path, format='png', dpi=300, bbox_inches='tight')
+                    print(f"PNG chart saved to: {file_path}")
+
+            print(f"Charts saved in formats: {', '.join(save_formats)}")
 
         return fig
 
@@ -255,7 +289,7 @@ def main():
         title='Quarterly Research Results',
         alt_text='Bar chart showing research results across 6 quarters',
         labels=labels,
-        save_path='accessible_bar_chart.svg'
+        save_path='accessible_bar_chart'
     )
 
     # Example 2: Line Chart
@@ -269,7 +303,7 @@ def main():
         x, [y1, y2, y3],
         title='Time Series Comparison',
         labels=['Series A', 'Series B', 'Series C'],
-        save_path='accessible_line_chart.svg'
+        save_path='accessible_line_chart'
     )
 
     # Example 3: Scatter Plot
@@ -283,7 +317,7 @@ def main():
         title='Performance vs Experience Scatter Plot',
         xlabel='Experience (months)',
         ylabel='Performance Score',
-        save_path='accessible_scatter_plot.svg'
+        save_path='accessible_scatter_plot'
     )
 
     print("\nDemo complete! Check the generated SVG files.")
