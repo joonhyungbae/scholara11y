@@ -350,8 +350,8 @@ ggsave("accessible_line_chart.pdf", line_plot, width = 10, height = 6, dpi = 300
 
         {/* Generated Examples */}
         <PageSection
-          title="Generated Example Charts"
-          subtitle="Accessible charts created with Python code"
+          title={t('charts.title')}
+          subtitle={t('charts.subtitle')}
           icon={<FileImage className="h-5 w-5" />}
         >
           <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
@@ -360,10 +360,10 @@ ggsave("accessible_line_chart.pdf", line_plot, width = 10, height = 6, dpi = 300
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <FileImage className="h-5 w-5" />
-                  Bar Chart
+                  {t('charts.barChart.title')}
                 </CardTitle>
                 <CardDescription>
-                  Okabe-Ito colors with patterns
+                  {t('charts.barChart.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -398,10 +398,10 @@ ggsave("accessible_line_chart.pdf", line_plot, width = 10, height = 6, dpi = 300
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <FileImage className="h-5 w-5" />
-                  Line Chart
+                  {t('charts.lineChart.title')}
                 </CardTitle>
                 <CardDescription>
-                  Multiple series with color & style encoding
+                  {t('charts.lineChart.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -436,10 +436,10 @@ ggsave("accessible_line_chart.pdf", line_plot, width = 10, height = 6, dpi = 300
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <FileImage className="h-5 w-5" />
-                  Scatter Plot
+                  {t('charts.scatterPlot.title')}
                 </CardTitle>
                 <CardDescription>
-                  Scatter plot with labeled data points
+                  {t('charts.scatterPlot.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -666,8 +666,8 @@ ggsave("accessible_line_chart.pdf", line_plot, width = 10, height = 6, dpi = 300
 
         {/* Contrast Ratios Table */}
         <PageSection
-          title="WCAG 대비율 요구사항"
-          subtitle="텍스트와 배경 간 최소 대비율 기준표"
+          title={t('contrastTable.title')}
+          subtitle={t('contrastTable.subtitle')}
         >
           <Card>
             <CardContent className="p-0">
@@ -676,37 +676,37 @@ ggsave("accessible_line_chart.pdf", line_plot, width = 10, height = 6, dpi = 300
                   <thead className="bg-muted">
                     <tr>
                       <th className="border-b border-border px-6 py-4 text-left text-sm font-semibold text-foreground">
-                        요소 유형
+                        {t('contrastTable.elementType')}
                       </th>
                       <th className="border-b border-border px-6 py-4 text-left text-sm font-semibold text-foreground">
-                        AA 등급
+                        {t('contrastTable.aaGrade')}
                       </th>
                       <th className="border-b border-border px-6 py-4 text-left text-sm font-semibold text-foreground">
-                        AAA 등급
+                        {t('contrastTable.aaaGrade')}
                       </th>
                       <th className="border-b border-border px-6 py-4 text-left text-sm font-semibold text-foreground">
-                        텍스트 크기 기준
+                        {t('contrastTable.textSizeCriteria')}
                       </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-border">
                     <tr>
-                      <td className="px-6 py-4 text-sm text-foreground">일반 텍스트</td>
+                      <td className="px-6 py-4 text-sm text-foreground">{t('contrastTable.normalText')}</td>
                       <td className="px-6 py-4 text-sm font-semibold text-primary">4.5:1</td>
                       <td className="px-6 py-4 text-sm font-semibold text-primary">7:1</td>
                       <td className="px-6 py-4 text-sm text-muted-foreground">&lt; 18pt (24px)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 text-sm text-foreground">큰 텍스트</td>
+                      <td className="px-6 py-4 text-sm text-foreground">{t('contrastTable.largeText')}</td>
                       <td className="px-6 py-4 text-sm font-semibold text-primary">3:1</td>
                       <td className="px-6 py-4 text-sm font-semibold text-primary">4.5:1</td>
                       <td className="px-6 py-4 text-sm text-muted-foreground">≥ 18pt or 14pt Bold</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 text-sm text-foreground">UI 컴포넌트</td>
+                      <td className="px-6 py-4 text-sm text-foreground">{t('contrastTable.uiComponents')}</td>
                       <td className="px-6 py-4 text-sm font-semibold text-primary">3:1</td>
                       <td className="px-6 py-4 text-sm text-muted-foreground">-</td>
-                      <td className="px-6 py-4 text-sm text-muted-foreground">Charts, icons, buttons</td>
+                      <td className="px-6 py-4 text-sm text-muted-foreground">{t('contrastTable.chartsIconsButtons')}</td>
                     </tr>
                   </tbody>
                 </table>

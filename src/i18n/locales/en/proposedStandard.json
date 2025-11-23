@@ -95,6 +95,22 @@
       }
     }
   },
+  "charts": {
+    "title": "Generated Example Charts",
+    "subtitle": "Accessible charts created with Python code",
+    "barChart": {
+      "title": "Bar Chart",
+      "description": "Okabe-Ito colors with patterns"
+    },
+    "lineChart": {
+      "title": "Line Chart",
+      "description": "Multiple series with color & style encoding"
+    },
+    "scatterPlot": {
+      "title": "Scatter Plot",
+      "description": "Scatter plot with labeled data points"
+    }
+  },
   "downloads": {
     "title": "Download Center",
     "python": {
@@ -246,5 +262,17 @@
       ],
       "conclusion": "This is the 'Proposed Standard': A complete system where all users can access information."
     }
+  },
+  "contrastTable": {
+    "title": "WCAG Contrast Ratio Requirements",
+    "subtitle": "Minimum contrast ratio standards between text and background",
+    "elementType": "Element Type",
+    "aaGrade": "AA Grade",
+    "aaaGrade": "AAA Grade",
+    "textSizeCriteria": "Text Size Criteria",
+    "normalText": "Normal Text",
+    "largeText": "Large Text",
+    "uiComponents": "UI Components",
+    "chartsIconsButtons": "Charts, icons, buttons"
   }
 }

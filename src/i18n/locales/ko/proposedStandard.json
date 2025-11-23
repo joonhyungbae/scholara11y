@@ -95,6 +95,22 @@
       }
     }
   },
+  "charts": {
+    "title": "생성된 예제 차트",
+    "subtitle": "Python 코드로 생성된 접근성 차트",
+    "barChart": {
+      "title": "막대 차트",
+      "description": "Okabe-Ito 색상과 패턴"
+    },
+    "lineChart": {
+      "title": "선 그래프",
+      "description": "색상과 스타일 인코딩을 사용한 다중 시리즈"
+    },
+    "scatterPlot": {
+      "title": "산점도",
+      "description": "라벨이 있는 데이터 포인트의 산점도"
+    }
+  },
   "downloads": {
     "title": "다운로드 센터",
     "python": {
@@ -246,5 +262,17 @@
       ],
       "conclusion": "이것이 바로 '제안 표준'입니다: 모든 사용자가 정보에 접근할 수 있는 완전한 시스템."
     }
+  },
+  "contrastTable": {
+    "title": "WCAG 대비율 요구사항",
+    "subtitle": "텍스트와 배경 간 최소 대비율 기준표",
+    "elementType": "요소 유형",
+    "aaGrade": "AA 등급",
+    "aaaGrade": "AAA 등급",
+    "textSizeCriteria": "텍스트 크기 기준",
+    "normalText": "일반 텍스트",
+    "largeText": "큰 텍스트",
+    "uiComponents": "UI 컴포넌트",
+    "chartsIconsButtons": "Charts, icons, buttons"
   }
 }
